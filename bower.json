@@ -8,5 +8,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "modernizr": "~2.8.3"
+  }
 }
