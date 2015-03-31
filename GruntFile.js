@@ -23,6 +23,7 @@ module.exports = function(grunt) {
       }
     },
 
+/*
     less: {
       debug: {
         options: {
@@ -39,6 +40,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+*/
 
     watch: {
       options: {
@@ -74,6 +76,7 @@ module.exports = function(grunt) {
           filter: 'isFile'
         }]
       },
+/*      
       lng: {
         files: [{
           expand: true,
@@ -122,6 +125,7 @@ module.exports = function(grunt) {
           filter: 'isFile'
         }]
       }
+*/
     },
 
     copy: {
