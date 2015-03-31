@@ -14,5 +14,15 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.8.0"
-  }
+  },
+  "devDependencies": {
+        "grunt": "~0.4.0",
+        "grunt-contrib-less": "~0.6.5",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-connect": "~0.6.0",
+        "matchdep": "~0.1.2",
+        "grunt-ejs-render": "~0.1.0",
+        "grunt-contrib-copy": "~0.4.0",
+        "grunt-contrib-clean": "~0.4.0"
+    }
 }
