@@ -35,7 +35,7 @@ function Keynote()
 	    var _url = $(location).attr('href');
 
         try{
-            _params = $.url().param();    
+            _params = $.url().param();
         }catch(e){
             //
         }

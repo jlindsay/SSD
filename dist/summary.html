@@ -60,9 +60,11 @@
 		
 </head>
 	<body>
-    	<h1><strong>Summary Goes here</strong></h1>
+    	<h1><strong class="msg">...</strong></h1>
 
     </body>
+
+    <script src="./iidx/components/requirejs/require.js"></script>
     <script src="./iidx/components/jquery/jquery.js"></script>
     <!--script src="./js/jquery.cookie.js"></script>
     <script src="./js/jquery.url.js"></script-->
@@ -88,8 +90,18 @@
       require(['jquery','cookies', 'url', 'keynote'], function($) {
           //initKeyBoard();
           console.log("deubg:init()");
+          //_params = $.url().param() ;
+          //console.log( window.location.hash );
+
+          _title = ( window.location.hash )? window.location.hash : "...";
           
           var _keynote = new Keynote().init( { pages: _pages } );
+
+          _title = _title.split("#").join("");
+          _title = _title.split("-").join(" ");
+          _title = _title.split("_").join(" ");
+          $(".msg").text( _title );
+
       });
 
     </script>
