@@ -19,8 +19,8 @@ var _pages = [
         { url: 'home.html' , hash: "" , uuid:"401" },
     
     
-    { url: 'summary.html' , hash: "Section-3" , uuid:"400" },
-        { url: 'home.html' , hash: "" , uuid:"401" },
+    { url: 'summary.html' , hash: "Section-3" , uuid:"500" },
+        { url: 'home.html' , hash: "" , uuid:"501" },
 
     { url: 'thankyou.html' , hash: "" , uuid:"600" },
 
