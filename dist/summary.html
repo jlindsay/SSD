@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sea Stream Demo: Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./iidx/components/brandkit/favicon/favicon-144px.png">
+
+  <!-- For iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./iidx/components/brandkit/favicon/favicon-114px.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./iidx/components/brandkit/favicon/favicon-72px.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="./iidx/components/brandkit/favicon/favicon.png">
+
+  <link rel="icon" href="./iidx/components/brandkit/favicon/favicon.ico">
+  <link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
+  <link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
+
+  <!--[if lt IE 9]>
+    <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+  <![endif]-->
+
+<script src="./iidx/components/modernizr/modernizr.js"></script>
+
+<style type="text/css">
+
+    html, body {
+        background-color: #2b2b2b;
+        color: white;
+        height: 100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    h1 {
+        display: inline;
+        position: relative;
+        top: 44%;
+        vertical-align: middle;
+        font-size: 90px;
+        line-height: 90%;
+        color:white;
+    }
+
+</style>
+
+<!--[if lt IE 9]>
+  <link id="theme-ie" href="css/iids/ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+		
+</head>
+	<body>
+    	<h1><strong>Summary Goes here</strong></h1>
+
+    </body>
+    <script src="./iidx/components/jquery/jquery.js"></script>
+    <!--script src="./js/jquery.cookie.js"></script>
+    <script src="./js/jquery.url.js"></script-->
+    <script src="./js/globle.js"></script>
+    <script src="./js/keynote.js"></script>
+    <script>
+      
+      require.config({
+        baseUrl: './',
+        urlArgs: String("r="+ (new Date()).getTime()),
+          paths: {
+          'cookies': 'js/jquery.cookie',
+            'url': 'js/jquery.url',
+            'keynote': 'js/keynote'
+        },
+        shim: {
+          'url': ['jquery'],
+          'cookies': ['jquery'],
+        }
+
+      });
+
+      require(['jquery','cookies', 'url', 'keynote'], function($) {
+          //initKeyBoard();
+          console.log("deubg:init()");
+          
+          var _keynote = new Keynote().init( { pages: _pages } );
+      });
+
+    </script>
+    <script src="./iidx/components/respond/respond.src.js"></script>
+</html>

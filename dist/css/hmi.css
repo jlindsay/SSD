@@ -14,7 +14,31 @@
 
 #secondary ul {
     margin: 0px;
-    margin-bottom: 380px;
+/*    margin-bottom: 380px; */
+    margin-bottom:100px;
     margin-top: 31px;
 }
 
+
+
+
+
+/* 
+  we may not need this 
+*/
+
+.hmi-primary-navbar {
+  clear: both;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 0px 0px 0px;
+  background: #5b5e62;
+  background: -moz-linear-gradient(top, #5b5e62 0%, #3f4247 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5e62), color-stop(100%,#3f4247));
+  background: -webkit-linear-gradient(top, #5b5e62 0%,#3f4247 100%);
+  background: -o-linear-gradient(top, #5b5e62 0%,#3f4247 100%);
+  background: -ms-linear-gradient(top, #5b5e62 0%,#3f4247 100%);
+  background: linear-gradient(to bottom, #5b5e62 0%,#3f4247 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5e62', endColorstr='#3f4247',GradientType=0 );
+}
