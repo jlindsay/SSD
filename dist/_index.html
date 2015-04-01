@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- For third-generation iPad with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../components/brandkit/favicon/favicon-144px.png">
+
+        <!-- For iPhone with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../components/brandkit/favicon/favicon-114px.png">
+
+        <!-- For first- and second-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../components/brandkit/favicon/favicon-72px.png">
+
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="components/brandkit/favicon/favicon.png">
+
+        <link rel="icon" href="components/brandkit/favicon/favicon.ico">
+        <link href="./css/iids.css" rel="stylesheet" type="text/css">
+        <link href="./css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="./css/demo.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+
+            html, body {
+                background-color: white;
+            }
+            .brand-header {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            .brand-header img, .brand-header h3 {
+                display: inline;
+            }
+            .brand-header img {
+                margin-top: -10px;
+                margin-right: 10px;
+            }
+
+            [class*=span] > ul {
+                list-style: none;
+                margin-left: 10px;
+            }
+
+            [class*=span] > ul > li > ul {
+                list-style: none;
+            }
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            .color-offshore {
+                display: block;
+                padding: 10px;
+                background-color: #0758b9;
+                font-size: 20px;
+                color: white;
+            }
+
+            .color-lng {
+                display: block;
+                padding: 10px;
+                background-color: #79bd03;
+                font-size: 20px;
+                color: white;
+            }
+
+            .color-pipeline {
+                display: block;
+                padding: 10px;
+                background-color: #700072;
+                font-size: 20px;
+                color: white;
+            }
+
+            .color-reinjection {
+                display: block;
+                padding: 10px;
+                background-color: #eb7f05;
+                font-size: 20px;
+                color: white;
+            }
+
+            .color-downstream {
+                display: block;
+                padding: 10px;
+                background-color: #1ba4e0;
+                font-size: 20px;
+                color: white;
+            }
+
+            h6 {
+                color: #3a78b1;
+                font-size: 20px;
+                margin-bottom: 15px;
+                text-transform: none;
+                font-weight: bold;
+            }
+
+            [class*=span] > ul > li {
+                margin-bottom: 20px;
+            }
+
+            [class*=span] > ul > li > ul > li {
+                margin-left: -25px;
+                margin-bottom: 10px;
+                line-height: 16px;
+            }
+
+            .span3 {
+                width: 225px;
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
+        </style>
+
+        <!--[if lt IE 9]>
+          <link id="theme-ie" href="css/iids/ie.css" rel="stylesheet" type="text/css">
+        <![endif]-->
+
+        <!-- demo data for summary page -->
+        <script src="data/fleet.summary.data.js"></script>
+
+        <script src="./components/modernizr/modernizr.js"></script>
+        <script src="//localhost:35729/livereload.js"></script>
+
+        <title>Demo Flow Map - GE Fleet Asset Manager</title>
+    </head>
+    <body class="site-map">
+        <div class="container">
+
+            <div class="row">
+                <div class="span12 brand-header">
+                    <img src="components/brandkit/img/ge-monogram-shark.svg" alt="">
+                    <h3 class="voice-brand">GE Fleet Asset Manager Demo</h3> 
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="span3">
+                    <h4 class="voice voice-brand color-offshore"><a style="color:#fff;text-decoration: none;" href="fleet_title.html?uuid=020#">Offshore</a></h4>
+                    <ul>
+                        <li>
+                            <h6 class="voice voice-brand">Early Detection</h6>
+                            <ul>
+                                <li><a href="fleet_segment_1.html?uuid=002#home">Lineup List</a></li>
+                                <li><a href="fleet_segment_1.html?uuid=003#overview">Lineup Overview</a></li>
+                                <li><a href="fleet_segment_1.html?uuid=006#alarms">Alarms and Events</a></li>
+                                <li><a href="fleet_segment_1.html?uuid=007#analysis">Alarm Analysis and Draft First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">iCenter Guidance &amp; Collaboration</h6>
+                            <ul>
+                                <li><a href="fleet_segment_2.html?uuid=009#analysis">Alarm Analysis and First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">Time passes</h6>
+                            <ul>
+                                <li><a href="fleet_segment_3.html?uuid=011#overview">Lineup overview w/ Notification Badge</a></li>
+                                <li><a href="fleet_segment_3.html?uuid=012#issues">Notification List</a></li>
+                                <li><a href="fleet_segment_3.html?uuid=013#detail">Notification Detail w/ chat callout</a></li>
+                                <li><a href="fleet_segment_3.html?uuid=014#maintenance">Maintenance Gantt Chart</a></li>
+                                <li><a href="fleet_segment_3.html?uuid=015#overview">Fleet Overview</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">After the Outage</h6>
+                            <ul>
+                                <li><a href="fleet_segment_4.html?uuid=017#analysis">Alarm Analysis </a></li>
+                                <li><a href="fleet_segment_4.html?uuid=018#overview">Lineup overview</a></li>
+                                <li><a href="thankyou.html?uuid=019">Benefits to Customer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="span3">
+                    <h4 class="voice voice-brand color-lng"><a style="color:#fff;text-decoration: none;" href="lng_title.html?uuid=050#">LNG</a></h4>
+                    <ul>
+                        <li>
+                            <h6 class="voice voice-brand">Early Detection</h6>
+                            <ul>
+                                <li><a href="lng_segment_1.html?uuid=032#home">Lineup List</a></li>
+                                <li><a href="lng_segment_1.html?uuid=033#overview">Lineup Overview</a></li>
+                                <li><a href="lng_segment_1.html?uuid=036#alarms">Alarms and Events</a></li>
+                                <li><a href="lng_segment_1.html?uuid=037#analysis">Alarm Analysis and Draft First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">iCenter Guidance &amp; Collaboration</h6>
+                            <ul>
+                                <li><a href="lng_segment_2.html?uuid=039#analysis">Alarm Analysis and First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">Time passes</h6>
+                            <ul>
+                                <li><a href="lng_segment_3.html?uuid=041#overview">Lineup overview w/ Notification Badge</a></li>
+                                <li><a href="lng_segment_3.html?uuid=042#issues">Notification List</a></li>
+                                <li><a href="lng_segment_3.html?uuid=043#detail">Notification Detail w/ chat callout</a></li>
+                                <li><a href="lng_segment_3.html?uuid=044#maintenance">Maintenance Gantt Chart</a></li>
+                                <li><a href="lng_segment_3.html?uuid=045#overview">Fleet Overview</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">After the Outage</h6>
+                            <ul>
+                                <li><a href="lng_segment_4.html?uuid=047#analysis">Alarm Analysis </a></li>
+                                <li><a href="lng_segment_4.html?uuid=048#overview">Lineup overview</a></li>
+                                <li><a href="lng_thankyou.html">Benefits to Customer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="span3">
+                    <h4 class="voice voice-brand color-pipeline"><a style="color:#fff;text-decoration: none;" href="pipeline_title.html?uuid=080#">Pipeline</a></h4>
+                    <ul>
+                        <li>
+                            <h6 class="voice voice-brand">Early Detection</h6>
+                            <ul>
+                                <li><a href="pipeline_segment_1.html?uuid=062#home">Lineup List</a></li>
+                                <li><a href="pipeline_segment_1.html?uuid=063#overview">Lineup Overview</a></li>
+                                <li><a href="pipeline_segment_1.html?uuid=066#alarms">Alarms and Events</a></li>
+                                <li><a href="pipeline_segment_1.html?uuid=067#analysis">Alarm Analysis and Draft First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">iCenter Guidance &amp; Collaboration</h6>
+                            <ul>
+                                <li><a href="pipeline_segment_2.html?uuid=069#analysis">Alarm Analysis and First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">Time passes</h6>
+                            <ul>
+                                <li><a href="pipeline_segment_3.html?uuid=071#overview">Lineup overview w/ Notification Badge</a></li>
+                                <li><a href="pipeline_segment_3.html?uuid=072#issues">Notification List</a></li>
+                                <li><a href="pipeline_segment_3.html?uuid=073#detail">Notification Detail w/ chat callout</a></li>
+                                <li><a href="pipeline_segment_3.html?uuid=074#maintenance">Maintenance Gantt Chart</a></li>
+                                <li><a href="pipeline_segment_3.html?uuid=075#overview">Fleet Overview</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">After the Outage</h6>
+                            <ul>
+                                <li><a href="pipeline_segment_4.html?uuid=077#analysis">Alarm Analysis </a></li>
+                                <li><a href="pipeline_segment_4.html?uuid=078#overview">Lineup overview</a></li>
+                                <li><a href="pipeline_thankyou.html?uuid=079">Benefits to Customer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="span3">
+                    <h4 class="voice voice-brand color-reinjection"><a style="color:#fff;text-decoration: none;" href="reinjection_title.html?uuid=120#">Reinjection</a></h4>
+                    <ul>
+                        <li>
+                            <h6 class="voice voice-brand">Early Detection</h6>
+                            <ul>
+                                <li><a href="reinjection_segment_1.html?uuid=102#home">Lineup list</a></li>
+                                <li><a href="reinjection_segment_1.html?uuid=103#overview">Lineup Overview</a></li>
+                                <li><a href="reinjection_segment_1.html?uuid=106#alarms">Alarms and Events</a></li>
+                                <li><a href="reinjection_segment_1.html?uuid=107#analysis">Alarm Analysis and Draft First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">iCenter Guidance &amp; Collaboration</h6>
+                            <ul>
+                                <li><a href="reinjection_segment_2.html?uuid=109#analysis">Alarm Analysis and First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">Time passes</h6>
+                            <ul>
+                                <li><a href="reinjection_segment_3.html?uuid=111#overview">Lineup overview w/ Notification Badge</a></li>
+                                <li><a href="reinjection_segment_3.html?uuid=112#issues">Notification List</a></li>
+                                <li><a href="reinjection_segment_3.html?uuid=113#detail">Notification Detail w/ chat callout</a></li>
+                                <li><a href="reinjection_segment_3.html?uuid=114#maintenance">Maintenance Gantt Chart</a></li>
+                                <li><a href="reinjection_segment_3.html?uuid=115#overview">Fleet Overview</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">After the Outage</h6>
+                            <ul>
+                                <li><a href="reinjection_segment_4.html?uuid=117#analysis">Alarm Analysis </a></li>
+                                <li><a href="reinjection_segment_4.html?uuid=118#overview">Lineup overview</a></li>
+                                <li><a href="reinjection_thankyou.html?uuid=119">Benefits to Customer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="span3">
+                    <h4 class="voice voice-brand color-downstream"><a style="color:#fff;text-decoration: none;" href="downstream_title.html?uuid=150#">Downstream</a></h4>
+                    <ul>
+                        <li>
+                            <h6 class="voice voice-brand">Early Detection</h6>
+                            <ul>
+                                <li><a href="downstream_segment_1.html?uuid=132#home">Lineup List</a></li>
+                                <li><a href="downstream_segment_1.html?uuid=133#overview">Lineup Overview</a></li>
+                                <li><a href="downstream_segment_1.html?uuid=134#performance">Performance Analysis</a></li>
+                                <li><a href="downstream_segment_1.html?uuid=135#overview'">Lineup Overview</a></li>
+                                <li><a href="downstream_segment_1.html?uuid=136#alarms">Alarms and Events</a></li>
+                                <li><a href="downstream_segment_1.html?uuid=137#analysis">Alarm Analysis and Draft First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">iCenter Guidance &amp; Collaboration</h6>
+                            <ul>
+                                <li><a href="downstream_segment_2.html?uuid=139#analysis">Alarm Analysis and First Assessment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">Time passes</h6>
+                            <ul>
+                                <li><a href="downstream_segment_3.html?uuid=141#overview">Lineup overview w/ Notification Badge</a></li>
+                                <li><a href="downstream_segment_3.html?uuid=142#issues">Notification List</a></li>
+                                <li><a href="downstream_segment_3.html?uuid=143#detail">Notification Detail w/ chat callout</a></li>
+                                <li><a href="downstream_segment_3.html?uuid=144#maintenance">Maintenance Gantt Chart</a></li>
+                                <li><a href="downstream_segment_3.html?uuid=145#overview">Fleet Overview</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="voice voice-brand">After the Outage</h6>
+                            <ul>
+                                <li><a href="downstream_segment_4.html?uuid=147#analysis">Alarm Analysis </a></li>
+                                <li><a href="downstream_segment_4.html?uuid=148#overview">Lineup overview</a></li>
+                                <li><a href="downstream_thankyou.html">Benefits to Customer</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script src="components/requirejs/require.js"></script>
+        <script src="js/require.config.js"></script>
+        <script type="text/javascript">
+
+        require.config({
+            baseUrl: './' 
+        });
+
+        </script>
+        <!--script src="js/demo/navagation.js" type="text/javascript" charset="utf-8"></script-->
+    </body>
+</html>
