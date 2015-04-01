@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="675.033px" height="636.091px" viewBox="0 0 675.033 636.091" enable-background="new 0 0 675.033 636.091"
+	 xml:space="preserve">
+<g>
+	<path fill="#2E2E2F" d="M322.096,494.86c0,2.75-2.25,5-5,5H35.451c-2.75,0-5-2.25-5-5V34.38c0-2.75,2.25-5,5-5h281.646
+		c2.75,0,5,2.25,5,5V494.86z"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" d="M322.096,494.86c0,2.75-2.25,5-5,5H35.451c-2.75,0-5-2.25-5-5V34.38
+		c0-2.75,2.25-5,5-5h281.646c2.75,0,5,2.25,5,5V494.86z"/>
+</g>
+<g>
+	<path fill="#2D2D2F" d="M322.096,494.86c0,2.75-2.25,5-5,5H35.451c-2.75,0-5-2.25-5-5V34.38c0-2.75,2.25-5,5-5h281.646
+		c2.75,0,5,2.25,5,5V494.86z"/>
+</g>
+<rect x="30.451" y="60.98" fill="#C0B9B1" width="291.646" height="428.456"/>
+<g>
+	<path fill="#FFFFFF" d="M307.446,180.436c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5V97.037c0-2.75,2.25-5,5-5h252.319
+		c2.75,0,5,2.25,5,5V180.436z"/>
+	<path fill="none" stroke="#9A9286" d="M307.446,180.436c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5V97.037c0-2.75,2.25-5,5-5
+		h252.319c2.75,0,5,2.25,5,5V180.436z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 48.8706 86.3867)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Breaker Status</text>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="55.669" y1="126.646" x2="300.567" y2="126.646"/>
+<text transform="matrix(1 0 0 1 55.0386 147.5566)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Open Permissive</text>
+<text transform="matrix(1 0 0 1 55.0386 173.2061)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Close Permissive</text>
+<text transform="matrix(1 0 0 1 55.0386 114.2236)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Current Position</text>
+<g>
+	<path fill="#FFFFFF" d="M307.446,270.965c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5v-57.893c0-2.75,2.25-5,5-5h252.319
+		c2.75,0,5,2.25,5,5V270.965z"/>
+	<path fill="none" stroke="#9A9286" d="M307.446,270.965c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5v-57.893c0-2.75,2.25-5,5-5
+		h252.319c2.75,0,5,2.25,5,5V270.965z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 49.5894 202.4229)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Control Condition</text>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="55.669" y1="242.522" x2="300.567" y2="242.522"/>
+<text transform="matrix(1 0 0 1 55.0386 264.0322)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Auto Permissive</text>
+<text transform="matrix(1 0 0 1 55.0386 230.2598)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Current Mode</text>
+<g>
+	<path fill="#FFFFFF" d="M307.446,472.14c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5V421.5c0-2.75,2.25-5,5-5h252.319
+		c2.75,0,5,2.25,5,5V472.14z"/>
+	<path fill="none" stroke="#9A9286" d="M307.446,472.14c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5V421.5c0-2.75,2.25-5,5-5
+		h252.319c2.75,0,5,2.25,5,5V472.14z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 48.8706 410.8506)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Device Condition</text>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="55.669" y1="442.495" x2="300.567" y2="442.495"/>
+<text transform="matrix(1 0 0 1 55.0386 463.8076)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Lockout/Tagout</text>
+<text transform="matrix(1 0 0 1 159.6079 434.6978)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="15">Local</text>
+<text transform="matrix(1 0 0 1 55.0386 434.0005)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Control Origin</text>
+<text transform="matrix(1 0 0 1 45.1265 51.123)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="18">Cool TWR Fan 1 Start…</text>
+<g>
+	<text transform="matrix(1 0 0 1 208.7808 83.3652)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="18">211T150001</text>
+</g>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="252.7021" y1="118.2466" x2="252.7021" y2="100.3101">
+		<stop  offset="0" style="stop-color:#30A5DE"/>
+		<stop  offset="0.865" style="stop-color:#3E74B8"/>
+		<stop  offset="1" style="stop-color:#2B5489"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M283.734,117.246c0,0.553-0.447,1-1,1h-60.063c-0.552,0-1,0.001-1,0.001V101.31c0-0.553,0-1,0-1
+		h60.974c0,0,1.089,0.447,1.089,1V117.246z"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="190.877" y1="100.2563" x2="190.877" y2="118.2466">
+		<stop  offset="0" style="stop-color:#F9F8F6"/>
+		<stop  offset="1" style="stop-color:#C7C4BD"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M222.146,117.247c0,0.553,0,1,0,1h-61.585c0,0-0.952-0.447-0.952-1v-15.938c0-0.553,0.448-1,1-1
+		h60.538c0.553,0,1-0.053,1-0.053V117.247z"/>
+	<text transform="matrix(1 0 0 1 177.479 113.0947)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">open</text>
+	<text transform="matrix(1 0 0 1 233.772 113.0947)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="11">closed</text>
+	<line fill="none" stroke="#929092" stroke-miterlimit="10" x1="221.671" y1="100.528" x2="221.671" y2="118.247"/>
+	<path fill="none" stroke="#929092" stroke-miterlimit="10" d="M283.734,117.246c0,0.553-0.447,1-1,1H160.608c-0.552,0-1-0.447-1-1
+		v-15.937c0-0.553,0.448-1,1-1h122.125c0.553,0,1,0.447,1,1V117.246z"/>
+</g>
+<g>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="252.7021" y1="234.3447" x2="252.7021" y2="216.4082">
+		<stop  offset="0" style="stop-color:#30A5DE"/>
+		<stop  offset="0.865" style="stop-color:#3E74B8"/>
+		<stop  offset="1" style="stop-color:#2B5489"/>
+	</linearGradient>
+	<path fill="url(#SVGID_3_)" d="M283.734,233.344c0,0.553-0.447,1-1,1h-60.063c-0.552,0-1,0.001-1,0.001v-16.937c0-0.553,0-1,0-1
+		h60.974c0,0,1.089,0.447,1.089,1V233.344z"/>
+	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="190.877" y1="216.3545" x2="190.877" y2="234.3447">
+		<stop  offset="0" style="stop-color:#F9F8F6"/>
+		<stop  offset="1" style="stop-color:#C7C4BD"/>
+	</linearGradient>
+	<path fill="url(#SVGID_4_)" d="M222.146,233.345c0,0.553,0,1,0,1h-61.585c0,0-0.952-0.447-0.952-1v-15.938c0-0.553,0.448-1,1-1
+		h60.538c0.553,0,1-0.053,1-0.053V233.345z"/>
+	<text transform="matrix(1 0 0 1 177.4902 229.1924)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">auto</text>
+	<text transform="matrix(1 0 0 1 231.9897 229.1924)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="11">manual</text>
+	<line fill="none" stroke="#929092" stroke-miterlimit="10" x1="221.671" y1="216.626" x2="221.671" y2="234.345"/>
+	<path fill="none" stroke="#929092" stroke-miterlimit="10" d="M283.734,233.344c0,0.553-0.447,1-1,1H160.608c-0.552,0-1-0.447-1-1
+		v-15.937c0-0.553,0.448-1,1-1h122.125c0.553,0,1,0.447,1,1V233.344z"/>
+</g>
+<g>
+	<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="252.7021" y1="468.9648" x2="252.7021" y2="451.0283">
+		<stop  offset="0" style="stop-color:#30A5DE"/>
+		<stop  offset="0.865" style="stop-color:#3E74B8"/>
+		<stop  offset="1" style="stop-color:#2B5489"/>
+	</linearGradient>
+	<path fill="url(#SVGID_5_)" d="M283.734,467.964c0,0.553-0.447,1-1,1h-60.063c-0.552,0-1,0.001-1,0.001v-16.937c0-0.553,0-1,0-1
+		h60.974c0,0,1.089,0.447,1.089,1V467.964z"/>
+	<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="190.877" y1="450.9746" x2="190.877" y2="468.9648">
+		<stop  offset="0" style="stop-color:#F9F8F6"/>
+		<stop  offset="1" style="stop-color:#C7C4BD"/>
+	</linearGradient>
+	<path fill="url(#SVGID_6_)" d="M222.146,467.965c0,0.553,0,1,0,1h-61.585c0,0-0.952-0.447-0.952-1v-15.938c0-0.553,0.448-1,1-1
+		h60.538c0.553,0,1-0.053,1-0.053V467.965z"/>
+	<text transform="matrix(1 0 0 1 171.5391 463.8125)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">locked</text>
+	<text transform="matrix(1 0 0 1 226.1216 463.8125)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="11">unlocked</text>
+	<line fill="none" stroke="#929092" stroke-miterlimit="10" x1="221.671" y1="451.247" x2="221.671" y2="468.965"/>
+	<path fill="none" stroke="#929092" stroke-miterlimit="10" d="M283.734,467.964c0,0.553-0.447,1-1,1H160.608c-0.552,0-1-0.447-1-1
+		v-15.937c0-0.553,0.448-1,1-1h122.125c0.553,0,1,0.447,1,1V467.964z"/>
+</g>
+<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="306.0396" y1="30.4907" x2="306.0396" y2="58.877">
+	<stop  offset="0" style="stop-color:#F9F8F6"/>
+	<stop  offset="1" style="stop-color:#C7C4BD"/>
+</linearGradient>
+<path fill="url(#SVGID_7_)" d="M291.021,30.491h25.789c2.342,0,4.248,1.905,4.248,4.248v24.139h-30.037V30.491z"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="300.567" y1="40.038" x2="310.594" y2="50.063"/>
+	</g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="310.594" y1="40.038" x2="300.567" y2="50.063"/>
+	</g>
+</g>
+<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="274.3696" y1="31.3853" x2="274.3696" y2="58.877">
+	<stop  offset="0" style="stop-color:#F9F8F6"/>
+	<stop  offset="1" style="stop-color:#C7C4BD"/>
+</linearGradient>
+<rect x="259.854" y="31.385" fill="url(#SVGID_8_)" width="29.031" height="27.492"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="268.27" y1="44.975" x2="280.569" y2="44.974"/>
+	</g>
+</g>
+<g>
+	<path fill="#2D2D2F" d="M317.096,31.38c1.654,0,3,1.346,3,3v460.48c0,1.654-1.346,3-3,3H35.451c-1.654,0-3-1.346-3-3V34.38
+		c0-1.654,1.346-3,3-3H317.096 M317.096,29.38H35.451c-2.75,0-5,2.25-5,5v460.48c0,2.75,2.25,5,5,5h281.646c2.75,0,5-2.25,5-5V34.38
+		C322.096,31.63,319.846,29.38,317.096,29.38L317.096,29.38z"/>
+</g>
+<g>
+	<path fill="#FFFFFF" d="M307.446,388.596c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5v-73.759c0-2.75,2.25-5,5-5h252.319
+		c2.75,0,5,2.25,5,5V388.596z"/>
+	<path fill="none" stroke="#9A9286" d="M307.446,388.596c0,2.75-2.25,5-5,5H50.126c-2.75,0-5-2.25-5-5v-73.759c0-2.75,2.25-5,5-5
+		h252.319c2.75,0,5,2.25,5,5V388.596z"/>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="55.669" y1="367.344" x2="300.567" y2="367.344"/>
+<text transform="matrix(1 0 0 1 159.6079 385.7866)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="15">None</text>
+<text transform="matrix(1 0 0 1 55.0386 385.0894)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Override Indicator</text>
+<text transform="matrix(1 0 0 1 55.0386 331.5249)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Fault Indicator</text>
+<g>
+	<text transform="matrix(1 0 0 1 48.8706 304.1885)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Fault &amp; Override</text>
+</g>
+<g>
+	<g>
+		<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="192.4575" y1="342.0889" x2="192.4575" y2="359.0254">
+			<stop  offset="0" style="stop-color:#F9F8F6"/>
+			<stop  offset="1" style="stop-color:#C7C4BD"/>
+		</linearGradient>
+		<path fill="url(#SVGID_9_)" stroke="#929092" stroke-miterlimit="10" d="M225.307,358.025c0,0.553-0.447,1-1,1h-63.699
+			c-0.552,0-1-0.447-1-1v-14.937c0-0.553,0.448-1,1-1h63.699c0.553,0,1,0.447,1,1V358.025z"/>
+		<text transform="matrix(1 0 0 1 178.0361 354.2666)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">reset</text>
+	</g>
+</g>
+<g>
+	<g>
+		<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="243.7349" y1="35.6763" x2="243.7349" y2="53.6919">
+			<stop  offset="0" style="stop-color:#F9F8F6"/>
+			<stop  offset="1" style="stop-color:#C7C4BD"/>
+		</linearGradient>
+		<circle fill="url(#SVGID_10_)" stroke="#929092" stroke-miterlimit="10" cx="243.735" cy="44.684" r="9.008"/>
+	</g>
+	<text transform="matrix(1 0 0 1 239.8022 51.1689)" fill="#5D6064" font-family="'GEInspiraPitch-Bold'" font-size="18.0181">?</text>
+</g>
+<g>
+	<path fill="#2E2E2F" d="M650.198,314.605c0,2.75-2.25,5-5,5H376.052c-2.75,0-5-2.25-5-5V34.38c0-2.75,2.25-5,5-5h269.146
+		c2.75,0,5,2.25,5,5V314.605z"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" d="M650.198,314.605c0,2.75-2.25,5-5,5H376.052c-2.75,0-5-2.25-5-5V34.38
+		c0-2.75,2.25-5,5-5h269.146c2.75,0,5,2.25,5,5V314.605z"/>
+</g>
+<g>
+	<path fill="#2D2D2F" d="M650.198,314.605c0,2.75-2.25,5-5,5H376.052c-2.75,0-5-2.25-5-5V34.38c0-2.75,2.25-5,5-5h269.146
+		c2.75,0,5,2.25,5,5V314.605z"/>
+</g>
+<rect x="371.052" y="60.98" fill="#C0B9B1" width="279.146" height="248.201"/>
+<g>
+	<path fill="#FFFFFF" d="M635.547,180.436c0,2.75-2.25,5-5,5H390.728c-2.75,0-5-2.25-5-5V97.037c0-2.75,2.25-5,5-5h239.819
+		c2.75,0,5,2.25,5,5V180.436z"/>
+	<path fill="none" stroke="#9A9286" d="M635.547,180.436c0,2.75-2.25,5-5,5H390.728c-2.75,0-5-2.25-5-5V97.037c0-2.75,2.25-5,5-5
+		h239.819c2.75,0,5,2.25,5,5V180.436z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 389.4722 86.3867)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Breaker Status</text>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="396.271" y1="126.646" x2="628.668" y2="126.646"/>
+<text transform="matrix(1 0 0 1 395.6401 147.5566)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Open Permissive</text>
+<text transform="matrix(1 0 0 1 395.6401 173.2061)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Close Permissive</text>
+<text transform="matrix(1 0 0 1 395.6401 114.2236)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Current Position</text>
+<g>
+	<path fill="#FFFFFF" d="M635.547,270.965c0,2.75-2.25,5-5,5H390.728c-2.75,0-5-2.25-5-5v-57.893c0-2.75,2.25-5,5-5h239.819
+		c2.75,0,5,2.25,5,5V270.965z"/>
+	<path fill="none" stroke="#9A9286" d="M635.547,270.965c0,2.75-2.25,5-5,5H390.728c-2.75,0-5-2.25-5-5v-57.893c0-2.75,2.25-5,5-5
+		h239.819c2.75,0,5,2.25,5,5V270.965z"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 390.1909 202.4229)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="12">Control Condition</text>
+</g>
+<line fill="none" stroke="#D1D2D3" x1="396.271" y1="242.522" x2="628.668" y2="242.522"/>
+<text transform="matrix(1 0 0 1 395.6401 264.0322)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Auto Permissive</text>
+<text transform="matrix(1 0 0 1 395.6401 230.2598)" fill="#5D6165" font-family="'GEInspiraPitch'" font-size="12">Current Mode</text>
+<text transform="matrix(1 0 0 1 385.728 51.123)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="18">Cool TWR Fan 1 Start…</text>
+<g>
+	<text transform="matrix(1 0 0 1 536.8823 83.3652)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="18">211T150001</text>
+</g>
+<g>
+	<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="593.3042" y1="100.3101" x2="593.3042" y2="118.2466">
+		<stop  offset="0" style="stop-color:#F9F8F6"/>
+		<stop  offset="1" style="stop-color:#C7C4BD"/>
+	</linearGradient>
+	<path fill="url(#SVGID_11_)" d="M624.335,117.246c0,0.553-0.447,1-1,1h-60.062c-0.553,0-1,0.001-1,0.001V101.31c0-0.553,0-1,0-1
+		h60.974c0,0,1.089,0.447,1.089,1V117.246z"/>
+	<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="531.4785" y1="118.2466" x2="531.4785" y2="100.2563">
+		<stop  offset="0" style="stop-color:#30A5DE"/>
+		<stop  offset="0.865" style="stop-color:#3E74B8"/>
+		<stop  offset="1" style="stop-color:#2B5489"/>
+	</linearGradient>
+	<path fill="url(#SVGID_12_)" d="M562.748,117.247c0,0.553,0,1,0,1h-61.585c0,0-0.952-0.447-0.952-1v-15.938c0-0.553,0.448-1,1-1
+		h60.538c0.553,0,1-0.053,1-0.053V117.247z"/>
+	<g>
+		<text transform="matrix(1 0 0 1 518.0806 113.0947)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="11">open</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 574.3735 113.0947)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">closed</text>
+	</g>
+	<line fill="none" stroke="#929092" stroke-miterlimit="10" x1="562.273" y1="100.528" x2="562.273" y2="118.247"/>
+	<path fill="none" stroke="#929092" stroke-miterlimit="10" d="M624.335,117.246c0,0.553-0.447,1-1,1H501.21c-0.552,0-1-0.447-1-1
+		v-15.937c0-0.553,0.448-1,1-1h122.125c0.553,0,1,0.447,1,1V117.246z"/>
+</g>
+<g>
+	<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="593.3042" y1="216.4082" x2="593.3042" y2="234.3447">
+		<stop  offset="0" style="stop-color:#F9F8F6"/>
+		<stop  offset="1" style="stop-color:#C7C4BD"/>
+	</linearGradient>
+	<path fill="url(#SVGID_13_)" d="M624.335,233.344c0,0.553-0.447,1-1,1h-60.062c-0.553,0-1,0.001-1,0.001v-16.937c0-0.553,0-1,0-1
+		h60.974c0,0,1.089,0.447,1.089,1V233.344z"/>
+	<linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="531.4785" y1="234.3447" x2="531.4785" y2="216.3545">
+		<stop  offset="0" style="stop-color:#30A5DE"/>
+		<stop  offset="0.865" style="stop-color:#3E74B8"/>
+		<stop  offset="1" style="stop-color:#2B5489"/>
+	</linearGradient>
+	<path fill="url(#SVGID_14_)" d="M562.748,233.345c0,0.553,0,1,0,1h-61.585c0,0-0.952-0.447-0.952-1v-15.938c0-0.553,0.448-1,1-1
+		h60.538c0.553,0,1-0.053,1-0.053V233.345z"/>
+	<g>
+		<text transform="matrix(1 0 0 1 518.0918 229.1924)" fill="#FFFFFF" font-family="'GEInspiraPitch'" font-size="11">auto</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 572.5913 229.1924)" fill="#5D6064" font-family="'GEInspiraPitch'" font-size="11">manual</text>
+	</g>
+	<line fill="none" stroke="#929092" stroke-miterlimit="10" x1="562.273" y1="216.626" x2="562.273" y2="234.345"/>
+	<path fill="none" stroke="#929092" stroke-miterlimit="10" d="M624.335,233.344c0,0.553-0.447,1-1,1H501.21c-0.552,0-1-0.447-1-1
+		v-15.937c0-0.553,0.448-1,1-1h122.125c0.553,0,1,0.447,1,1V233.344z"/>
+</g>
+<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="634.1411" y1="30.4907" x2="634.1411" y2="58.877">
+	<stop  offset="0" style="stop-color:#F9F8F6"/>
+	<stop  offset="1" style="stop-color:#C7C4BD"/>
+</linearGradient>
+<path fill="url(#SVGID_15_)" d="M619.123,30.491h25.789c2.342,0,4.248,1.905,4.248,4.248v24.139h-30.037V30.491z"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="628.668" y1="40.038" x2="638.696" y2="50.063"/>
+	</g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="638.696" y1="40.038" x2="628.668" y2="50.063"/>
+	</g>
+</g>
+<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="602.4712" y1="31.3853" x2="602.4712" y2="58.877">
+	<stop  offset="0" style="stop-color:#F9F8F6"/>
+	<stop  offset="1" style="stop-color:#C7C4BD"/>
+</linearGradient>
+<rect x="587.956" y="31.385" fill="url(#SVGID_16_)" width="29.031" height="27.492"/>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#5D6064" stroke-width="3.24" stroke-linecap="round" stroke-miterlimit="10" x1="596.372" y1="44.975" x2="608.67" y2="44.974"/>
+	</g>
+</g>
+<g>
+	<path fill="#2D2D2F" d="M645.198,31.38c1.654,0,3,1.346,3,3v280.225c0,1.654-1.346,3-3,3H376.052c-1.654,0-3-1.346-3-3V34.38
+		c0-1.654,1.346-3,3-3H645.198 M645.198,29.38H376.052c-2.75,0-5,2.25-5,5v280.225c0,2.75,2.25,5,5,5h269.146c2.75,0,5-2.25,5-5
+		V34.38C650.198,31.63,647.948,29.38,645.198,29.38L645.198,29.38z"/>
+</g>
+<g>
+	<g>
+		<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="571.8364" y1="35.6763" x2="571.8364" y2="53.6919">
+			<stop  offset="0" style="stop-color:#F9F8F6"/>
+			<stop  offset="1" style="stop-color:#C7C4BD"/>
+		</linearGradient>
+		<circle fill="url(#SVGID_17_)" stroke="#929092" stroke-miterlimit="10" cx="571.836" cy="44.684" r="9.009"/>
+	</g>
+	
+		<text transform="matrix(1 0 0 1 567.9038 51.1689)" fill="#5D6064" font-family="'GEInspiraPitch-Bold'" font-size="18.0181" text-decoration=" underline">?</text>
+</g>
+<text transform="matrix(1 0 0 1 159.6079 147.3657)" fill="#9E58EE" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">Not OK - Bypassed</text>
+<text transform="matrix(1 0 0 1 159.6079 263.5322)" fill="#9E58EE" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">Not OK - Bypassed</text>
+<text transform="matrix(1 0 0 1 159.6079 173.3657)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">OK</text>
+<text transform="matrix(1 0 0 1 500.2095 147.3657)" fill="#9E58EE" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">Not OK - Bypassed</text>
+<text transform="matrix(1 0 0 1 500.2095 263.5322)" fill="#9E58EE" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">Not OK - Bypassed</text>
+<text transform="matrix(1 0 0 1 500.2095 173.3657)" fill="#2D2D2F" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">OK</text>
+<text transform="matrix(1 0 0 1 159.6079 331.7441)" fill="#9E58EE" font-family="'GEInspiraPitch'" font-size="15" text-decoration=" underline">Process/Override Trip</text>
+<g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="596.377" y1="284.4824" x2="596.377" y2="301.418">
+				<stop  offset="0" style="stop-color:#5C5F63"/>
+				<stop  offset="1" style="stop-color:#3E4146"/>
+			</linearGradient>
+			<path fill="url(#SVGID_18_)" stroke="#2D2D2F" stroke-miterlimit="10" d="M630.686,300.418c0,0.553-0.447,1-1,1h-66.618
+				c-0.551,0-1-0.447-1-1v-14.936c0-0.553,0.449-1,1-1h66.618c0.553,0,1,0.447,1,1V300.418z"/>
+			<g>
+				<text transform="matrix(1 0 0 1 569.0068 296.6611)" fill="#BFC2C5" font-family="'GEInspiraPitch'" font-size="11">DETAILS</text>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#BFC2C5" points="622.617,291.397 618.338,295.523 614.06,291.397 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_19_" gradientUnits="userSpaceOnUse" x1="268.377" y1="284.4824" x2="268.377" y2="301.418">
+				<stop  offset="0" style="stop-color:#5C5F63"/>
+				<stop  offset="1" style="stop-color:#3E4146"/>
+			</linearGradient>
+			<path fill="url(#SVGID_19_)" stroke="#2D2D2F" stroke-miterlimit="10" d="M302.686,300.418c0,0.553-0.447,1-1,1h-66.618
+				c-0.552,0-1-0.447-1-1v-14.936c0-0.553,0.448-1,1-1h66.618c0.553,0,1,0.447,1,1V300.418z"/>
+			<g>
+				<text transform="matrix(1 0 0 1 241.0068 296.6611)" fill="#BFC2C5" font-family="'GEInspiraPitch'" font-size="11">DETAILS</text>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#BFC2C5" points="294.617,295.397 290.338,291.272 286.06,295.397 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 468.248 356.9248)" fill="#EC008C" font-family="'GEInspira'" font-size="15">Default View</text>
+<text transform="matrix(1 0 0 1 125.4106 539.833)"><tspan x="0" y="0" fill="#EC008C" font-family="'GEInspira'" font-size="15">Additional Info</tspan><tspan x="-22.021" y="18" fill="#EC008C" font-family="'GEInspira'" font-size="15">Dynamically Included</tspan></text>
+</svg>

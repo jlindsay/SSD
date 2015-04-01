@@ -1,0 +1,141 @@
+.fuel-system-buttons{
+	position: absolute;
+	width: 105px;
+	height: 27px;
+}
+
+.fuel-guage{
+	position: absolute;
+	height: 200px;
+	width: 82px;
+}
+
+.fuel-guage1{
+	position: absolute;
+	height: 80px;
+	width: 300px;
+}
+
+#fuel-system-buttons11{
+	margin-top: 90px;
+	margin-left: 120px;
+}
+
+#fuel-system-buttons12{
+	margin-top: 90px;
+	margin-left: 224px;
+}
+
+#fuel-system-buttons2{
+	margin-top: 90px;
+	margin-left: 378px;
+}
+
+#fuel-system-buttons3{
+	margin-top: 165px;
+	margin-left: 120px;
+}
+
+#fuel-system-buttons4{
+	margin-top: 165px;
+	margin-left: 378px;
+}
+
+#fuel-system-buttons5{
+	margin-top: 440px;
+	margin-left: 225px;
+}
+
+#fuel-system-buttons6{
+	margin-top: 440px;
+	margin-left: 425px;
+}
+
+#fuel-system-buttons7{
+	margin-top: 440px;
+	margin-left: 575px;
+}
+
+#fuel-system-buttons8 div.pulldown{
+	position: absolute;
+	width: 155px;
+	height: 27px;
+	margin-top: 92px;
+	margin-left: 805px;
+}
+
+#fuel-system-buttons8 i{
+	margin-right: 5px;
+}
+
+#fuel-system-buttons9{
+	margin-top: 91px;
+	margin-left: 970px;
+}
+
+#fuel-system-buttons10{
+	margin-top: 165px;
+	margin-left: 970px;
+}
+
+#fuel-system-widget1{
+	margin-top: 235px;
+	margin-left: 100px;
+}
+
+#fuel-system-widget2{
+	margin-top: 235px;
+	margin-left: 250px;
+}
+
+#fuel-system-widget3{
+	margin-top: 235px;
+	margin-left: 450px;
+}
+
+#fuel-system-widget4{
+	margin-top: 235px;
+	margin-left: 600px;
+}
+
+#fuel-system-widget5{
+	margin-top: 240px;
+	margin-left: 885px;
+}
+
+#fuel-system-widget51{
+	margin-top: 265px;
+	margin-left: 715px;
+	text-align: center;
+}
+#fuel-system-widget51a{
+	margin-top: 280px;
+	margin-left: 715px;
+	text-align: center;
+}
+
+#fuel-system-widget52{
+	margin-top: 265px;
+	margin-left: 1060px;
+	text-align: center;
+}
+#fuel-system-widget52a{
+	margin-top: 280px;
+	margin-left: 1060px;
+	text-align: center;
+}
+
+#fuel-system-widget6{
+	margin-top: 235px;
+	margin-left: 1350px;
+}
+
+#fuel-system-widget7{
+	margin-top: 235px;
+	margin-left: 1460px;
+}
+
+#fuel-system-widget8{
+	margin-top: 235px;
+	margin-left: 1570px;
+}

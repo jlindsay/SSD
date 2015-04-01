@@ -1,0 +1,118 @@
+
+.index #primary {
+  display:none;
+}
+
+#index-nav {
+
+  background: #5B5E62;
+  float: left;
+  width: 1270px;
+  height:820px;
+  border-radius:0 0 5px 5px;
+  padding:10px;
+  position:relative;
+  margin: 0 0 16px 2px;
+  color: #FFFFFF;
+}
+
+#index-nav  div ul li{
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#index-nav  div ul li ul{
+	margin-top: 5px;
+}
+#index-nav  div ul li ul li{
+	font-weight: normal;
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+
+#message-window {
+  float:left;
+  width:358px;
+  height:807px;
+  background:#FFF;
+  margin:10px 20px 0 20px;
+  border-radius:5px 5px 0 0;
+  position:relative;
+}
+#message-window h2 {
+  background:#CCC;
+  padding:10px;
+  border-radius:5px 5px 0 0;
+  text-align:center;
+  font-size:20px;
+
+}
+#message-window ul{
+
+}
+#message-window li {
+  padding:10px;
+}
+
+#message-window li:hover {
+  background:#CCC;
+  cursor:pointer;
+}
+
+
+
+#index-nav div{
+  float:left;
+  width:140px;
+  height:754px;
+  padding:20px;
+  margin:0 0 0 0;
+  position:relative;
+}
+
+#index-nav div:after {
+  background-image: linear-gradient(#5B5E62, #989498, #989498, #989498, #5B5E62);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  right:0px;
+}
+
+#index-nav div:last-child:after {
+  background-image: none;
+}
+
+#message-window footer {
+  clear:both;
+  display:block;
+  background:#FFF;
+  padding:10px;
+  border-radius:0 0 5px 5px;
+  position:absolute;
+  bottom:-20px;
+  width:338px;
+  background:#CCC;
+}
+#message-window footer button{
+  float:left;
+}
+#message-window footer .pagination{
+  float:right;
+  font-size:18px;
+  margin-top:4px;
+}
+
+#message-window footer .pagination i,
+#message-window footer .pagination span {
+  float:left;
+  display:block;
+  margin:0 5px 0 5px
+}
+#message-window footer .pagination input {
+  width:20px;
+  float:left;
+  margin-top:-3px;
+
+
+}

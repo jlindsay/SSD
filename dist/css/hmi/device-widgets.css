@@ -1,0 +1,162 @@
+
+#label-water,
+#label-liquid,
+#label-gas {
+  position:absolute;
+  left:8px;
+  width:47px;
+  text-align:right
+}
+
+#label-water {
+  position:absolute;
+  top:362px;
+}
+#label-liquid{
+  position:absolute;
+  top:422px;
+}
+#label-gas {
+  position:absolute;
+  top:482px;
+}
+
+.device-state-widget {
+  border:2px solid #C0B9B1;
+  border-radius:3px;
+  background:#E6E5E1;
+  padding:3px 3px 3px 3px;
+  float:left;
+  font-size:13px;
+}
+.device-state-widget ul{
+  float:left;
+  padding:3px 0 0 0
+}
+.device-state-widget ul li{
+  clear:both;
+  width:15px;
+  height:15px;
+  margin-bottom:1px;
+}
+.device-state-widget h5,
+#six .device-state-widget h5{
+  font-size:11px;
+  text-align:left;
+  width:100%;
+  margin:0;
+  padding:0;
+  display:block;
+  clear:both;
+  float:none
+}
+.device-state-widget div {
+  background:#FFF;
+  padding:6px;
+  float:left;
+  margin:3px 2px 0 0;
+  position:relative;
+  border-radius:3px;
+}
+.device-state-widget div span {
+  display:block;
+  clear:both;
+  margin-top:5px;
+}
+.device-state-widget .attribute {
+  background:#FFF;
+  padding:2px 4px 2px 4px;
+  margin:0;
+  position:relative;
+  bottom:0px;
+  border-radius:3px;
+  float:left;
+  font-size:12px
+}
+
+
+#widget_52G{
+  position:absolute;
+  top:135px;
+  left:8px;
+}
+#widget_VA20-1{
+  position:absolute;
+  top:284px;
+  left:90px;
+}
+#widget_VA20-1 div span,
+#widget_88WN-12 div span,
+#widget_88WN-123 div span,
+#widget_VSA4-1 div span,
+#widget_VSR-1 div span,
+#widget_VGC-1 div span,
+#widget_VGC-2 div span,
+#widget_VGC-3 div span,
+#widget_VGC-4 div span{
+  clear:none;
+  margin-left:5px;
+  float:left;
+}
+#widget_VA20-1 div img,
+#widget_88WN-12 div img,
+#widget_88WN-123 div img,
+#widget_VSA4-1 div img,
+#widget_VSR-1 div img,
+#widget_VGC-1 div img,
+#widget_VGC-2 div img,
+#widget_VGC-3 div img,
+#widget_VGC-4 div img{
+  float:left;
+}
+
+#widget_88WN-12{
+  position:absolute;
+  top:345px;
+  left:90px;
+}
+#widget_88WN-123{
+  position:absolute;
+  top:405px;
+  left:90px;
+}
+#widget_VSA4-1{
+  position:absolute;
+  top:465px;
+  left:90px;
+}
+#widget_VSR-1{
+  position:absolute;
+  top:465px;
+  left:220px;
+}
+#widget_VGC-1{
+  position:absolute;
+  top:278px;
+  left:370px;
+}
+#widget_VGC-2{
+  position:absolute;
+  top:340px;
+  left:370px;
+}
+#widget_VGC-3{
+  position:absolute;
+  top:403px;
+  left:370px;
+}
+#widget_VGC-4{
+  position:absolute;
+  top:464px;
+  left:370px;
+}
+
+.bad {
+  border-color:#9E58EE
+}
+
+.device-state-widget .attribute.bad {
+  background:#FF00FF;
+  color:#FFF;
+}
+

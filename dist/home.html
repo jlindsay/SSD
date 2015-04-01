@@ -26,11 +26,22 @@
   <link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
   <link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
 
+
+
+  <link href="./css/hmi.css" rel="stylesheet" type="text/css">
+  <!--link href="./css/styles.css" rel="stylesheet" type="text/css"-->
+
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+
   <!--[if lt IE 9]>
     <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
   <![endif]-->
 
-  <script src="./iidx/components/modernizr.js"></script>
+  <script src="./iidx/components/modernizr/modernizr.js"></script>
+
+<style>
+</style>
+
 </head>
 <body>
 
@@ -72,68 +83,113 @@
 </nav>
 
 
-<div class="container content">
-  <div class="page-header voice voice-brand">
-    <h1 class="pull-left">Dashboard View</h1>
-  </div>
 
-<div class="row ui-sortable">
-    <div class="col-sm-8 col-md-8">
-      <section class="module actionable draggable" style="display: block;">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
+<section>
 
-    <div class="col-sm-4 col-md-4">
-      <section class="module actionable draggable ">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
+<nav id="secondary">
+  <ul>
+    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#fuel-system.html">FUEL SYSTEM</a></li>
+    
+    <!-- Sub Menu -->   
+    <li class="submenu" style="display: none;"><a href="#empty.html">FSR Control</a></li>
+    <li class="submenu" style="display: none;"><a href="#empty.html">Gas</a></li>
+    <li class="submenu" style="display: none;"><a href="#empty.html">Performance Heater</a></li>
+    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid</a></li>
+    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid Fuel</a></li>
+    <li class="submenu" style="display: none;"><a id="purge-link" href="#purge.html">Purge</a></li>
+      
+    <!-- End Sub Menu -->
+    <li><i class="icon-plus"></i><a href="#empty.html">COMPRESSOR</a></li>
+    <li><i class="icon-plus"></i><a href="#empty.html">COMBUSTION</a></li>
+    <li><i class="icon-plus"></i><a href="#empty.html">GT ROTOR</a></li>
+    <li><i class="icon-plus"></i><a href="#empty.html">GT INLET</a></li>
+    <li><i class="icon-plus"></i><a href="#empty.html">GT AUX</a></li>
+  </ul>
 
-    <div class="col-sm-4 col-md-4">
-      <section class="module actionable draggable scrollable">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
+  <button class="reset">MASTER RESET</button>
+  <button class="reset">DIAGNOSTIC RESET</button>
+  <button class="alarm">ALARM VIEWER <img class="icon-detail" src="img/HMI/detail.png"></button>
+  <button class="note">ADD A NOTE <img class="icon-detail" src="img/HMI/detail.png"></button>
+</nav>
 
-    <div class="col-sm-4 col-md-4">
-      <section class="module actionable draggable scrollable">
-        <header class="module-header"></header>
-        <div class="module-body"><div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
 
-    <div class="col-sm-4 col-md-4">
-      <section class="module actionable draggable">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
+<div id="widget-container">
 
-    <div class="col-sm-8 col-md-8">
-      <section class="module actionable draggable" style="display: block;">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
 
-    <div class="col-sm-4 col-md-4">
-      <section class="module actionable draggable ">
-        <header class="module-header"></header>
-        <div class="module-body"></div>
-        <footer class="module-footer"></footer>
-      </section>
-    </div>
 </div>
+
+
+
+
+
+</section>
+
+
+<!--
+<div class="container content">
+	<div class="page-header voice voice-brand">
+		<h1 class="pull-left">Dashboard View</h1>
+	</div>
+
+	<div class="row ui-sortable">
+	    <div class="col-sm-8 col-md-8">
+	      <section class="module actionable draggable" style="display: block;">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-4 col-md-4">
+	      <section class="module actionable draggable ">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-4 col-md-4">
+	      <section class="module actionable draggable scrollable">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-4 col-md-4">
+	      <section class="module actionable draggable scrollable">
+	        <header class="module-header"></header>
+	        <div class="module-body"><div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-4 col-md-4">
+	      <section class="module actionable draggable">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-8 col-md-8">
+	      <section class="module actionable draggable" style="display: block;">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+
+	    <div class="col-sm-4 col-md-4">
+	      <section class="module actionable draggable ">
+	        <header class="module-header"></header>
+	        <div class="module-body"></div>
+	        <footer class="module-footer"></footer>
+	      </section>
+	    </div>
+</div>
+
+-->
 
 <script src="./iidx/components/requirejs/require.js"></script>
 <script src="./iidx/js/require.config.js"></script>

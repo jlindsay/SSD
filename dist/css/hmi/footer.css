@@ -1,0 +1,10 @@
+footer {
+  height:26px;
+  color:#5C5F63;
+  clear:both;
+}
+footer p {
+  float:right;
+  margin-right:12px;
+  padding:5px 0 0 0;
+}

@@ -1,0 +1,2485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1690.255"
+   height="852.94"
+   id="svg5087"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="fuel_system_new.svg">
+  <defs
+     id="defs5089">
+    <linearGradient
+       id="SVGID_35_"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.3857"
+       y1="734.5"
+       x2="1191.4594"
+       y2="734.5">
+      <stop
+         offset="0"
+         style="stop-color:#79A7E1"
+         id="stop1358" />
+      <stop
+         offset="1"
+         style="stop-color:#3B73B9"
+         id="stop1360" />
+    </linearGradient>
+    <linearGradient
+       id="SVGID_36_"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4326"
+       y1="759.5"
+       x2="1202.2681"
+       y2="759.5">
+      <stop
+         offset="0"
+         style="stop-color:#79A7E1"
+         id="stop1366" />
+      <stop
+         offset="1"
+         style="stop-color:#3B73B9"
+         id="stop1368" />
+    </linearGradient>
+    <linearGradient
+       id="SVGID_37_"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4023"
+       y1="784.5"
+       x2="1195.3894"
+       y2="784.5">
+      <stop
+         offset="0"
+         style="stop-color:#79A7E1"
+         id="stop1374" />
+      <stop
+         offset="1"
+         style="stop-color:#3B73B9"
+         id="stop1376" />
+    </linearGradient>
+    <linearGradient
+       id="SVGID_38_"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4238"
+       y1="809.5"
+       x2="1200.3026"
+       y2="809.5">
+      <stop
+         offset="0"
+         style="stop-color:#79A7E1"
+         id="stop1382" />
+      <stop
+         offset="1"
+         style="stop-color:#3B73B9"
+         id="stop1384" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(-216,-192)"
+       id="blue_bar_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="1393.4141"
+       y1="370.02689"
+       x2="1411.5156"
+       y2="370.02689">
+      <stop
+         offset="0"
+         style="stop-color:#79A7E1"
+         id="stop369" />
+      <stop
+         offset="1"
+         style="stop-color:#3B73B9"
+         id="stop371" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#blue_bar_1_"
+       id="linearGradient9945"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-740.64286,-151.51546)"
+       x1="1393.4141"
+       y1="370.02689"
+       x2="1411.5156"
+       y2="370.02689" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_35_"
+       id="linearGradient9947"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.3857"
+       y1="734.5"
+       x2="1191.4594"
+       y2="734.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_36_"
+       id="linearGradient9949"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4326"
+       y1="759.5"
+       x2="1202.2681"
+       y2="759.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_37_"
+       id="linearGradient9951"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4023"
+       y1="784.5"
+       x2="1195.3894"
+       y2="784.5" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_38_"
+       id="linearGradient9953"
+       gradientUnits="userSpaceOnUse"
+       x1="1104.4238"
+       y1="809.5"
+       x2="1200.3026"
+       y2="809.5" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4438264"
+     inkscape:cx="1440.0548"
+     inkscape:cy="680.98643"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5092">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(516.6426,-38.732231)">
+    <polygon
+       transform="translate(-740.64286,-151.51546)"
+       style="fill:#eeeff3"
+       points="216,1050.041 1911,1040.041 1911,192 216,194.174 "
+       id="polygon6" />
+    <rect
+       style="fill:#ffffff"
+       x="-520.64288"
+       y="248.48454"
+       width="1691"
+       height="268"
+       id="rect8" />
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g105">
+      <rect
+         style="fill:#ffffff"
+         x="827"
+         y="718"
+         width="153"
+         height="24"
+         id="rect107" />
+      <text
+         transform="translate(833.1777,735.4238)"
+         id="text109">
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="14"
+           id="tspan111">Spread 1</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="64.609001"
+           y="0"
+           font-size="18"
+           id="tspan113">5000</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="102.769"
+           y="0"
+           font-size="18"
+           id="tspan115" />
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="106.945"
+           y="0"
+           font-size="14"
+           id="tspan117">deg</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g119">
+      <rect
+         style="fill:#ffffff"
+         x="827"
+         y="751"
+         width="153"
+         height="24"
+         id="rect121" />
+      <text
+         transform="translate(833.1777,768.4238)"
+         id="text123">
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="14"
+           id="tspan125">Spread 2</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="64.609001"
+           y="0"
+           font-size="18"
+           id="tspan127">5000</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="102.769"
+           y="0"
+           font-size="18"
+           id="tspan129" />
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="106.945"
+           y="0"
+           font-size="14"
+           id="tspan131">deg</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g133">
+      <rect
+         style="fill:#ffffff"
+         x="827"
+         y="784"
+         width="153"
+         height="24"
+         id="rect135" />
+      <text
+         transform="translate(833.1777,801.4238)"
+         id="text137">
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="14"
+           id="tspan139">Spread 3</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="64.609001"
+           y="0"
+           font-size="18"
+           id="tspan141">5000</tspan>
+        <tspan
+           style="font-size:18px;font-family:GEInspiraPitch"
+           x="102.769"
+           y="0"
+           font-size="18"
+           id="tspan143" />
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="106.945"
+           y="0"
+           font-size="14"
+           id="tspan145">deg</tspan>
+      </text>
+    </g>
+    <text
+       y="123.24574"
+       x="-498.34406"
+       id="text147">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="-498.34406"
+         y="123.24574"
+         font-size="14"
+         id="tspan149">DNL Mode</tspan>
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="-498.34406"
+         y="144.24574"
+         font-size="18"
+         id="tspan151">1D</tspan>
+    </text>
+    <text
+       y="270.41522"
+       x="-196.62427"
+       style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+       font-size="18"
+       id="text165">Fuel gas</text>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g167">
+      <text
+         style="font-size:28px;fill:#2d2d2f;font-family:GEInspiraPitch"
+         transform="translate(241.4658,235.5225)"
+         font-size="28"
+         id="text169">Fuel Gas</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g171">
+      <text
+         style="font-size:28px;fill:#2d2d2f;font-family:GEInspiraPitch"
+         transform="translate(1027.2227,235.5225)"
+         font-size="28"
+         id="text173">Fuel Transfer</text>
+    </g>
+    <text
+       y="123.24574"
+       x="803.37469"
+       id="text177">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="803.37469"
+         y="123.24574"
+         font-size="14"
+         id="tspan179">Fuel Mode</tspan>
+      <tspan
+         style="font-size:18px;fill:#2d2d2f;font-family:GEInspiraPitch"
+         x="803.37469"
+         y="144.24574"
+         font-size="18"
+         id="tspan181">LFM</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="803.37469"
+         y="181.24574"
+         font-size="14"
+         id="tspan183" />
+    </text>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g185">
+      <text
+         style="font-size:28px;fill:#2d2d2f;font-family:GEInspiraPitch"
+         transform="translate(1543.0176,235.5225)"
+         font-size="28"
+         id="text187">Liquid Fuel</text>
+    </g>
+    <text
+       y="123.24625"
+       x="-138.79517"
+       id="text191">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="-138.79517"
+         y="123.24625"
+         font-size="14"
+         id="tspan193">Pre-Start Check</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="-138.79517"
+         y="195.24625"
+         font-size="14"
+         id="tspan195">Gas Purge Valve Tests</tspan>
+    </text>
+    <text
+       y="123.24574"
+       x="-396.18488"
+       id="text210">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="-396.18488"
+         y="123.24574"
+         font-size="14"
+         id="tspan212">Piloted Premix Base</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="-396.18488"
+         y="195.24574"
+         font-size="14"
+         id="tspan214">Wobbe Index</tspan>
+    </text>
+    <text
+       y="123.24625"
+       x="288.51047"
+       id="text216">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="288.51047"
+         y="123.24625"
+         font-size="14"
+         id="tspan218">Fuel Mode</tspan>
+      <tspan
+         style="font-size:18px;fill:#2d2d2f;font-family:GEInspiraPitch"
+         x="288.51047"
+         y="150.24625"
+         font-size="18"
+         id="tspan220" />
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="296.86246"
+         y="150.24625"
+         font-size="18"
+         id="tspan222">Liquid Fuel</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="288.51047"
+         y="195.24625"
+         font-size="14"
+         id="tspan224">FSR Status</tspan>
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="288.51047"
+         y="224.54825"
+         font-size="18"
+         id="tspan226">22.5</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="321.16245"
+         y="224.54825"
+         font-size="14"
+         id="tspan228">%</tspan>
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="337.17844"
+         y="224.54825"
+         font-size="18"
+         id="tspan230">–DWYK</tspan>
+    </text>
+    <text
+       y="123.24625"
+       x="608.90204"
+       id="text264">
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="608.90204"
+         y="123.24625"
+         font-size="14"
+         id="tspan266">Fuel Transfer Status</tspan>
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="608.90204"
+         y="144.24625"
+         font-size="18"
+         id="tspan268">N/A</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="608.90204"
+         y="195.24625"
+         font-size="14"
+         id="tspan270">FSR1 vs. FSR2 % Split</tspan>
+      <tspan
+         style="font-size:18px;font-family:GEInspiraPitch"
+         x="608.90204"
+         y="224.54825"
+         font-size="18"
+         id="tspan272">25</tspan>
+      <tspan
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         x="627.98199"
+         y="224.54825"
+         font-size="14"
+         id="tspan274">%</tspan>
+    </text>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g312">
+      <g
+         id="g314">
+        <path
+           style="fill:#ffdb33"
+           inkscape:connector-curvature="0"
+           d="m 358.724,236 c -0.598,0 -1.239,-0.313 -1.423,-0.882 l -4.884,-14.953 c -0.185,-0.569 0.06,-1.284 0.544,-1.635 l 12.785,-9.27 c 0.484,-0.352 1.276,-0.342 1.76,0.01 l 12.784,9.293 c 0.484,0.352 0.729,1.107 0.544,1.676 l -4.883,14.878 c -0.185,0.569 -0.825,0.883 -1.423,0.883 h -15.804 z"
+           id="path316" />
+        <path
+           style="fill:none;stroke:#908f90;stroke-miterlimit:10"
+           inkscape:connector-curvature="0"
+           stroke-miterlimit="10"
+           d="m 358.724,236.5 c -0.598,0 -1.239,-0.563 -1.423,-1.132 l -4.884,-15.078 c -0.185,-0.569 0.06,-1.346 0.544,-1.698 l 12.785,-9.301 c 0.484,-0.352 1.276,-0.357 1.76,-0.006 l 12.784,9.286 c 0.484,0.352 0.729,1.103 0.544,1.672 l -4.883,15.126 c -0.185,0.569 -0.825,1.131 -1.423,1.131 h -15.804 z"
+           id="path318" />
+      </g>
+      <g
+         id="g320">
+        <text
+           style="font-size:21.45330048px;font-family:GEInspiraPitch"
+           transform="translate(360.9414,231.5112)"
+           font-size="21.4533"
+           id="text322">3</text>
+      </g>
+    </g>
+    <rect
+       style="fill:#c0b9b1"
+       id="gray_bar_2_"
+       x="652.77106"
+       y="210.51155"
+       width="93"
+       height="16" />
+    <rect
+       style="fill:url(#linearGradient9945)"
+       id="blue_bar_2_"
+       x="652.77106"
+       y="210.51155"
+       width="18.101999"
+       height="16" />
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g501">
+      <text
+         style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(341.0474,701.3135)"
+         font-size="18"
+         id="text503">valves</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g550">
+      <g
+         id="g552">
+        <text
+           style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+           transform="translate(551.769,701.3135)"
+           font-size="18"
+           id="text554">purge</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g556">
+      <text
+         style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(697.3223,701.3135)"
+         font-size="18"
+         id="text558">manifold</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g560">
+      <text
+         style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(826,701.3135)"
+         font-size="18"
+         id="text562">Spread</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g564">
+      <text
+         style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(1029.1523,701.3135)"
+         font-size="18"
+         id="text566">flame intensity</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g568">
+      <text
+         style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(1543.5176,701.3135)"
+         font-size="18"
+         id="text570">Pumps &amp; Valves</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g580">
+      <line
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         x1="696.79199"
+         y1="751.5"
+         x2="339.75201"
+         y2="751.5"
+         id="line582" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g584">
+      <line
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         x1="696.79199"
+         y1="827.77899"
+         x2="370"
+         y2="827.77899"
+         id="line586" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g588">
+      <line
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         x1="696.79199"
+         y1="904.05902"
+         x2="370"
+         y2="904.05902"
+         id="line590" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g592">
+      <path
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         inkscape:connector-curvature="0"
+         d="M 696.792,980.338 H 375 c -2.75,0 -5,-2.25 -5,-5 V 751.864"
+         id="path594" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Temp_120_">
+      <text
+         transform="translate(560.6152,744.9551)"
+         id="text597">
+        <tspan
+           style="font-size:14px;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="14"
+           id="tspan599">Inactive</tspan>
+        <tspan
+           style="font-size:14px;font-family:GEInspiraPitch"
+           x="0"
+           y="76"
+           font-size="14"
+           id="tspan601">Inactive</tspan>
+        <tspan
+           style="font-size:14px;font-family:GEInspiraPitch"
+           x="-10.095"
+           y="152"
+           font-size="14"
+           id="tspan603">In Progress</tspan>
+        <tspan
+           style="font-size:14px;font-family:GEInspiraPitch"
+           x="-10.095"
+           y="228"
+           font-size="14"
+           id="tspan605">In Progress</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Temp_21_">
+      <text
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(1546.9629,744.625)"
+         font-size="14"
+         id="text608">Water</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g610">
+      <g
+         id="g612">
+        <path
+           style="fill:#e6e5e1"
+           inkscape:connector-curvature="0"
+           d="m 395.84,774.99 c -1.516,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.234,-2.75 2.75,-2.75 h 84.311 c 1.516,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.234,2.75 -2.75,2.75 H 395.84 z"
+           id="path614" />
+        <path
+           style="fill:#908f90"
+           inkscape:connector-curvature="0"
+           d="m 480.15,728.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -84.31 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 84.31 m 0,-1.5 h -84.31 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 84.311 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c -0.001,-1.93 -1.571,-3.5 -3.501,-3.5 l 0,0 z"
+           id="path616" />
+      </g>
+      <g
+         id="g618">
+        <rect
+           style="fill:#ffffff"
+           x="395"
+           y="741"
+           width="67"
+           height="32"
+           id="rect620" />
+        <g
+           id="g622">
+          <g
+             id="g624">
+            <path
+               style="fill:#e6e5e1"
+               inkscape:connector-curvature="0"
+               d="m 395.84,728.666 c -1.1,0 -2,0.9 -2,2 v 41.574 c 0,1.1 0.9,2 2,2 h 84.311 c 1.1,0 2,-0.9 2,-2 v -41.574 c 0,-1.1 -0.9,-2 -2,-2 H 395.84 z m 64.992,40.928 c 0,1.1 -0.9,2 -2,2 h -60.284 c -1.1,0 -2,-0.9 -2,-2 V 743.9 c 0,-1.1 0.9,-2 2,-2 h 60.284 c 1.1,0 2,0.9 2,2 v 25.694 z"
+               id="path626" />
+          </g>
+        </g>
+        <g
+           id="Temp_9_">
+          <g
+             id="g629">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(397.373,739.0078)"
+               font-size="11"
+               id="text631">VGC-1</text>
+          </g>
+        </g>
+        <g
+           id="Temp_8_">
+          <g
+             id="g634">
+            <text
+               transform="translate(426.6572,760.9307)"
+               id="text636">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan638">43.6</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="24.101999"
+                 y="0"
+                 font-size="8"
+                 id="tspan640">%</tspan>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g642">
+          <rect
+             style="fill:#ffffff"
+             x="464.45801"
+             y="757.61603"
+             width="14"
+             height="14"
+             id="rect644" />
+          <g
+             id="Temp_7_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(467.5137,769.0264)"
+               font-size="13"
+               id="text647">A</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g649">
+      <g
+         id="g651">
+        <path
+           style="fill:#e6e5e1"
+           inkscape:connector-curvature="0"
+           d="m 262.84,774.99 c -1.516,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.234,-2.75 2.75,-2.75 h 84.311 c 1.516,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.234,2.75 -2.75,2.75 H 262.84 z"
+           id="path653" />
+        <path
+           style="fill:#908f90"
+           inkscape:connector-curvature="0"
+           d="m 347.15,728.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -84.31 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 84.31 m 0,-1.5 h -84.31 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 84.311 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c -0.001,-1.93 -1.571,-3.5 -3.501,-3.5 l 0,0 z"
+           id="path655" />
+      </g>
+      <g
+         id="g657">
+        <rect
+           style="fill:#ffffff"
+           x="262"
+           y="741"
+           width="67"
+           height="32"
+           id="rect659" />
+        <g
+           id="g661">
+          <g
+             id="g663">
+            <path
+               style="fill:#e6e5e1"
+               inkscape:connector-curvature="0"
+               d="m 262.84,728.666 c -1.1,0 -2,0.9 -2,2 v 41.574 c 0,1.1 0.9,2 2,2 h 84.311 c 1.1,0 2,-0.9 2,-2 v -41.574 c 0,-1.1 -0.9,-2 -2,-2 H 262.84 z m 64.992,40.928 c 0,1.1 -0.9,2 -2,2 h -60.284 c -1.1,0 -2,-0.9 -2,-2 V 743.9 c 0,-1.1 0.9,-2 2,-2 h 60.284 c 1.1,0 2,0.9 2,2 v 25.694 z"
+               id="path665" />
+          </g>
+        </g>
+        <g
+           id="Temp_12_">
+          <g
+             id="g668">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(264.373,739.0078)"
+               font-size="11"
+               id="text670">VSR</text>
+          </g>
+        </g>
+        <g
+           id="Temp_11_">
+          <g
+             id="g673">
+            <text
+               transform="translate(293.6572,760.9307)"
+               id="text675">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan677">27.8</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="24.101999"
+                 y="0"
+                 font-size="8"
+                 id="tspan679">%</tspan>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g681">
+          <rect
+             style="fill:#ffffff"
+             x="331.45801"
+             y="757.61603"
+             width="14"
+             height="14"
+             id="rect683" />
+          <g
+             id="Temp_10_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(333.2988,769.0264)"
+               font-size="13"
+               id="text686">M</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g688">
+      <g
+         id="g690">
+        <rect
+           style="fill:#3b73b9"
+           x="411.43799"
+           y="748.30798"
+           width="2.2639999"
+           height="11.319"
+           id="rect692" />
+        <polygon
+           style="fill:#3b73b9"
+           points="411.439,759.617 411.439,757.354 401.252,751.512 401.252,765.457 "
+           id="polygon694" />
+        <polygon
+           style="fill:#3b73b9"
+           points="413.701,759.617 413.701,757.354 423.891,751.512 423.891,765.457 "
+           id="polygon696" />
+      </g>
+      <rect
+         style="fill:#3b73b9"
+         x="407.39001"
+         y="744.45502"
+         width="10.53"
+         height="8.7069998"
+         id="rect698" />
+      <g
+         id="Temp_47_">
+        <text
+           style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+           transform="translate(409.5215,751.8652)"
+           font-size="9.0426"
+           id="text701">H</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g703">
+      <g
+         id="g705">
+        <rect
+           style="fill:#3b73b9"
+           x="278.496"
+           y="748.30798"
+           width="2.2639999"
+           height="11.319"
+           id="rect707" />
+        <polygon
+           style="fill:#3b73b9"
+           points="278.498,759.617 278.498,757.354 268.311,751.512 268.311,765.457 "
+           id="polygon709" />
+        <polygon
+           style="fill:#3b73b9"
+           points="280.76,759.617 280.76,757.354 290.949,751.512 290.949,765.457 "
+           id="polygon711" />
+      </g>
+      <rect
+         style="fill:#3b73b9"
+         x="274.448"
+         y="744.45502"
+         width="10.53"
+         height="8.7069998"
+         id="rect713" />
+      <g
+         id="Temp_16_">
+        <text
+           style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+           transform="translate(276.5801,751.8652)"
+           font-size="9.0426"
+           id="text716">H</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g718">
+      <g
+         id="g720">
+        <g
+           id="g722">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 395.84,852.99 c -1.516,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.234,-2.75 2.75,-2.75 h 84.311 c 1.516,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.234,2.75 -2.75,2.75 H 395.84 z"
+             id="path724" />
+          <path
+             style="fill:#908f90"
+             inkscape:connector-curvature="0"
+             d="m 480.15,806.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -84.31 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 84.31 m 0,-1.5 h -84.31 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 84.311 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c -0.001,-1.93 -1.571,-3.5 -3.501,-3.5 l 0,0 z"
+             id="path726" />
+        </g>
+        <g
+           id="g728">
+          <rect
+             style="fill:#ffffff"
+             x="395"
+             y="819"
+             width="67"
+             height="32"
+             id="rect730" />
+          <g
+             id="g732">
+            <g
+               id="g734">
+              <path
+                 style="fill:#e6e5e1"
+                 inkscape:connector-curvature="0"
+                 d="m 395.84,806.666 c -1.1,0 -2,0.9 -2,2 v 41.574 c 0,1.1 0.9,2 2,2 h 84.311 c 1.1,0 2,-0.9 2,-2 v -41.574 c 0,-1.1 -0.9,-2 -2,-2 H 395.84 z m 64.992,40.928 c 0,1.1 -0.9,2 -2,2 h -60.284 c -1.1,0 -2,-0.9 -2,-2 V 821.9 c 0,-1.1 0.9,-2 2,-2 h 60.284 c 1.1,0 2,0.9 2,2 v 25.694 z"
+                 id="path736" />
+            </g>
+          </g>
+          <g
+             id="Temp_6_">
+            <g
+               id="g739">
+              <text
+                 style="font-size:11px;font-family:GEInspiraPitch"
+                 transform="translate(397.373,817.0078)"
+                 font-size="11"
+                 id="text741">VGC-2</text>
+            </g>
+          </g>
+          <g
+             id="Temp_5_">
+            <g
+               id="g744">
+              <text
+                 transform="translate(426.6572,838.9307)"
+                 id="text746">
+                <tspan
+                   style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                   x="0"
+                   y="0"
+                   font-size="13"
+                   id="tspan748">23.8</tspan>
+                <tspan
+                   style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                   x="24.101999"
+                   y="0"
+                   font-size="8"
+                   id="tspan750">%</tspan>
+              </text>
+            </g>
+          </g>
+          <g
+             id="g752">
+            <rect
+               style="fill:#ffffff"
+               x="464.45801"
+               y="835.61603"
+               width="14"
+               height="14"
+               id="rect754" />
+            <g
+               id="Temp_4_">
+              <text
+                 style="font-size:13px;font-family:GEInspiraPitch"
+                 transform="translate(467.5137,847.0264)"
+                 font-size="13"
+                 id="text757">A</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g759">
+        <g
+           id="g761">
+          <rect
+             style="fill:#3b73b9"
+             x="411.43799"
+             y="826.67798"
+             width="2.2639999"
+             height="11.319"
+             id="rect763" />
+          <polygon
+             style="fill:#3b73b9"
+             points="411.439,837.987 411.439,835.723 401.252,829.881 401.252,843.827 "
+             id="polygon765" />
+          <polygon
+             style="fill:#3b73b9"
+             points="413.701,837.987 413.701,835.723 423.891,829.881 423.891,843.827 "
+             id="polygon767" />
+        </g>
+        <rect
+           style="fill:#3b73b9"
+           x="407.39001"
+           y="822.82501"
+           width="10.53"
+           height="8.7080002"
+           id="rect769" />
+        <g
+           id="Temp_13_">
+          <text
+             style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+             transform="translate(409.5215,830.2344)"
+             font-size="9.0426"
+             id="text772">H</text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g774">
+      <line
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         x1="1872.957"
+         y1="741.16498"
+         x2="1589.984"
+         y2="741.16498"
+         id="line776" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g778">
+      <path
+         style="fill:#e6e5e1"
+         inkscape:connector-curvature="0"
+         d="m 1621.84,764.702 c -1.517,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.233,-2.75 2.75,-2.75 h 100.311 c 1.517,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.233,2.75 -2.75,2.75 H 1621.84 z"
+         id="path780" />
+      <path
+         style="fill:#908f90"
+         inkscape:connector-curvature="0"
+         d="m 1722.15,718.378 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -100.31 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 100.31 m 0,-1.5 h -100.31 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 100.311 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c -10e-4,-1.93 -1.571,-3.5 -3.501,-3.5 l 0,0 z"
+         id="path782" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g784">
+      <rect
+         style="fill:#ffffff"
+         x="1621"
+         y="730"
+         width="84"
+         height="33"
+         id="rect786" />
+      <g
+         id="g788">
+        <g
+           id="g790">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 1621.84,718.378 c -1.1,0 -2,0.9 -2,2 v 41.574 c 0,1.1 0.9,2 2,2 h 100.311 c 1.1,0 2,-0.9 2,-2 v -41.574 c 0,-1.1 -0.9,-2 -2,-2 H 1621.84 z m 80.992,40.928 c 0,1.1 -0.9,2 -2,2 h -76.284 c -1.1,0 -2,-0.9 -2,-2 v -25.693 c 0,-1.1 0.9,-2 2,-2 h 76.284 c 1.1,0 2,0.9 2,2 v 25.693 z"
+             id="path792" />
+        </g>
+      </g>
+      <g
+         id="Temp_74_">
+        <g
+           id="g795">
+          <text
+             style="font-size:11px;font-family:GEInspiraPitch"
+             transform="translate(1623.373,728.7188)"
+             font-size="11"
+             id="text797">88WN-1,2</text>
+        </g>
+      </g>
+      <g
+         id="Temp_73_">
+        <g
+           id="g800">
+          <text
+             style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+             transform="translate(1652.6562,750.1416)"
+             font-size="13"
+             id="text802">Running</text>
+        </g>
+      </g>
+      <g
+         id="g804">
+        <rect
+           style="fill:#ffffff"
+           x="1706.458"
+           y="747.328"
+           width="14"
+           height="14"
+           id="rect806" />
+        <g
+           id="Temp_17_">
+          <text
+             style="font-size:13px;font-family:GEInspiraPitch"
+             transform="translate(1709.5137,758.7373)"
+             font-size="13"
+             id="text809">A</text>
+        </g>
+      </g>
+      <path
+         style="fill:#3b73b9"
+         inkscape:connector-curvature="0"
+         d="m 1635.692,736.146 0,0 0,0 c -5.384,0 -9.747,4.365 -9.747,9.748 0,4.557 3.134,8.375 7.361,9.439 l -7.457,2.348 h 19.684 l -7.458,-2.348 c 4.229,-1.064 7.364,-4.881 7.364,-9.439 0,-0.312 -0.02,-0.623 -0.049,-0.932 l 0,0 c -0.459,-4.847 -4.471,-8.652 -9.402,-8.801 0.1,-0.003 0.196,-0.016 0.297,-0.016 5.189,0 9.475,3.832 10.213,8.816 h 4.311 v -8.816 h -15.117 z"
+         id="path811" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g813">
+      <circle
+         style="fill:#e6e5e1;stroke:#908f90;stroke-miterlimit:10"
+         sodipodi:ry="8.9020004"
+         sodipodi:rx="8.9020004"
+         sodipodi:cy="741"
+         sodipodi:cx="1880.8149"
+         stroke-miterlimit="10"
+         cx="1880.8149"
+         cy="741"
+         r="8.9020004"
+         id="circle815"
+         d="m 1889.7169,741 c 0,4.91644 -3.9855,8.902 -8.902,8.902 -4.9164,0 -8.902,-3.98556 -8.902,-8.902 0,-4.91644 3.9856,-8.902 8.902,-8.902 4.9165,0 8.902,3.98556 8.902,8.902 z" />
+      <g
+         id="g817">
+        <polygon
+           style="fill:#3e4146"
+           points="1879,746.455 1879,735.76 1884.158,741.107 "
+           id="polygon819" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g821">
+      <circle
+         style="fill:#e6e5e1;stroke:#908f90;stroke-miterlimit:10"
+         sodipodi:ry="8.9020004"
+         sodipodi:rx="8.9020004"
+         sodipodi:cy="695.47198"
+         sodipodi:cx="621.815"
+         stroke-miterlimit="10"
+         cx="621.815"
+         cy="695.47198"
+         r="8.9020004"
+         id="circle823"
+         d="m 630.717,695.47198 c 0,4.91644 -3.98556,8.90201 -8.902,8.90201 -4.91644,0 -8.902,-3.98557 -8.902,-8.90201 0,-4.91643 3.98556,-8.902 8.902,-8.902 4.91644,0 8.902,3.98557 8.902,8.902 z" />
+      <g
+         id="g825">
+        <polygon
+           style="fill:#3e4146"
+           points="620,700.927 620,690.231 625.158,695.579 "
+           id="polygon827" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Temp_33_">
+      <text
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+         transform="translate(1547.916,815.625)"
+         font-size="14"
+         id="text830">Liquid</text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g832">
+      <line
+         style="fill:none;stroke:#bfb8b0;stroke-width:3"
+         x1="1872.957"
+         y1="812.16498"
+         x2="1589.984"
+         y2="812.16498"
+         id="line834" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g836">
+      <path
+         style="fill:#e6e5e1"
+         inkscape:connector-curvature="0"
+         d="m 1621.84,835.702 c -1.517,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.233,-2.75 2.75,-2.75 h 100.311 c 1.517,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.233,2.75 -2.75,2.75 H 1621.84 z"
+         id="path838" />
+      <path
+         style="fill:#908f90"
+         inkscape:connector-curvature="0"
+         d="m 1722.15,789.378 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -100.31 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 100.31 m 0,-1.5 h -100.31 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 100.311 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c -10e-4,-1.93 -1.571,-3.5 -3.501,-3.5 l 0,0 z"
+         id="path840" />
+    </g>
+    <rect
+       style="fill:#ffffff"
+       x="880.35712"
+       y="649.48456"
+       width="84"
+       height="33"
+       id="rect842" />
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g844">
+      <g
+         id="g846">
+        <path
+           style="fill:#e6e5e1"
+           inkscape:connector-curvature="0"
+           d="m 1621.84,789.378 c -1.1,0 -2,0.9 -2,2 v 41.574 c 0,1.1 0.9,2 2,2 h 100.311 c 1.1,0 2,-0.9 2,-2 v -41.574 c 0,-1.1 -0.9,-2 -2,-2 H 1621.84 z m 80.992,40.928 c 0,1.1 -0.9,2 -2,2 h -76.284 c -1.1,0 -2,-0.9 -2,-2 v -25.693 c 0,-1.1 0.9,-2 2,-2 h 76.284 c 1.1,0 2,0.9 2,2 v 25.693 z"
+           id="path848" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Temp_26_">
+      <g
+         id="g851">
+        <text
+           style="font-size:11px;font-family:GEInspiraPitch"
+           transform="translate(1623.373,799.7188)"
+           font-size="11"
+           id="text853">88FP-1,2,3</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Temp_25_">
+      <g
+         id="g856">
+        <text
+           style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+           transform="translate(1652.6562,821.1416)"
+           font-size="13"
+           id="text858">Running</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g860">
+      <rect
+         style="fill:#ffffff"
+         x="1706.458"
+         y="818.328"
+         width="14"
+         height="14"
+         id="rect862" />
+      <g
+         id="Temp_24_">
+        <text
+           style="font-size:13px;font-family:GEInspiraPitch"
+           transform="translate(1709.5137,829.7373)"
+           font-size="13"
+           id="text865">A</text>
+      </g>
+    </g>
+    <path
+       style="fill:#3b73b9"
+       inkscape:connector-curvature="0"
+       d="m 895.04914,655.63054 0,0 0,0 c -5.384,0 -9.747,4.365 -9.747,9.748 0,4.557 3.134,8.375 7.361,9.439 l -7.457,2.348 h 19.684 l -7.458,-2.348 c 4.229,-1.064 7.364,-4.881 7.364,-9.439 0,-0.312 -0.02,-0.623 -0.049,-0.932 l 0,0 c -0.459,-4.847 -4.471,-8.652 -9.402,-8.801 0.1,-0.003 0.196,-0.016 0.297,-0.016 5.189,0 9.475,3.832 10.213,8.816 h 4.311 v -8.816 h -15.117 z"
+       id="path867" />
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g869">
+      <circle
+         style="fill:#e6e5e1;stroke:#908f90;stroke-miterlimit:10"
+         sodipodi:ry="8.9020004"
+         sodipodi:rx="8.9020004"
+         sodipodi:cy="812"
+         sodipodi:cx="1880.8149"
+         stroke-miterlimit="10"
+         cx="1880.8149"
+         cy="812"
+         r="8.9020004"
+         id="circle871"
+         d="m 1889.7169,812 c 0,4.91644 -3.9855,8.902 -8.902,8.902 -4.9164,0 -8.902,-3.98556 -8.902,-8.902 0,-4.91644 3.9856,-8.902 8.902,-8.902 4.9165,0 8.902,3.98556 8.902,8.902 z" />
+      <g
+         id="g873">
+        <polygon
+           style="fill:#3e4146"
+           points="1879,817.455 1879,806.76 1884.158,812.107 "
+           id="polygon875" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g877">
+      <g
+         id="g879">
+        <g
+           id="g881">
+          <circle
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             sodipodi:ry="33.743999"
+             sodipodi:rx="33.743999"
+             sodipodi:cy="751.93799"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="751.93799"
+             r="33.743999"
+             id="circle883"
+             d="m 771.41398,751.93799 c 0,18.63629 -15.1077,33.744 -33.744,33.744 -18.63629,0 -33.744,-15.10771 -33.744,-33.744 0,-18.6363 15.10771,-33.744 33.744,-33.744 18.6363,0 33.744,15.1077 33.744,33.744 z" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="737.66998"
+             y1="718.19397"
+             x2="737.66998"
+             y2="785.68298"
+             id="line885" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="705.57703"
+             y1="741.51099"
+             x2="769.76202"
+             y2="762.36603"
+             id="line887" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="717.836"
+             y1="779.23901"
+             x2="757.50403"
+             y2="724.64001"
+             id="line889" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="757.505"
+             y1="779.23798"
+             x2="717.836"
+             y2="724.64001"
+             id="line891" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="769.763"
+             y1="741.51099"
+             x2="705.578"
+             y2="762.36603"
+             id="line893" />
+          <circle
+             style="fill:#eeeff3"
+             sodipodi:ry="23.035"
+             sodipodi:rx="23.035"
+             sodipodi:cy="751.93799"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="751.93799"
+             r="23.035"
+             id="circle895"
+             d="m 760.70498,751.93799 c 0,12.72188 -10.31312,23.035 -23.035,23.035 -12.72188,0 -23.035,-10.31312 -23.035,-23.035 0,-12.72188 10.31312,-23.035 23.035,-23.035 12.72188,0 23.035,10.31312 23.035,23.035 z" />
+        </g>
+        <g
+           id="g897">
+          <circle
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             sodipodi:ry="33.743999"
+             sodipodi:rx="33.743999"
+             sodipodi:cy="828.31201"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="828.31201"
+             r="33.743999"
+             id="circle899"
+             d="m 771.41398,828.31201 c 0,18.6363 -15.1077,33.744 -33.744,33.744 -18.63629,0 -33.744,-15.1077 -33.744,-33.744 0,-18.63629 15.10771,-33.744 33.744,-33.744 18.6363,0 33.744,15.10771 33.744,33.744 z" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="737.66998"
+             y1="794.56799"
+             x2="737.66998"
+             y2="862.05701"
+             id="line901" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="705.57703"
+             y1="817.88501"
+             x2="769.76202"
+             y2="838.73999"
+             id="line903" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="717.836"
+             y1="855.612"
+             x2="757.50403"
+             y2="801.01398"
+             id="line905" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="757.505"
+             y1="855.612"
+             x2="717.836"
+             y2="801.01398"
+             id="line907" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="769.763"
+             y1="817.88501"
+             x2="705.578"
+             y2="838.73999"
+             id="line909" />
+          <circle
+             style="fill:#eeeff3"
+             sodipodi:ry="23.035"
+             sodipodi:rx="23.035"
+             sodipodi:cy="828.31201"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="828.31201"
+             r="23.035"
+             id="circle911"
+             d="m 760.70498,828.31201 c 0,12.72188 -10.31312,23.035 -23.035,23.035 -12.72188,0 -23.035,-10.31312 -23.035,-23.035 0,-12.72188 10.31312,-23.035 23.035,-23.035 12.72188,0 23.035,10.31312 23.035,23.035 z" />
+        </g>
+        <g
+           id="g913">
+          <circle
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             sodipodi:ry="33.743999"
+             sodipodi:rx="33.743999"
+             sodipodi:cy="904.68701"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="904.68701"
+             r="33.743999"
+             id="circle915"
+             d="m 771.41398,904.68701 c 0,18.6363 -15.1077,33.744 -33.744,33.744 -18.63629,0 -33.744,-15.1077 -33.744,-33.744 0,-18.63629 15.10771,-33.744 33.744,-33.744 18.6363,0 33.744,15.10771 33.744,33.744 z" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="737.66998"
+             y1="870.94202"
+             x2="737.66998"
+             y2="938.43103"
+             id="line917" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="705.57703"
+             y1="894.25897"
+             x2="769.76202"
+             y2="915.11401"
+             id="line919" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="717.836"
+             y1="931.98602"
+             x2="757.50403"
+             y2="877.388"
+             id="line921" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="757.505"
+             y1="931.98602"
+             x2="717.836"
+             y2="877.388"
+             id="line923" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="769.763"
+             y1="894.25897"
+             x2="705.578"
+             y2="915.11401"
+             id="line925" />
+          <circle
+             style="fill:#eeeff3"
+             sodipodi:ry="23.035"
+             sodipodi:rx="23.035"
+             sodipodi:cy="904.68701"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="904.68701"
+             r="23.035"
+             id="circle927"
+             d="m 760.70498,904.68701 c 0,12.72188 -10.31312,23.035 -23.035,23.035 -12.72188,0 -23.035,-10.31312 -23.035,-23.035 0,-12.72188 10.31312,-23.035 23.035,-23.035 12.72188,0 23.035,10.31312 23.035,23.035 z" />
+        </g>
+        <g
+           id="g929">
+          <circle
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             sodipodi:ry="33.743999"
+             sodipodi:rx="33.743999"
+             sodipodi:cy="981.06097"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="981.06097"
+             r="33.743999"
+             id="circle931"
+             d="m 771.41398,981.06097 c 0,18.6363 -15.1077,33.74403 -33.744,33.74403 -18.63629,0 -33.744,-15.10773 -33.744,-33.74403 0,-18.63629 15.10771,-33.744 33.744,-33.744 18.6363,0 33.744,15.10771 33.744,33.744 z" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="737.66998"
+             y1="947.31598"
+             x2="737.66998"
+             y2="1014.805"
+             id="line933" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="705.57703"
+             y1="970.633"
+             x2="769.76202"
+             y2="991.48798"
+             id="line935" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="717.836"
+             y1="1008.36"
+             x2="757.50403"
+             y2="953.76202"
+             id="line937" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="757.505"
+             y1="1008.36"
+             x2="717.836"
+             y2="953.76202"
+             id="line939" />
+          <line
+             style="fill:none;stroke:#bfb8b0;stroke-width:3"
+             x1="769.763"
+             y1="970.633"
+             x2="705.578"
+             y2="991.48798"
+             id="line941" />
+          <circle
+             style="fill:#eeeff3"
+             sodipodi:ry="23.035"
+             sodipodi:rx="23.035"
+             sodipodi:cy="981.06097"
+             sodipodi:cx="737.66998"
+             cx="737.66998"
+             cy="981.06097"
+             r="23.035"
+             id="circle943"
+             d="m 760.70498,981.06097 c 0,12.72188 -10.31312,23.03503 -23.035,23.03503 -12.72188,0 -23.035,-10.31315 -23.035,-23.03503 0,-12.72188 10.31312,-23.035 23.035,-23.035 12.72188,0 23.035,10.31312 23.035,23.035 z" />
+        </g>
+      </g>
+      <text
+         transform="translate(731.5645,744.9404)"
+         id="text945">
+        <tspan
+           style="font-size:11px;fill:#13161a;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="11"
+           id="tspan947">D5</tspan>
+        <tspan
+           style="font-size:13px;font-family:GEInspiraPitch"
+           x="-3.9330001"
+           y="15"
+           font-size="13"
+           id="tspan949">75</tspan>
+        <tspan
+           style="font-size:8px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="9.8479996"
+           y="15"
+           font-size="8"
+           id="tspan951">%</tspan>
+        <tspan
+           style="font-size:11px;fill:#13161a;font-family:GEInspiraPitch"
+           x="-3.7179999"
+           y="79"
+           font-size="11"
+           id="tspan953">PM1</tspan>
+        <tspan
+           style="font-size:13px;font-family:GEInspiraPitch"
+           x="-3.9330001"
+           y="93"
+           font-size="13"
+           id="tspan955">25</tspan>
+        <tspan
+           style="font-size:8px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="9.8479996"
+           y="93"
+           font-size="8"
+           id="tspan957">%</tspan>
+        <tspan
+           style="font-size:11px;fill:#13161a;font-family:GEInspiraPitch"
+           x="-3.7179999"
+           y="157"
+           font-size="11"
+           id="tspan959">PM2</tspan>
+        <tspan
+           style="font-size:13px;font-family:GEInspiraPitch"
+           x="-0.48699999"
+           y="171"
+           font-size="13"
+           id="tspan961">0</tspan>
+        <tspan
+           style="font-size:8px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="6.402"
+           y="171"
+           font-size="8"
+           id="tspan963">%</tspan>
+        <tspan
+           style="font-size:11px;fill:#13161a;font-family:GEInspiraPitch"
+           x="-3.7179999"
+           y="234"
+           font-size="11"
+           id="tspan965">PM3</tspan>
+        <tspan
+           style="font-size:13px;font-family:GEInspiraPitch"
+           x="-0.48699999"
+           y="248"
+           font-size="13"
+           id="tspan967">0</tspan>
+        <tspan
+           style="font-size:8px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="6.402"
+           y="248"
+           font-size="8"
+           id="tspan969">%</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g971">
+      <g
+         id="g973">
+        <polygon
+           style="fill:#bfb8b0"
+           points="701.486,751.422 694.158,744.092 694.158,758.75 "
+           id="polygon975" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g977">
+      <g
+         id="g979">
+        <polygon
+           style="fill:#bfb8b0"
+           points="701.486,827.422 694.158,820.092 694.158,834.75 "
+           id="polygon981" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g983">
+      <g
+         id="g985">
+        <polygon
+           style="fill:#bfb8b0"
+           points="701.486,903.99 694.158,896.66 694.158,911.318 "
+           id="polygon987" />
+      </g>
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="g989">
+      <g
+         id="g991">
+        <polygon
+           style="fill:#bfb8b0"
+           points="701.486,980.422 694.158,973.092 694.158,987.75 "
+           id="polygon993" />
+      </g>
+    </g>
+    <text
+       y="290.57874"
+       x="313.95285"
+       id="text232">
+      <tspan
+         x="313.95285"
+         y="290.57874"
+         font-size="14"
+         id="tspan234"
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch">Fuel Gas</tspan>
+    </text>
+    <text
+       y="290.81729"
+       x="680.37775"
+       id="text232-1">
+      <tspan
+         x="680.37775"
+         y="290.81729"
+         font-size="14"
+         id="tspan234-7"
+         style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch">Liquid Fuel</tspan>
+    </text>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="reference">
+      <g
+         id="g1326">
+        <text
+           style="font-size:18px;font-family:GEInspiraPitch"
+           transform="translate(1061.5098,740.1074)"
+           font-size="18"
+           id="text1328">89%</text>
+      </g>
+      <g
+         id="g1330">
+        <text
+           style="font-size:18px;font-family:GEInspiraPitch"
+           transform="translate(1051.791,765.877)"
+           font-size="18"
+           id="text1332">100%</text>
+      </g>
+      <g
+         id="g1334">
+        <text
+           style="font-size:18px;font-family:GEInspiraPitch"
+           transform="translate(1061.5098,791.5869)"
+           font-size="18"
+           id="text1336">93%</text>
+      </g>
+      <g
+         id="g1338">
+        <text
+           style="font-size:18px;font-family:GEInspiraPitch"
+           transform="translate(1061.5098,818.1426)"
+           font-size="18"
+           id="text1340">98%</text>
+      </g>
+      <text
+         transform="translate(1030.4883,739.4473)"
+         id="text1342">
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="0"
+           y="0"
+           font-size="14"
+           id="tspan1344">A</tspan>
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="0.19499999"
+           y="26"
+           font-size="14"
+           id="tspan1346">B</tspan>
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="-0.043000001"
+           y="52"
+           font-size="14"
+           id="tspan1348">C</tspan>
+        <tspan
+           style="font-size:14px;fill:#5c5f63;font-family:GEInspiraPitch"
+           x="-0.98000002"
+           y="78"
+           font-size="14"
+           id="tspan1350">D</tspan>
+      </text>
+      <g
+         id="g1352">
+        <text
+           style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+           transform="translate(1270.5078,701.3691)"
+           font-size="18"
+           id="text1354">VIBRATION</text>
+      </g>
+      <rect
+         style="fill:#c0b9b1"
+         id="gray_bar_5_"
+         x="1104"
+         y="726"
+         width="100"
+         height="17" />
+      <linearGradient
+         id="linearGradient7866"
+         gradientUnits="userSpaceOnUse"
+         x1="1104.3857"
+         y1="734.5"
+         x2="1191.4594"
+         y2="734.5">
+        <stop
+           offset="0"
+           style="stop-color:#79A7E1"
+           id="stop7868" />
+        <stop
+           offset="1"
+           style="stop-color:#3B73B9"
+           id="stop7870" />
+      </linearGradient>
+      <rect
+         style="fill:url(#linearGradient9947)"
+         x="1104"
+         y="726"
+         width="89"
+         height="17"
+         id="rect1362" />
+      <rect
+         style="fill:#c0b9b1"
+         id="gray_bar_4_"
+         x="1104"
+         y="751"
+         width="100"
+         height="17" />
+      <linearGradient
+         id="linearGradient7874"
+         gradientUnits="userSpaceOnUse"
+         x1="1104.4326"
+         y1="759.5"
+         x2="1202.2681"
+         y2="759.5">
+        <stop
+           offset="0"
+           style="stop-color:#79A7E1"
+           id="stop7876" />
+        <stop
+           offset="1"
+           style="stop-color:#3B73B9"
+           id="stop7878" />
+      </linearGradient>
+      <rect
+         style="fill:url(#linearGradient9949)"
+         x="1104"
+         y="751"
+         width="100"
+         height="17"
+         id="rect1370" />
+      <rect
+         style="fill:#c0b9b1"
+         id="gray_bar_3_"
+         x="1104"
+         y="776"
+         width="100"
+         height="17" />
+      <linearGradient
+         id="linearGradient7882"
+         gradientUnits="userSpaceOnUse"
+         x1="1104.4023"
+         y1="784.5"
+         x2="1195.3894"
+         y2="784.5">
+        <stop
+           offset="0"
+           style="stop-color:#79A7E1"
+           id="stop7884" />
+        <stop
+           offset="1"
+           style="stop-color:#3B73B9"
+           id="stop7886" />
+      </linearGradient>
+      <rect
+         style="fill:url(#linearGradient9951)"
+         x="1104"
+         y="776"
+         width="93"
+         height="17"
+         id="rect1378" />
+      <rect
+         style="fill:#c0b9b1"
+         id="gray_bar_1_"
+         x="1104"
+         y="801"
+         width="100"
+         height="17" />
+      <linearGradient
+         id="linearGradient7890"
+         gradientUnits="userSpaceOnUse"
+         x1="1104.4238"
+         y1="809.5"
+         x2="1200.3026"
+         y2="809.5">
+        <stop
+           offset="0"
+           style="stop-color:#79A7E1"
+           id="stop7892" />
+        <stop
+           offset="1"
+           style="stop-color:#3B73B9"
+           id="stop7894" />
+      </linearGradient>
+      <rect
+         style="fill:url(#linearGradient9953)"
+         x="1104"
+         y="801"
+         width="98"
+         height="17"
+         id="rect1386" />
+      <text
+         style="font-size:20px;fill:#5c5f63;font-family:GEInspira-ExtraBold"
+         transform="translate(1358.1309,684.041)"
+         font-size="20"
+         id="text1388" />
+    </g>
+    <g
+       transform="translate(-740.64286,-151.51546)"
+       id="Layer_8">
+      <g
+         id="g1505">
+        <g
+           id="g1507">
+          <g
+             id="g1509">
+            <rect
+               style="fill:#3b73b9"
+               x="410.845"
+               y="901.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1511" />
+            <polygon
+               style="fill:#3b73b9"
+               points="410.847,912.857 410.847,910.593 400.659,904.752 400.659,918.697 "
+               id="polygon1513" />
+            <polygon
+               style="fill:#3b73b9"
+               points="413.108,912.857 413.108,910.593 423.298,904.752 423.298,918.697 "
+               id="polygon1515" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="406.797"
+             y="897.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1517" />
+          <g
+             id="Temp_57_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(408.9287,905.1055)"
+               font-size="9.0426"
+               id="text1520">H</text>
+          </g>
+        </g>
+        <g
+           id="g1522">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 397.677,927.99 c -1.516,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.234,-2.75 2.75,-2.75 h 80.396 c 1.516,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.234,2.75 -2.75,2.75 h -80.396 z m 2.708,-32.34 c -0.689,0 -1.25,0.561 -1.25,1.25 v 25.693 c 0,0.689 0.561,1.25 1.25,1.25 h 56.284 c 0.689,0 1.25,-0.561 1.25,-1.25 V 896.9 c 0,-0.689 -0.561,-1.25 -1.25,-1.25 h -56.284 z"
+             id="path1524" />
+          <path
+             style="fill:#908f90"
+             inkscape:connector-curvature="0"
+             d="m 478.073,881.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -80.396 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 80.396 m -77.688,42.928 h 56.284 c 1.1,0 2,-0.9 2,-2 V 896.9 c 0,-1.1 -0.9,-2 -2,-2 h -56.284 c -1.1,0 -2,0.9 -2,2 v 25.693 c 0,1.1 0.9,2.001 2,2.001 m 77.688,-44.428 h -80.396 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 80.396 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c 0,-1.93 -1.57,-3.5 -3.5,-3.5 l 0,0 z m -77.688,42.928 c -0.271,0 -0.5,-0.229 -0.5,-0.5 V 896.9 c 0,-0.271 0.229,-0.5 0.5,-0.5 h 56.284 c 0.271,0 0.5,0.229 0.5,0.5 v 25.693 c 0,0.271 -0.229,0.5 -0.5,0.5 h -56.284 l 0,0.001 z"
+             id="path1526" />
+        </g>
+        <rect
+           style="fill:#ffffff"
+           x="397"
+           y="894"
+           width="63"
+           height="32"
+           id="rect1528" />
+        <g
+           id="Temp_64_">
+          <g
+             id="g1531">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(399.21,892.0078)"
+               font-size="11"
+               id="text1533">VGC-3</text>
+          </g>
+        </g>
+        <g
+           id="Temp_46_">
+          <g
+             id="g1536">
+            <text
+               transform="translate(441.4932,914.4307)"
+               id="text1538">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan1540">1</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="7.02"
+                 y="0"
+                 font-size="8"
+                 id="tspan1542">%</tspan>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g1544">
+          <rect
+             style="fill:#ffffff"
+             x="462.29599"
+             y="910.61603"
+             width="14"
+             height="14"
+             id="rect1546" />
+          <g
+             id="Temp_45_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(464.1348,922.0264)"
+               font-size="13"
+               id="text1549">M</text>
+          </g>
+        </g>
+        <g
+           id="g1551">
+          <g
+             id="g1553">
+            <rect
+               style="fill:#3b73b9"
+               x="410.711"
+               y="901.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1555" />
+            <polygon
+               style="fill:#3b73b9"
+               points="410.713,912.857 410.713,910.593 400.525,904.752 400.525,918.697 "
+               id="polygon1557" />
+            <polygon
+               style="fill:#3b73b9"
+               points="412.975,912.857 412.975,910.593 423.164,904.752 423.164,918.697 "
+               id="polygon1559" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="406.66299"
+             y="897.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1561" />
+          <g
+             id="Temp_1_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(408.7949,905.1055)"
+               font-size="9.0426"
+               id="text1564">H</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1566">
+        <g
+           id="g1568">
+          <g
+             id="g1570">
+            <rect
+               style="fill:#3b73b9"
+               x="410.845"
+               y="976.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1572" />
+            <polygon
+               style="fill:#3b73b9"
+               points="410.847,987.857 410.847,985.593 400.659,979.752 400.659,993.697 "
+               id="polygon1574" />
+            <polygon
+               style="fill:#3b73b9"
+               points="413.108,987.857 413.108,985.593 423.298,979.752 423.298,993.697 "
+               id="polygon1576" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="406.797"
+             y="972.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1578" />
+          <g
+             id="Temp_43_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(408.9287,980.1055)"
+               font-size="9.0426"
+               id="text1581">H</text>
+          </g>
+        </g>
+        <g
+           id="g1583">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 397.677,1002.99 c -1.516,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.234,-2.75 2.75,-2.75 h 80.396 c 1.516,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.234,2.75 -2.75,2.75 h -80.396 z m 2.708,-32.34 c -0.689,0 -1.25,0.561 -1.25,1.25 v 25.693 c 0,0.689 0.561,1.25 1.25,1.25 h 56.284 c 0.689,0 1.25,-0.561 1.25,-1.25 V 971.9 c 0,-0.689 -0.561,-1.25 -1.25,-1.25 h -56.284 z"
+             id="path1585" />
+          <path
+             style="fill:#908f90"
+             inkscape:connector-curvature="0"
+             d="m 478.073,956.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -80.396 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 80.396 m -77.688,42.928 h 56.284 c 1.1,0 2,-0.9 2,-2 V 971.9 c 0,-1.1 -0.9,-2 -2,-2 h -56.284 c -1.1,0 -2,0.9 -2,2 v 25.693 c 0,1.1 0.9,2.001 2,2.001 m 77.688,-44.428 h -80.396 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 80.396 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c 0,-1.93 -1.57,-3.5 -3.5,-3.5 l 0,0 z m -77.688,42.928 c -0.271,0 -0.5,-0.229 -0.5,-0.5 V 971.9 c 0,-0.271 0.229,-0.5 0.5,-0.5 h 56.284 c 0.271,0 0.5,0.229 0.5,0.5 v 25.693 c 0,0.271 -0.229,0.5 -0.5,0.5 h -56.284 l 0,0.001 z"
+             id="path1587" />
+        </g>
+        <rect
+           style="fill:#ffffff"
+           x="397"
+           y="969"
+           width="63"
+           height="32"
+           id="rect1589" />
+        <g
+           id="Temp_29_">
+          <g
+             id="g1592">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(399.21,967.0078)"
+               font-size="11"
+               id="text1594">VGC-3</text>
+          </g>
+        </g>
+        <g
+           id="Temp_18_">
+          <g
+             id="g1597">
+            <text
+               transform="translate(441.4932,989.4307)"
+               id="text1599">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan1601">1</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="7.02"
+                 y="0"
+                 font-size="8"
+                 id="tspan1603">%</tspan>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g1605">
+          <rect
+             style="fill:#ffffff"
+             x="462.29599"
+             y="985.61603"
+             width="14"
+             height="14"
+             id="rect1607" />
+          <g
+             id="Temp_15_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(464.1348,997.0264)"
+               font-size="13"
+               id="text1610">M</text>
+          </g>
+        </g>
+        <g
+           id="g1612">
+          <g
+             id="g1614">
+            <rect
+               style="fill:#3b73b9"
+               x="410.711"
+               y="976.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1616" />
+            <polygon
+               style="fill:#3b73b9"
+               points="410.713,987.857 410.713,985.593 400.525,979.752 400.525,993.697 "
+               id="polygon1618" />
+            <polygon
+               style="fill:#3b73b9"
+               points="412.975,987.857 412.975,985.593 423.164,979.752 423.164,993.697 "
+               id="polygon1620" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="406.66299"
+             y="972.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1622" />
+          <g
+             id="Temp_2_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(408.7949,980.1055)"
+               font-size="9.0426"
+               id="text1625">H</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1627">
+        <g
+           id="g1629">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 1758.677,763.99 c -1.517,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.233,-2.75 2.75,-2.75 h 80.396 c 1.517,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.233,2.75 -2.75,2.75 h -80.396 z m 2.708,-32.34 c -0.689,0 -1.25,0.561 -1.25,1.25 v 25.693 c 0,0.689 0.561,1.25 1.25,1.25 h 56.284 c 0.689,0 1.25,-0.561 1.25,-1.25 V 732.9 c 0,-0.689 -0.561,-1.25 -1.25,-1.25 h -56.284 z"
+             id="path1631" />
+          <path
+             style="fill:#908f90"
+             inkscape:connector-curvature="0"
+             d="m 1839.073,717.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -80.396 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 80.396 m -77.688,42.928 h 56.284 c 1.1,0 2,-0.9 2,-2 V 732.9 c 0,-1.1 -0.9,-2 -2,-2 h -56.284 c -1.1,0 -2,0.9 -2,2 v 25.693 c 0,1.1 0.9,2.001 2,2.001 m 77.688,-44.428 h -80.396 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 80.396 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c 0,-1.93 -1.57,-3.5 -3.5,-3.5 l 0,0 z m -77.688,42.928 c -0.271,0 -0.5,-0.229 -0.5,-0.5 V 732.9 c 0,-0.271 0.229,-0.5 0.5,-0.5 h 56.284 c 0.271,0 0.5,0.229 0.5,0.5 v 25.693 c 0,0.271 -0.229,0.5 -0.5,0.5 h -56.284 l 0,0.001 z"
+             id="path1633" />
+        </g>
+        <rect
+           style="fill:#ffffff"
+           x="1758"
+           y="730"
+           width="63"
+           height="32"
+           id="rect1635" />
+        <g
+           id="Temp_58_">
+          <g
+             id="g1638">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(1760.209,728.0078)"
+               font-size="11"
+               id="text1640">20WN-1</text>
+          </g>
+        </g>
+        <g
+           id="Temp_55_">
+          <g
+             id="g1643">
+            <text
+               transform="translate(1795.1572,750.4307)"
+               id="text1645">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan1647">50</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="14.04"
+                 y="0"
+                 font-size="8"
+                 id="tspan1649">%</tspan>
+            </text>
+          </g>
+        </g>
+        <g
+           id="g1651">
+          <rect
+             style="fill:#ffffff"
+             x="1823.296"
+             y="746.61603"
+             width="14"
+             height="14"
+             id="rect1653" />
+          <g
+             id="Temp_54_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(1826.3496,758.0264)"
+               font-size="13"
+               id="text1656">A</text>
+          </g>
+        </g>
+        <g
+           id="g1658">
+          <g
+             id="g1660">
+            <rect
+               style="fill:#3b73b9"
+               x="1771.521"
+               y="737.35901"
+               width="2.2639999"
+               height="11.319"
+               id="rect1662" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1771.522,748.669 1771.522,746.405 1761.335,740.563 1761.335,754.509 "
+               id="polygon1664" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1773.784,748.669 1773.784,746.405 1783.974,740.563 1783.974,754.509 "
+               id="polygon1666" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="1767.473"
+             y="733.50702"
+             width="10.53"
+             height="8.7069998"
+             id="rect1668" />
+          <g
+             id="Temp_61_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(1770.3369,740.916)"
+               font-size="9.0426"
+               id="text1671">S</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g1673">
+        <g
+           id="g1675">
+          <g
+             id="g1677">
+            <rect
+               style="fill:#3b73b9"
+               x="1771.845"
+               y="809.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1679" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1771.847,820.857 1771.847,818.593 1761.659,812.752 1761.659,826.697 "
+               id="polygon1681" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1774.108,820.857 1774.108,818.593 1784.298,812.752 1784.298,826.697 "
+               id="polygon1683" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="1767.797"
+             y="805.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1685" />
+          <g
+             id="Temp_68_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(1769.9287,813.1055)"
+               font-size="9.0426"
+               id="text1688">H</text>
+          </g>
+        </g>
+        <g
+           id="g1690">
+          <path
+             style="fill:#e6e5e1"
+             inkscape:connector-curvature="0"
+             d="m 1758.677,835.99 c -1.517,0 -2.75,-1.233 -2.75,-2.75 v -41.574 c 0,-1.517 1.233,-2.75 2.75,-2.75 h 80.396 c 1.517,0 2.75,1.233 2.75,2.75 v 41.574 c 0,1.517 -1.233,2.75 -2.75,2.75 h -80.396 z m 2.708,-32.34 c -0.689,0 -1.25,0.561 -1.25,1.25 v 25.693 c 0,0.689 0.561,1.25 1.25,1.25 h 56.284 c 0.689,0 1.25,-0.561 1.25,-1.25 V 804.9 c 0,-0.689 -0.561,-1.25 -1.25,-1.25 h -56.284 z"
+             id="path1692" />
+          <path
+             style="fill:#908f90"
+             inkscape:connector-curvature="0"
+             d="m 1839.073,789.666 c 1.1,0 2,0.9 2,2 v 41.574 c 0,1.1 -0.9,2 -2,2 h -80.396 c -1.1,0 -2,-0.9 -2,-2 v -41.574 c 0,-1.1 0.9,-2 2,-2 h 80.396 m -77.688,42.928 h 56.284 c 1.1,0 2,-0.9 2,-2 V 804.9 c 0,-1.1 -0.9,-2 -2,-2 h -56.284 c -1.1,0 -2,0.9 -2,2 v 25.693 c 0,1.1 0.9,2.001 2,2.001 m 77.688,-44.428 h -80.396 c -1.93,0 -3.5,1.57 -3.5,3.5 v 41.574 c 0,1.93 1.57,3.5 3.5,3.5 h 80.396 c 1.93,0 3.5,-1.57 3.5,-3.5 v -41.574 c 0,-1.93 -1.57,-3.5 -3.5,-3.5 l 0,0 z m -77.688,42.928 c -0.271,0 -0.5,-0.229 -0.5,-0.5 V 804.9 c 0,-0.271 0.229,-0.5 0.5,-0.5 h 56.284 c 0.271,0 0.5,0.229 0.5,0.5 v 25.693 c 0,0.271 -0.229,0.5 -0.5,0.5 h -56.284 l 0,0.001 z"
+             id="path1694" />
+        </g>
+        <rect
+           style="fill:#ffffff"
+           x="1758"
+           y="802"
+           width="63"
+           height="32"
+           id="rect1696" />
+        <g
+           id="Temp_66_">
+          <g
+             id="g1699">
+            <text
+               style="font-size:11px;font-family:GEInspiraPitch"
+               transform="translate(1760.209,800.0078)"
+               font-size="11"
+               id="text1701">VC3-1</text>
+          </g>
+        </g>
+        <g
+           id="g1703">
+          <rect
+             style="fill:#ffffff"
+             x="1823.296"
+             y="818.61603"
+             width="14"
+             height="14"
+             id="rect1705" />
+          <g
+             id="Temp_62_">
+            <text
+               style="font-size:13px;font-family:GEInspiraPitch"
+               transform="translate(1825.1348,830.0264)"
+               font-size="13"
+               id="text1708">M</text>
+          </g>
+        </g>
+        <g
+           id="g1710">
+          <g
+             id="g1712">
+            <rect
+               style="fill:#3b73b9"
+               x="1771.7111"
+               y="809.54797"
+               width="2.2639999"
+               height="11.319"
+               id="rect1714" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1771.713,820.857 1771.713,818.593 1761.525,812.752 1761.525,826.697 "
+               id="polygon1716" />
+            <polygon
+               style="fill:#3b73b9"
+               points="1773.975,820.857 1773.975,818.593 1784.164,812.752 1784.164,826.697 "
+               id="polygon1718" />
+          </g>
+          <rect
+             style="fill:#3b73b9"
+             x="1767.663"
+             y="805.69501"
+             width="10.53"
+             height="8.7080002"
+             id="rect1720" />
+          <g
+             id="Temp_56_">
+            <text
+               style="font-size:9.04259968px;fill:#ffffff;font-family:GEInspiraPitch-Bold"
+               transform="translate(1769.7949,813.1055)"
+               font-size="9.0426"
+               id="text1723">H</text>
+          </g>
+        </g>
+        <g
+           id="Temp_59_">
+          <g
+             id="g1726">
+            <text
+               transform="translate(1795.1572,823.6484)"
+               id="text1728">
+              <tspan
+                 style="font-size:13px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="0"
+                 y="0"
+                 font-size="13"
+                 id="tspan1730">50</tspan>
+              <tspan
+                 style="font-size:8px;fill:#13161a;font-family:GEInspiraPitch"
+                 x="14.04"
+                 y="0"
+                 font-size="8"
+                 id="tspan1732">%</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:#bfc2c5"
+       inkscape:connector-curvature="0"
+       id="Frame_2_"
+       d="m -516.6426,38.842763 0,852.829007 1690.255,4.9e-4 -0.078,-852.940029 z m 11.7922,848.640087 c -3.182,0 -6.226,-2.525 -6.226,-5.69 l 0,-824.070041 c 0,-3.166 3.044,-6.24 6.226,-6.24 l 764.511,0 c 3.182,0 5.264,3.074 5.264,6.24 l 0,824.070041 c 0,3.165 -2.082,5.69 -5.264,5.69 z m 786.104,0 c -3.182,0 -6.33,-2.525 -6.33,-5.69 l 0,-824.070041 c 0,-3.166 3.148,-6.24 6.33,-6.24 l 492.885,0 c 3.182,0 5.785,3.074 5.785,6.24 l 0,824.070041 c 0,3.165 -2.604,5.69 -5.785,5.69 z m 883.376,-836.000041 c 3.182,0 5.294,3.074 5.294,6.24 l 0,824.070041 c 0,3.165 -2.112,5.69 -5.294,5.69 l -368.972,0 c -3.182,0 -5.734,-2.525 -5.734,-5.69 l 0,-824.070041 c 0,-3.166 2.553,-6.24 5.734,-6.24 z"
+       sodipodi:nodetypes="cccccsssssssssssssssssssssssssss" />
+    <text
+       y="270.96844"
+       x="485.12967"
+       style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+       font-size="18"
+       id="text163">fuel split</text>
+    <text
+       y="276.5553"
+       x="930.84235"
+       style="font-size:18px;fill:#5c5f63;font-family:GEInspiraPitch"
+       font-size="18"
+       id="text189">liquid fuel</text>
+  </g>
+</svg>

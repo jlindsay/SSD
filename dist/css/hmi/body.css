@@ -1,0 +1,200 @@
+@import "body-modules.css";
+
+section {
+  background:#BFC2C5;
+  clear:both;
+  float:left;
+  width:100%
+}
+
+#widget-container {
+  float:left;
+  width:1678px;
+}
+
+
+#widget-container #one,
+#widget-container #two,
+#widget-container #three,
+#widget-container #four,
+#widget-container #five,
+#widget-container #six,
+#widget-container #seven,
+#widget-container #fuel-gas,
+#widget-container #fuel-transfer,
+#widget-container #liquid-fuel {
+  float:left;
+  background:#EEEFF3;
+  border-radius:6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#widget-container #one {
+  width:976px;
+  height:210px;
+}
+#widget-container #two{
+  width:692px;
+  height:210px;
+  margin:0 0 0 10px;
+}
+#widget-container #three{
+  width:260px;
+  height:618px;
+  margin:10px 10px 0 0;
+}
+
+#widget-container #four{
+  width:266px;
+  height:618px;
+  margin:10px 10px 0 0;
+}
+
+#widget-container #five{
+  width:292px;
+  height:618px;
+  margin:10px 10px 0 0;
+}
+
+#widget-container #six{
+  width:610px;
+  height:618px;
+  margin:10px 10px 0 0;
+}
+
+#widget-container #seven{
+  width:210px;
+  height:618px;
+  margin:10px 0 0 0;
+}
+
+#widget-container #fuel-gas {
+  width:758px;
+  height:842px;
+}
+#widget-container #fuel-transfer {
+  width:500px;
+  height:842px;
+  margin:0 0 0 10px;
+}
+#widget-container #liquid-fuel {
+  width:400px;
+  height:842px;
+  margin:0 0 0 10px;
+}
+
+.icon-detail{
+	float: right;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+
+/*
+Face Plates CSS
+*/
+
+.fp1 {
+ width:400px;
+ height:200px;
+ transform: translate(639px, 219px);
+}
+
+.fp {
+  position:absolute;
+  background:#2D2D2F;
+  border-radius:5px;
+}
+
+.fp-header {
+  position:relative;
+  height:28px;
+  color: white;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  font-size: 18pt;
+  text-indent: 15px;
+}
+
+.fp-header-controls {
+  float: right;
+}
+
+.fp-header-controls img{
+  margin-right: 2px;
+}
+
+.fp-body {
+  position:relative;
+  background:#C0B9B1;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.fp-body span{
+	font-size: 12px;
+}
+
+.fp-body strong{
+	float: right;
+	margin-right: 15px;
+}
+
+.fp-body-panel{
+	position: relative;
+	background: none repeat scroll 0 0 #EEEFF3;
+	border-radius:5px;
+	color: #5D6165;
+	font-size: 12pt;
+	margin-left: 15PX;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.fp-body-panel h5{
+	display: block;
+	font-size: 12pt;
+}
+
+.fp-body-panel .btn-group{
+	float: left;
+	clear: none;
+}
+
+#fp1-buttons11{
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 350px;
+	width: 50px;
+	height: 30px;
+}
+#fp1-buttons12{
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 300px;
+	width: 50px;
+	height: 30px;
+}
+
+#secondary h2{	
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 5px;
+}

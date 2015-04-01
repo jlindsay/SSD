@@ -1,0 +1,93 @@
+
+
+.readout {
+  background:#FFF;
+  margin:0 5px 5px 10px;
+  font-size:13px;
+  padding:4px 5px 4px 5px;
+  border-radius:4px;
+  color:#5C5F63;
+  width:80%
+}
+.readout strong {
+  font-weight:bold;
+  padding-left:5px;
+}
+.readout strong span{
+  font-weight:normal;
+  font-size:11px;
+}
+
+.readout.grid,
+.readout.frequency {
+  float:left;
+  width:auto;
+}
+.readout.frequency{
+  margin-left:0px;
+}
+.readout.primary {
+  clear:both;
+}
+
+#seven .readout span{
+  float:left;
+  width:90px;
+}
+#seven .readout strong span{
+  float:none;
+}
+
+#six .readout span{
+  float:left;
+  width:90px;
+}
+#six .readout strong span{
+  float:none;
+}
+
+#six .readout strong,
+#five .readout strong {
+  position:relative;
+}
+#six .readout {
+  width:50%
+}
+
+
+#five .readout span{
+  float:left;
+  width:120px;
+}
+#five .readout strong span{
+  float:none;
+}
+
+
+#four .readout span{
+  float:left;
+  width:120px;
+}
+#four .readout strong span{
+  float:none;
+}
+
+
+#six .slider,
+#five .slider {
+  float: left;
+  height: 14px;
+  width: 120px;
+  display:inline-block;
+  margin-top:0px;
+  position:absolute;
+  top:0px;
+  right:-130px;
+  margin:0px;
+
+}
+#five .readout .slider {
+  width:70px;
+  right:-80px;
+}
+

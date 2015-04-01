@@ -1,0 +1,419 @@
+@import "index.css";
+@import "readouts.css";
+@import "device-widgets.css";
+@import "tasks-widgets.css";
+@import "fuel-system.css";
+@import "pulldown.css";
+#one  ul,
+#two  ul{
+  float:left;
+  width:100%;
+}
+li.mc,
+li.lc,
+#one li.gen,
+li.fc,
+li.speed,
+li.vibration,
+li.aux-system {
+  float:left;
+  padding:13px 12px 14px 12px;
+  width:185px;
+}
+#one  ul li h4,
+#two  ul li h4 {
+  color:#5C5F63;
+  font-weight:bold;
+  font-size:16px
+}
+#one  ul li.fc h4 {
+  margin-bottom:45px
+}
+
+.gt h4 img {
+  display:inline;
+  position:absolute;
+  margin-left:5px;
+  margin-top:-5px
+}
+#one ul li.mc{
+  width:322px;
+}
+
+li.mc .btn-group{
+  float:left;
+  width:128px;
+  margin-top:10px;
+}
+
+li.mc .btn-group button:first-child{
+  margin-bottom:0px;
+  border-bottom:0px;
+  border-radius:2px 2px 0 0;
+}
+li.mc .btn-group button {
+  border-radius:0 0 2px 2px;
+}
+li.mc .btn-group button:last-child{
+  border-radius:2px;
+}
+
+
+button,
+select{
+  border:1px solid #908F90;
+  font-size:14px;
+  color:#5C5F63;
+  border-radius:2px;
+  background: -moz-linear-gradient(top, #F8F7F5 0%, #C6C3BC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F8F7F5), color-stop(100%,#C6C3BC));
+  background: -webkit-linear-gradient(top, #F8F7F5 0%,#C6C3BC 100%);
+  background: -o-linear-gradient(top, #F8F7F5 0%,#C6C3BC 100%);
+  background: -ms-linear-gradient(top, #F8F7F5 0%,#C6C3BC 100%);
+  background: linear-gradient(to bottom, #F8F7F5 0%,#C6C3BC 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8F7F5', endColorstr='#C6C3BC',GradientType=0 );
+  cursor:pointer;
+  position:relative;
+  margin:0 0 5px 0px;
+}
+button{
+  clear:both;
+  display:block;
+  width:128px;
+  padding:5px 0 7px 0;
+  text-transform:capitalize;
+}
+
+button:hover {
+  background: -moz-linear-gradient(top, #C6C3BC 0%, #F8F7F5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6C3BC), color-stop(100%,#F8F7F5));
+  background: -webkit-linear-gradient(top, #C6C3BC 0%,#F8F7F5 100%);
+  background: -o-linear-gradient(top, #C6C3BC 0%,#F8F7F5 100%);
+  background: -ms-linear-gradient(top, #C6C3BC 0%,#F8F7F5 100%);
+  background: linear-gradient(to bottom, #C6C3BC 0%,#F8F7F5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C6C3BC', endColorstr='#F8F7F5',GradientType=0 );
+}
+
+
+
+
+button.selected {
+/*  background: -moz-linear-gradient(top, #79A7E1 0%, #3B73B9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#79A7E1), color-stop(100%,#3B73B9));
+  background: -webkit-linear-gradient(top, #79A7E1 0%,#3B73B9 100%);
+  background: -o-linear-gradient(top, #79A7E1 0%,#3B73B9 100%);
+  background: -ms-linear-gradient(top, #79A7E1 0%,#3B73B9 100%);
+  background: linear-gradient(to bottom, #79A7E1 0%,#3B73B9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79A7E1', endColorstr='#3B73B9',GradientType=0 );
+  */
+  background: -moz-linear-gradient(top, #3B73B9 0%, #79A7E1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3B73B9), color-stop(100%,#79A7E1));
+  background: -webkit-linear-gradient(top, #3B73B9 0%,#79A7E1 100%);
+  background: -o-linear-gradient(top, #3B73B9 0%,#79A7E1 100%);
+  background: -ms-linear-gradient(top, #3B73B9 0%,#79A7E1 100%);
+  background: linear-gradient(to bottom, #3B73B9 0%,#79A7E1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B73B9', endColorstr='#79A7E1',GradientType=0 );
+  color:#FFF;
+}
+
+select.full{
+  width:100%
+}
+
+select{
+  float:left;
+}
+select{
+  font-size:18px;
+  padding:auto;
+  height:auto;
+  color:#000;
+  margin-right:5px;
+  width:117px;
+}
+
+button.increase,
+button.decrease{
+  width:30px;
+  height:25px;
+  padding:0 0 0 0;
+  float:left;
+  border-radius:3px 0 0 3px;
+  clear:none;
+}
+button.decrease{
+  border-radius:0 3px 3px 0;
+  border-left:0px;
+}
+
+select em{
+  color:#FFF
+}
+
+#one ul li .info-container,
+#two ul li .info-container{
+  float:left;
+  width:184px;
+  margin-top:10px;
+  position:relative;
+  height:151px;
+  display:block;
+}
+
+
+#one ul li .info-container:after,
+#two ul li .info-container:after{
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, 30% 0, 0 100%, from(#BFC2C5), to(transparent));
+  background-image: -webkit-linear-gradient(transparent, #989498, transparent);
+  background-image: -moz-linear-gradient(#EEEFF3,#989498,#989498,#989498,#EEEFF3);
+  background-image: -o-linear-gradient(#000, transparent);
+  top:-30px;
+  bottom: 0px;
+  width: 1px;
+  height:190px;
+  right:-12px
+}
+
+#two ul li.speed .info-container:after{
+  right:14px
+}
+#two ul li.vibration .info-container:after{
+  right:-66px
+}
+
+#one ul li.fc .info-container:after,
+#two ul li.aux-system .info-container:after{
+  width:0px;
+}
+
+
+#two ul li.aux-system {
+  width:219px;
+}
+#two ul li.speed {
+  width:160px;
+}
+#two ul li.vibration {
+  width:240px;
+}
+
+#two ul li.aux-system .info-container {
+  width:104px;
+  float:left;
+  padding:0px;
+  margin-left:0px
+}
+#two ul li.aux-system .info-container .warning {
+  position:relative;
+}
+#two ul li.aux-system .info-container .warning span{
+  border-radius:3px
+}
+#two ul li.aux-system .info-container .warning img{
+  position:absolute;
+  top:-2px;
+  right:-10px;
+}
+
+
+
+
+
+
+
+#one ul li.mc  .info-container{
+  width:174px;
+  margin-left:20px;
+}
+.info-container span,
+.speed .info-container span,
+.aux-system .info-container span{
+  clear:both;
+  display:block;
+  margin-bottom:3px;
+  font-size:15px
+}
+.info-container strong,
+.speed .info-container strong,
+.aux-system .info-container strong{
+  font-weight:bold;
+  font-size:18px;
+  margin-bottom:10px;
+  clear:both;
+  display:block;
+}
+
+#two ul li.vibration .info-container span{
+  margin-bottom:3px;
+  font-size:15px;
+  padding-right:5px;
+}
+
+
+#two ul li.vibration .info-container strong {
+  font-weight:bold;
+  font-size:18px;
+  padding-right:5px;
+}
+
+
+#two ul li.vibration .info-container span,
+#two ul li.vibration .info-container strong {
+  float:left;
+}
+#two ul li.vibration .info-container span strong{
+  float:right;
+  position:relative;
+  top:-2px;
+  right:-10px;
+}
+
+#two ul li.vibration .vibration {
+  clear:both;
+  margin-top:0px;
+  float:left;
+  width:240px;
+  position:relative;
+}
+#two ul li.vibration .vibration .slider{
+  float:left;
+  height:16px;
+  width:120px;
+  margin-top:2px;
+}
+#two ul li.vibration .info-container .vibration span {
+  float:left;
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  clear:none;
+  position:absolute;
+  top:2px;
+  left:0px;
+}
+#two ul li.vibration .vibration strong{
+  float:left;
+  display:inline;
+  margin-left:20px;
+}
+
+
+#three .info-container,
+#four .info-container,
+#five .info-container,
+#six .info-container,
+#seven .info-container {
+  padding:10px;
+  background-image:url(../../img/HMI/turbine.png);
+  background-color:#FFF;
+  border-radius: 6px 6px 0px 0px;
+  height:510px;
+  margin:0 0 5px 0;
+  position:relative;
+}
+
+#three .info-container {
+  background-position:-120px -270px
+}
+#four .info-container {
+  background-position:-380px -270px
+}
+#five .info-container {
+  background-position:-660px -270px
+}
+#six .info-container {
+  background-position:-970px -270px
+}
+#seven .info-container {
+  background-position:-1600px -270px
+}
+
+
+
+
+.gauge {
+  float:left;
+  width:82px;
+  height:200px;
+}
+
+.info-container .gauge:last-child {
+  margin:0px;
+}
+
+.info-container h4{
+  color:#5C5F63;
+  font-weight:bold;
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+
+#flow2 {
+  position:relative;
+  right:-40px;
+}
+#press2 {
+  position:relative;
+  right:-80px;
+}
+
+#press3 {
+  position:relative;
+  right:-265px;
+}
+
+#temp3 {
+  position:relative;
+  right:-250px;
+}
+
+#flow3 {
+  position:relative;
+  right:-230px;
+}
+
+#temp4 {
+  position:relative;
+  right:-20px;
+}
+#press4 {
+  position:relative;
+  right:-20px;
+}
+
+#four h5,
+#five h5,
+#six h5,
+#seven h5 {
+  color: #5C5F63;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+
+#four h5,
+#seven h5{
+  text-align:center;
+}
+#five h5 {
+  float:left;
+  width:50%;
+  text-align:center;
+}
+#six h5 {
+  float:left;
+  text-align:center;
+  width:80%;
+  padding-left:90px;
+}
+
+
+
+
+
+
+
