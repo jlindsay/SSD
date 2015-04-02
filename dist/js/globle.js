@@ -1,6 +1,5 @@
 var _pages = [
 
-
     { url: 'index.html' , hash: "" , uuid:"000" },
 
     { url: 'summary.html' , hash: "Section-1" , uuid:"100" },
