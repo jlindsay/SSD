@@ -96,13 +96,16 @@
             _title = _title.split("#").join("");
             _title = _title.split("-").join(" ");
             _title = _title.split("_").join(" ");
-              
+            
+            
             $(".msg").fadeOut("fast",function(e){
                 $(".msg").text( _title );
                 $(".msg").fadeIn("fast", function(e){
 
                 });
-            });
+            });  
+        
+            
       });
 
     </script>

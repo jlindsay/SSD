@@ -133,7 +133,7 @@
 <body>
 
 
-<body class="site-map">
+<body class="site-map" style="display:none;">
         <div class="container">
 
             <div class="row">
@@ -265,6 +265,10 @@
         //initKeyBoard();
         console.log("deubg:init()");
         var _keynote = new Keynote().init( {pages: _pages } );
+
+        $("body").fadeIn("fast",function(e){
+            //
+        });
     });
 
 </script>
