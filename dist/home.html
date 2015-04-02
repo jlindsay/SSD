@@ -110,10 +110,6 @@
 </script>
 
 
-<!-- 
-	keynote code is below
--->
-
 <script src="./iidx/components/jquery/jquery.js"></script>
 <!--script src="./js/jquery.cookie.js"></script>
 <script src="./js/jquery.url.js"></script-->
@@ -137,74 +133,85 @@
 	});
 
 	require(['jquery','cookies', 'url', 'keynote'], function($) {
-   		//initKeyBoard();
    			console.log("deubg:init()");
-   		var _keynote = new Keynote().init( {pages: _pages } );
+   		var _keynote = new Keynote().init( { pages: _pages } );
    			initUI();
 	});
 
 	function initUI()
 	{
-		console.log("initUI()");
-		//$("#fleet-nav").hide();
-		//$("#ship-nav").hide();
+		console.log("debug:initUI()");
+		
 		$("#master-nav li").click(function(e){
 				e.preventDefault();
 			var elm = $(e.target).attr("href");
 				$("#master-nav li").removeClass("active");
 				$(e.target).closest("li").addClass("active");
-/*
-				$("#fleet-nav").hide();
-				$("#ship-nav").hide();
-				$(elm).closest("ul").fadeIn();
-				//console.log("elm:", $(elm);
-*/
-				initTabs(elm);
-/*				
-			var key  = String( href.split("#")[1] );
-		    var template = String( "templates/bodies/"+ key + ".html" );
 
-
-
-				$("#content-body").empty();
-				$("#content-body").load( template , function(responseText, textStatus, XMLHttpRequest)
-				{
-	                focusTabs(key);
-	                //$("section").fadeIn();
-	            });
-*/
+				console.log("debug:initUI:CLICK:elm:", elm);
+				initMainTabs(elm);
 		});
+		var hash = window.location.hash;
+		console.log("debug:initUI:hash:", hash);
+
+		initMainTabs("fleet-nav");
+
 	}
 
-	function initTabs(elm_id)
+
+
+
+	function initMainTabs(elm_id)
 	{
-		console.log("initTabs()");
+		console.log( "debug:initTabs():elm_id:", elm_id );
 		$("#fleet-nav").hide();
 		$("#ship-nav").hide();
+		
 		if( !elm_id ){
 			return;
 		}
 		
 		$(elm_id).closest("ul").fadeIn();
 
-		var template = "./temp/home.html"
-		$("#content-body").empty();
-		$("#content-body").load( template , function(responseText, textStatus, XMLHttpRequest)
+		switch(elm_id)
 		{
-            //focusTabs(key);
-            $("#content-body").fadeIn();
-        });
-
-
-
+			case "#fleet-nav":
+				loadTemplate( "home_fleet" );
+				break;
+			case "#ship-nav":
+				loadTemplate( "home_ship" );
+				break;
+			default:
+				loadTemplate( "home_index" );
+				break;
+		}
 
 	}
 
+	function loadTemplate(key)
+	{
+		console.log("debug:loadTemplate():key:", key);
+		var template = "./temp/"+key+".html";
+		console.log("debug:loadTemplate():template:", template);
+
+		$("#content-body").fadeOut("fast", function(e){
+			console.log("fadeout():");
+			$("#content-body").empty();
+			$("#content-body").load( template , function(responseText, textStatus, XMLHttpRequest)
+			{
+            	$("#content-body").fadeIn("fast", function(e){
+            		console.log("fadeIn()");
+            	});
+        	});
+		});
+
+	}
 
 
 </script>
 
 <script src="./iidx/components/respond/respond.src.js"></script>
+
 </body>
 </html>
 

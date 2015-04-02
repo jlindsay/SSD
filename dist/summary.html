@@ -59,9 +59,8 @@
 
 		
 </head>
-	<body>
-    	<h1><strong class="msg">...</strong></h1>
-
+    <body>
+        <h1><strong class="msg">...</strong></h1>
     </body>
 
     <script src="./iidx/components/requirejs/require.js"></script>
@@ -72,38 +71,41 @@
     <script src="./js/keynote.js"></script>
     <script>
       
-      require.config({
-        baseUrl: './',
-        urlArgs: String("r="+ (new Date()).getTime()),
-          paths: {
-          'cookies': 'js/jquery.cookie',
-            'url': 'js/jquery.url',
-            'keynote': 'js/keynote'
-        },
-        shim: {
-          'url': ['jquery'],
-          'cookies': ['jquery'],
-        }
+        require.config({
+            baseUrl: './',
+            urlArgs: String("r="+ (new Date()).getTime()),
+                paths: {
+                    'cookies': 'js/jquery.cookie',
+                    'url': 'js/jquery.url',
+                    'keynote': 'js/keynote'
+            },
+            shim: {
+                'url': ['jquery'],
+                'cookies': ['jquery'],
+            }
 
-      });
+        });
 
-      require(['jquery','cookies', 'url', 'keynote'], function($) {
-          //initKeyBoard();
-          console.log("deubg:init()");
-          //_params = $.url().param() ;
-          //console.log( window.location.hash );
+        require(['jquery','cookies', 'url', 'keynote'], function($) {
+            console.log("deubg:init()");
 
-          _title = ( window.location.hash )? window.location.hash : "...";
+            _title = ( window.location.hash )? window.location.hash : "...";
           
-          var _keynote = new Keynote().init( { pages: _pages } );
+            var _keynote = new Keynote().init( { pages: _pages } );
 
-          _title = _title.split("#").join("");
-          _title = _title.split("-").join(" ");
-          _title = _title.split("_").join(" ");
-          $(".msg").text( _title );
+            _title = _title.split("#").join("");
+            _title = _title.split("-").join(" ");
+            _title = _title.split("_").join(" ");
+              
+            $(".msg").fadeOut("fast",function(e){
+                $(".msg").text( _title );
+                $(".msg").fadeIn("fast", function(e){
 
+                });
+            });
       });
 
     </script>
+    
     <script src="./iidx/components/respond/respond.src.js"></script>
 </html>
