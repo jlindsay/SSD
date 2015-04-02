@@ -31,7 +31,7 @@
   <link href="./css/hmi.css" rel="stylesheet" type="text/css">
   <!--link href="./css/styles.css" rel="stylesheet" type="text/css"-->
 
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!--link href="./css/main.css" rel="stylesheet" type="text/css"-->
 
   <!--[if lt IE 9]>
     <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-static-top navbar-default" role="navigation">
+<nav id="navbar" class="navbar navbar-static-top navbar-default" role="navigation" style="display:none;">
 
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,18 +66,18 @@
     <div class="container">
     
       <ul id="master-nav" class="nav navbar-nav">
-        <li class="active"><a href="#fleet-nav">Fleet</a></li>
-        <li><a href="#ship-nav">Ship</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#ship">Ship</a></li>
       </ul>
 
 
-      <ul id="fleet-nav" class="nav navbar-nav" style="margin-left:40px;display:none;">
+      <ul id="fleet" class="nav navbar-nav" style="margin-left:40px;display:none;">
         <li><a class="active" href="#">A</a></li>
         <li><a href="#">B</a></li>
         <li><a href="#">C</a></li>
       </ul>
 
-      <ul id="ship-nav" class="nav navbar-nav" style="margin-left:40px;display:none;">
+      <ul id="ship" class="nav navbar-nav" style="margin-left:40px;display:none;">
         <li><a class="active" href="#">A</a></li>
         <li><a href="#">B</a></li>
         <li><a href="#">C</a></li>
@@ -138,6 +138,7 @@
    			initUI();
 	});
 
+
 	function initUI()
 	{
 		console.log("debug:initUI()");
@@ -147,45 +148,86 @@
 			var elm = $(e.target).attr("href");
 				$("#master-nav li").removeClass("active");
 				$(e.target).closest("li").addClass("active");
-
-				console.log("debug:initUI:CLICK:elm:", elm);
-				initMainTabs(elm);
+				focusMainTabs(elm);
 		});
-		var hash = window.location.hash;
-		console.log("debug:initUI:hash:", hash);
+		
+		parseURL();
 
-		initMainTabs("fleet-nav");
+
+	}
+
+	function parseURL()
+	{
+		console.log("debug:parseURL()");
+		var url = $(location).attr('href');
+		var hash = $(location).attr('hash').split("#").join("");
+			
+			hash = hash.split(";");
+
+		var hash_params = {};
+
+		$.each( hash , function($index,$val){
+			var at = $val.split("=");
+				hash_params[at[0]] = at[1];
+		});
+
+		var key = hash_params['tab'];
+
+		switch(key)
+		{
+			case "ship":
+				focusMainTabs("#ship");
+				break;
+			case "fleet":
+				focusMainTabs("#fleet");
+				break;
+			default:
+				focusMainTabs("#index");
+				break;
+		}
 
 	}
 
 
-
-
-	function initMainTabs(elm_id)
+	function focusMainTabs(elm_id)
 	{
-		console.log( "debug:initTabs():elm_id:", elm_id );
-		$("#fleet-nav").hide();
-		$("#ship-nav").hide();
+		console.log( "debug:focusMainTabs():elm_id:", elm_id );
+		
+		$("#fleet").hide();
+		$("#ship").hide();
 		
 		if( !elm_id ){
 			return;
 		}
-		
-		$(elm_id).closest("ul").fadeIn();
 
+		var elm = $("#master-nav").find("a[href='"+elm_id+"']");//
+			$("#master-nav li").removeClass("active");
+		if( elm )
+		{
+			$(elm).closest("li").addClass("active");	
+		}else{
+			//$("#master-nav li:first").addClass("active");
+		}
+		
+		$("#navbar").fadeIn();
+		$(elm_id).fadeIn();
+
+		var key = elm_id.split("#").join("");
 		switch(elm_id)
 		{
-			case "#fleet-nav":
+			case "#fleet":
+				$(location).attr('hash', "#tab=" + key  );
 				loadTemplate( "home_fleet" );
 				break;
-			case "#ship-nav":
+			case "#ship":
+				$(location).attr('hash', "#tab=" + key  );
 				loadTemplate( "home_ship" );
 				break;
 			default:
+				$(location).attr('hash', "" );
 				loadTemplate( "home_index" );
 				break;
 		}
-
 	}
 
 	function loadTemplate(key)
@@ -193,6 +235,9 @@
 		console.log("debug:loadTemplate():key:", key);
 		var template = "./temp/"+key+".html";
 		console.log("debug:loadTemplate():template:", template);
+
+		//var hash = $(location).attr('hash').split("#").join("");
+
 
 		$("#content-body").fadeOut("fast", function(e){
 			console.log("fadeout():");
@@ -204,7 +249,6 @@
             	});
         	});
 		});
-
 	}
 
 
