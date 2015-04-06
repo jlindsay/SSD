@@ -7,6 +7,14 @@
 
 /*  override */
 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #ffffff;
+  color:#333;
+}
+
+
 #secondary ul li {
   height:42px;
   
@@ -14,14 +22,69 @@
 
 #secondary ul {
     margin: 0px;
-/*    margin-bottom: 380px; */
     margin-bottom:100px;
-    margin-top: 31px;
+    margin-top: 12px;
+
+}
+
+
+.asset-pannel {
+    
+    background-color: #505357;
+    margin-top: 12px;
+}
+
+.asset-pannel ul {
+  list-style-type: none;
+  width:170px;
 }
 
 
 
+.asset-pannel ul li{
+  line-height:42px;  
+  color:#ffffff;
+  text-align: middle;
 
+}
+
+.asset-pannel ul li a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.content-area{
+  display: inline-block;
+  right: 232px;
+  left: 230px;
+  min-width: 500px;
+  top: 170px;
+  position: absolute;
+  
+}
+
+.content-area .pannel{
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 300px;
+  height:auto;
+  width:100%;
+  padding:20px;
+  margin-bottom: 20px;
+}
+
+
+.breadcrumb
+{
+    
+    margin:20px;
+}
+
+
+.breadcrumb ul li
+{
+    color:#333;
+}
 
 /* 
   we may not need this 
@@ -42,3 +105,7 @@
   background: linear-gradient(to bottom, #5b5e62 0%,#3f4247 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5e62', endColorstr='#3f4247',GradientType=0 );
 }
+
+
+
+

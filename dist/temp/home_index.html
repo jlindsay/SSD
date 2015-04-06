@@ -1,55 +1,115 @@
+<ul class="breadcrumb">
+    <li><a href="#">Fleet</a></li>
+    <li><a href="#">Ship</a></li>
+    <li class="active">Option A</li>
+</ul>
+
 <nav id="secondary">
+	<ul>
+	    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#fuel-system.html">FUEL SYSTEM</a></li>
+	    <!-- Sub Menu -->   
+	    <li class="submenu" style="display: none;"><a href="#empty.html">FSR Control</a></li>
+	    <li class="submenu" style="display: none;"><a href="#empty.html">Gas</a></li>
+	    <li class="submenu" style="display: none;"><a href="#empty.html">Performance Heater</a></li>
+	    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid</a></li>
+	    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid Fuel</a></li>
+	    <li class="submenu" style="display: none;"><a id="purge-link" href="#purge.html">Purge</a></li>
+	      
+	    <!-- End Sub Menu -->
+	    <li><i class="icon-plus"></i><a href="#empty.html">COMPRESSOR</a></li>
+	    <li><i class="icon-plus"></i><a href="#empty.html">COMBUSTION</a></li>
+	    <li><i class="icon-plus"></i><a href="#empty.html">GT ROTOR</a></li>
+	    <li><i class="icon-plus"></i><a href="#empty.html">GT INLET</a></li>
+	    <li><i class="icon-plus"></i><a href="#empty.html">GT AUX</a></li>
+  	</ul>
+
+	<!--button class="reset">MASTER RESET</button>
+	<button class="reset">DIAGNOSTIC RESET</button>
+	<button class="alarm">ALARM VIEWER <img class="icon-detail" src="img/HMI/detail.png"></button>
+	<button class="note">ADD A NOTE <img class="icon-detail" src="img/HMI/detail.png"></button-->
+</nav>
+<div id="" class="pull-right">
+	<nav class="asset-pannel" >
 		<ul>
-		    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#fuel-system.html">FUEL SYSTEM</a></li>
+		    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#assets">Assets</a></li>
 		    <!-- Sub Menu -->   
-		    <li class="submenu" style="display: none;"><a href="#empty.html">FSR Control</a></li>
-		    <li class="submenu" style="display: none;"><a href="#empty.html">Gas</a></li>
-		    <li class="submenu" style="display: none;"><a href="#empty.html">Performance Heater</a></li>
-		    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid</a></li>
-		    <li class="submenu" style="display: none;"><a href="#empty.html">Liquid Fuel</a></li>
-		    <li class="submenu" style="display: none;"><a id="purge-link" href="#purge.html">Purge</a></li>
-		      
-		    <!-- End Sub Menu -->
-		    <li><i class="icon-plus"></i><a href="#empty.html">COMPRESSOR</a></li>
-		    <li><i class="icon-plus"></i><a href="#empty.html">COMBUSTION</a></li>
-		    <li><i class="icon-plus"></i><a href="#empty.html">GT ROTOR</a></li>
-		    <li><i class="icon-plus"></i><a href="#empty.html">GT INLET</a></li>
-		    <li><i class="icon-plus"></i><a href="#empty.html">GT AUX</a></li>
-	  	</ul>
-
-		<!--button class="reset">MASTER RESET</button>
-		<button class="reset">DIAGNOSTIC RESET</button>
-		<button class="alarm">ALARM VIEWER <img class="icon-detail" src="img/HMI/detail.png"></button>
-		<button class="note">ADD A NOTE <img class="icon-detail" src="img/HMI/detail.png"></button-->
+		    <li class="submenu" ><a href="#assets">Level 1 Threats</a></li>
+		    <li class="submenu" ><a href="#assets">Level 3 Threats</a></li>
+		</ul>
 	</nav>
+
+	<nav class="asset-pannel" >
+		<ul>
+		    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#assets">Assets</a></li>
+		    <!-- Sub Menu -->   
+		    <li class="submenu" ><a href="#assets">Level 1 Threats</a></li>
+		    <li class="submenu" ><a href="#assets">Level 3 Threats</a></li>
+		</ul>
+	</nav>
+
+	<nav class="asset-pannel" >
+		<ul>
+		    <li class="selected"><i id="fuel-system-open-icon" class="icon-plus"></i><a id="fuel-system-link" href="#assets">Assets</a></li>
+		    <!-- Sub Menu -->   
+		    <li class="submenu" ><a href="#assets">Level 1 Threats</a></li>
+		    <li class="submenu" ><a href="#assets">Level 3 Threats</a></li>
+		</ul>
+	</nav>
+</div>
 	
-		
-	<div class="row ui-sortable" >
-		<div class="col-sm-8 col-md-8" style="margin-top:30px;">
-			<section class="module actionable draggable" style="display: block;">
-			<header class="module-header">
-				<h1>home index...</h1>
-			</header>
-			<div class="module-body"></div>
-			<footer class="module-footer"></footer>
-			</section>
+<div class="row ui-sortable content-area" >
+	<div class="pannel">
+		<header class="module-header">
+			<h1>Title</h1>
+		</header>
+		<div class="module-body">
+			body...
 		</div>
-
-		<div class="col-sm-4 col-md-4">
-			<section class="module actionable draggable ">
-			<header class="module-header"></header>
-			<div class="module-body"></div>
-			<footer class="module-footer"></footer>
-			</section>
-		</div>
-
-		<div class="col-sm-4 col-md-4">
-			<section class="module actionable draggable scrollable">
-			<header class="module-header"></header>
-			<div class="module-body"></div>
-			<footer class="module-footer"></footer>
-			</section>
-		</div>
-
-		
 	</div>
+	<div class="pannel">
+		<header class="module-header">
+			<h1>Title</h1>
+		</header>
+		<div class="module-body">
+			body...
+		</div>
+	</div>
+	<div class="pannel">
+		<header class="module-header">
+			<h1>Title</h1>
+		</header>
+		<div class="module-body">
+			body...
+		</div>
+	</div>
+	<!--div class="col-sm-8 col-md-8" style="margin-top:30px;">
+		<section class="module actionable draggable" style="display: block;">
+		<header class="module-header">
+			<h1>home index...</h1>
+		</header>
+		<div class="module-body"></div>
+		<footer class="module-footer"></footer>
+		</section>
+	</div>
+
+	<div class="col-sm-4 col-md-4">
+		<section class="module actionable draggable ">
+		<header class="module-header"></header>
+		<div class="module-body"></div>
+		<footer class="module-footer"></footer>
+		</section>
+	</div>
+
+	<div class="col-sm-4 col-md-4">
+		<section class="module actionable draggable scrollable">
+		<header class="module-header"></header>
+		<div class="module-body"></div>
+		<footer class="module-footer"></footer>
+		</section>
+	</div-->
+
+	
+</div>
+
+
+
