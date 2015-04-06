@@ -69,10 +69,33 @@
   min-height: 300px;
   height:auto;
   width:100%;
-  padding:20px;
+  
   margin-bottom: 20px;
 }
 
+.content-area .pannel .module-body
+{
+    padding:20px;
+}
+
+img {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.content-area .pannel header{
+  background-color: #eee;
+  color:#222;
+     padding-left:20px;
+     padding-right:20px;
+     padding-top:10px;
+     padding-bottom: 10px;
+
+}
 
 .breadcrumb
 {
@@ -86,6 +109,12 @@
     color:#333;
 }
 
+.breadcrumb > li + li:before {
+  color:#000;
+}
+.breadcrumb > li + li.active {
+  color:#000;
+}
 /* 
   we may not need this 
 */
