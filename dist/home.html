@@ -67,8 +67,6 @@
         
         <div class="btn-group open">
           <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i><span class="user-name">Tom Edison</span> <i class="icon-chevron-down"></i></button>
-
-
           <!--ul class="dropdown-menu pull-right">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -80,10 +78,7 @@
         <!--div class="circular">asdf</div-->
         <img class="circular" src="./img/people/jeff-crossman.jpg" />
       </div>
-
     </div>
-
-
   </div>
 
 
@@ -99,8 +94,9 @@
 			<span style="margin-left:5px;">Fleet</span></a>
 		</li>
         <li><a href="#ship">
+        	
         	<svg height="10" width="10">
-  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
+  				<rect width="10" height="10" fill="#fd9734" />
 			</svg>
         	<span style="margin-left:5px;">Ship</span></a>
         </li>
@@ -161,20 +157,14 @@
         </li>
       </ul>
 
-
-
   </div>
-
-
-
 
 </nav>
 
+
+
 <section id="content-body">
-
-	
-	
-
+<!-- content is loaded here... -->
 </section>
 
 
@@ -217,6 +207,9 @@
    			initUI();
 	});
 
+//	var _nav_id=0;
+//	var _subnav_id=0;
+	var DEFAULT_TEMPLATE = "./temp/overview.html";
 
 	function initUI()
 	{
@@ -231,7 +224,7 @@
 		});
 		
 		parseURL();
-
+		
 
 	}
 
@@ -271,7 +264,7 @@
 	function focusMainTabs(elm_id)
 	{
 		console.log( "debug:focusMainTabs():elm_id:", elm_id );
-		
+//		_nav_id = elem_id ? elem_id : 0;
 		$("#fleet").hide();
 		$("#ship").hide();
 		
@@ -302,6 +295,7 @@
 				$(location).attr('hash', "#tab=" + key  );
 				loadTemplate( "home_ship" );
 				break;
+			case "#overview":
 			default:
 				$(location).attr('hash', "" );
 				loadTemplate( "home_index" );
@@ -309,25 +303,92 @@
 		}
 	}
 
+	function initSubNav()
+	{
+		console.log("debug:initSubNav()");
+		$("#secondary ul li").click(function(e){
+			console.log("click:", e.target );
+			e.preventDefault();
+			$("#secondary ul li").removeClass("selected");
+			$(e.target).closest( "li").addClass("selected");
+			console.log("href:",$( e.target ).attr('href'));
+			var key = $( e.target ).attr('href').split("#").join("");
+			
+			focusSubNav( key );
+		});
+		$("#secondary ul li:first a").trigger("click");
+		focusSubNav();
+	}
+
+	function focusSubNav(key)
+	{
+
+		console.log( "debug:focusSubNav():key:", key );				
+		loadSubNavContentTemplate(key);
+	}
+
+
+	function loadSubNavContentTemplate(key)
+	{
+			console.log( "debug:loadSubNavTemplate():key:", key );
+			
+		var template = "./temp/sub/"+key+".html";
+			console.log( "debug:loadTemplate():template:", template );
+			//$("#content-pannels")
+			//$("#asset-pannels")
+			$("#content-pannels").fadeOut("fast", function(e){
+				console.log("fadeout():complete");
+				$("#content-pannels").empty();
+				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
+				{
+	            	$("#content-pannels").fadeIn("fast", function(e){
+	            		console.log("fadeIn()");
+	            		loadSubNavTemplate(key);
+	            	});
+	        	});
+			});
+	}
+
+	function loadSubNavTemplate(key)
+	{
+			console.log( "debug:loadSubNavTemplate():key:", key );
+		var template = "./temp/nav/"+key+".html";
+			console.log( "debug:loadTemplate():template:", template );
+
+			$("#asset-pannels").fadeOut("fast", function(e){
+				console.log("fadeout():complete");
+				$("#asset-pannels").empty();
+				$("#asset-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
+				{
+	            	$("#asset-pannels").fadeIn("fast", function(e){
+	            		console.log("fadeIn()");
+	            	});
+	        	});
+			});
+	}
+	
 	function loadTemplate(key)
 	{
-		console.log("debug:loadTemplate():key:", key);
-		var template = "./temp/"+key+".html";
-		console.log("debug:loadTemplate():template:", template);
+			console.log("debug:loadTemplate():key:", key);
+		var template = ( key )? "./temp/"+key+".html" : DEFAULT_TEMPLATE ;
+			console.log("debug:loadTemplate():template:", template);
 
 		//var hash = $(location).attr('hash').split("#").join("");
 
 
 		$("#content-body").fadeOut("fast", function(e){
-			console.log("fadeout():");
+			console.log("fadeout()::complete");
 			$("#content-body").empty();
 			$("#content-body").load( template , function(responseText, textStatus, XMLHttpRequest)
 			{
             	$("#content-body").fadeIn("fast", function(e){
             		console.log("fadeIn()");
             	});
+
+            	initSubNav();
         	});
 		});
+
 	}
 
 
