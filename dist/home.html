@@ -168,6 +168,10 @@
 </section>
 
 
+<!--div class="footer"> 
+
+</div-->
+
 <script src="./iidx/components/requirejs/require.js"></script>
 <script src="./iidx/js/require.config.js"></script>
 <script type="text/javascript">
@@ -184,7 +188,9 @@
 <script src="./js/jquery.url.js"></script-->
 <script src="./js/globle.js"></script>
 <script src="./js/keynote.js"></script>
+<!--script src="./js/jquery.scrollTo.js"></script-->
 <script>
+
 	
 	require.config({
 		baseUrl: './',
@@ -192,11 +198,13 @@
   		paths: {
 			'cookies': 'js/jquery.cookie',
     		'url': 'js/jquery.url',
-    		'keynote': 'js/keynote'
+    		'keynote': 'js/keynote',
+    		'scrollTo':'js/jquery.scrollTo.js'
 		},
 		shim: {
 			'url': ['jquery'],
 			'cookies': ['jquery'],
+			'scrollTo' : ['jquery']
 		}
 
 	});
@@ -364,6 +372,23 @@
 	            	$("#asset-pannels").fadeIn("fast", function(e){
 	            		console.log("fadeIn()");
 	            	});
+	            	
+		            //$(".asset-pannel").unbind("click");
+		            $(".asset-pannel").click(function(e){
+		            	e.preventDefault();
+		            	console.log( $(e.target).attr('href') );
+
+		            	$("html, body").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
+
+		            	//$("#asset-pannels").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
+
+		            	
+						
+	            	});
+	            	
+	            	//$("#asset-pannels .asset-pannel ul li:first a").trigger("click");
+	            	
+
 	        	});
 			});
 	}

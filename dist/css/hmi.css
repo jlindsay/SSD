@@ -146,5 +146,17 @@ img {
   float:right;
 }
 
+html body{
+  width:100%;
+  height:auto;
+}
+.footer
+{
+  margin-top: 25px;
+  background: #2A2B2F;
+  padding: 25px 0;
+  min-height: 200px;
+  bottom:0;
+}
 
 
