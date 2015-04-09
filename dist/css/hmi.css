@@ -15,6 +15,13 @@
 }
 
 
+#secondary ul li a , .truncate {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #secondary ul li {
   height:42px;
   
@@ -25,7 +32,10 @@
     margin-bottom:100px;
     margin-top: 12px;
     margin-left:20px;
+    width: 210px;
 }
+
+
 
 
 .secondary-tree
@@ -37,7 +47,18 @@
     font-size: medium;
     cursor: pointer;
     float:left;
+    max-height: 80px;
+    /*max-width:130px;*/
+
 }
+/*
+.secondary-tree ul li a {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
 
 
 .asset-pannel.selected {

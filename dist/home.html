@@ -82,7 +82,6 @@
   </div>
 
 
-
   <div class="primary-navbar nav-collapse">
     <div class="container">
     
@@ -126,31 +125,44 @@
             <svg height="10" width="10">
   				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 			</svg>
-			<span style="margin-left:5px;">A</span></a>
+			<span style="margin-left:5px;">BOP</span></a>
 		</li>
         <li><a href="#">
              <svg height="10" width="10">
   				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 			</svg>
-			<span style="margin-left:5px;">B</span></a>
+			<span style="margin-left:5px;">Well</span></a>
         </li>
         <li><a href="#">        	
         	<svg height="10" width="10">
   				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 			</svg>
-			<span style="margin-left:5px;">C</span></a>
+			<span style="margin-left:5px;">Riser</span></a>
         </li>
         <li><a href="#">
-        	<svg height="10" width="10">
-  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
-			</svg>
-			<span style="margin-left:5px;">D</span></a>
+        	<svg width="10" height="10"><path d=" 	M 5 0 
+										        	L 0 10 
+										        	L 10 10
+										        	" fill="#ff9821" /></svg>
+			<span style="margin-left:5px;">Drillfloor</span></a>
         </li>
         <li><a href="#">        	
         	<svg height="10" width="10">
   				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 			</svg>
-			<span style="margin-left:5px;">E</span></a>
+			<span style="margin-left:5px;">Fire & Gas</span></a>
+        </li>
+        <li><a href="#">        	
+        	<svg height="10" width="10">
+  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
+			</svg>
+			<span style="margin-left:5px;">Power Managment</span></a>
+        </li>
+        <li><a href="#">        	
+        	<svg height="10" width="10">
+  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
+			</svg>
+			<span style="margin-left:5px;">Dynamic Positioning</span></a>
         </li>
       </ul>
 
@@ -298,6 +310,7 @@
 				loadTemplate( "home_ship" );
 				break;
 			case "#overview":
+				break;
 			default:
 				$(location).attr('hash', "" );
 				loadTemplate( "home_index" );
@@ -308,10 +321,12 @@
 	function initSubNav()
 	{
 		console.log("debug:initSubNav()");
+		
+		$("#secondary ul li").off();
 		$("#secondary ul li").click(function(e){
 				console.log("click:", e.target );
 				e.preventDefault();
-				$("#secondary ul li").removeClass("selected");
+				$("#secondary ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
 				console.log("href:",$( e.target ).attr('href'));
 			var key = $( e.target ).attr('href').split("#").join("");
@@ -321,7 +336,17 @@
 		});
 		$("#secondary ul li:first a").trigger("click");
 		focusSubNav();
+
+
+		$("#secondary-tree li").off();
+		$("#secondary-tree li").click(function(e){
+			e.preventDefault();
+			console.log("click");
+		});
+		//$("#secondary-tree ul li:first a").trigger("click");
 	}
+
+
 
 	function focusSubNav(key)
 	{
@@ -336,19 +361,19 @@
 
 	function loadSubNavContentTemplate(key)
 	{
-			console.log( "debug:loadSubNavTemplate():key:", key );
+			console.log( "debug:loadSubNavContentTemplate():key:", key );
 			
 		var template = "./temp/sub/"+key+".html";
-			console.log( "debug:loadTemplate():template:", template );
+			console.log( "debug:loadSubNavContentTemplate():template:", template );
 			//$("#content-pannels")
 			//$("#asset-pannels")
 			$("#content-pannels").fadeOut("fast", function(e){
-				console.log("fadeout():complete");
+				console.log("debug:loadSubNavContentTemplatefadeout():complete");
 				$("#content-pannels").empty();
 				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
 	            	$("#content-pannels").fadeIn("fast", function(e){
-	            		console.log("fadeIn()");
+	            		console.log("debug:content-pannels.fadeIn():complete");
 	            	});
 	        	});
 			});
@@ -362,7 +387,7 @@
 			console.log( "debug:loadTemplate():template:", template );
 
 			$("#asset-pannels").fadeOut("fast", function(e){
-				console.log("fadeout():complete");
+				console.log("debug:asset-pannels:fadeout():complete");
 				$("#asset-pannels").empty();
 				$("#asset-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
