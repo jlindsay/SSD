@@ -7,6 +7,8 @@
 
 /*  override */
 
+
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -26,7 +28,15 @@
   height:42px;
   
 }
-
+#secondary ul li.selected a
+{
+  background-color: #c2c2c2;
+}
+/*
+#secondary ul li.selected {
+  
+}
+*/
 #secondary ul {
     margin: 0px;
     margin-bottom:100px;
@@ -51,6 +61,23 @@
     /*max-width:130px;*/
 
 }
+
+.secondary-tree li 
+{
+  max-width: 155px;
+}
+
+.secondary-tree li.selected 
+{
+  background-color:#c2c2c2;
+}
+/*
+#secondary ul li.selected .secondary-tree li a, 
+#secondary ul li.selected .secondary-tree li
+{
+  background: none;
+}
+*/
 /*
 .secondary-tree ul li a {
     width: 150px;

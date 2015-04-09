@@ -3,7 +3,32 @@ var _pages = [
     { url: 'index.html' , hash: "" , uuid:"000" },
 
     { url: 'summary.html' , hash: "Section-1" , uuid:"100" },
-        { url: 'home.html' , hash: "tab=ship" , uuid:"101" },
+        { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"101" },
+        { url: 'home.html' , hash: "tab=ship&sub=acoustics" , uuid:"102" },
+        { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge" , uuid:"103" },
+            { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge&dropdown=system-1" , uuid:"104" },
+            { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge&dropdown=system-2" , uuid:"105" },
+            { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge&dropdown=system-3" , uuid:"106" },
+            { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge&dropdown=system-4" , uuid:"107" },
+
+
+        { url: 'home.html' , hash: "tab=ship&sub=cbm" , uuid:"108" },
+        { url: 'home.html' , hash: "tab=ship&sub=engine-monitoring" , uuid:"109" },
+        { url: 'home.html' , hash: "tab=ship&sub=fuel" , uuid:"110" },
+        { url: 'home.html' , hash: "tab=ship&sub=gns-reference" , uuid:"111" },
+        
+        { url: 'home.html' , hash: "tab=ship&sub=helideck-and-enviroment" , uuid:"112" },
+        { url: 'home.html' , hash: "tab=ship&sub=integrated-automation" , uuid:"113" },
+        { url: 'home.html' , hash: "tab=ship&sub=load-and-stability" , uuid:"114" },
+        { url: 'home.html' , hash: "tab=ship&sub=navigation" , uuid:"115" },
+        { url: 'home.html' , hash: "tab=ship&sub=oil" , uuid:"116" },
+        { url: 'home.html' , hash: "tab=ship&sub=power-distribution" , uuid:"117" },
+        { url: 'home.html' , hash: "tab=ship&sub=tank-guaging" , uuid:"118" },
+        { url: 'home.html' , hash: "tab=ship&sub=thruster-remote-control" , uuid:"119" },
+        { url: 'home.html' , hash: "tab=ship&sub=water-fresh" , uuid:"120" },
+        { url: 'home.html' , hash: "tab=ship&sub=water-grey" , uuid:"121" },
+
+
 
     { url: 'summary.html' , hash: "Section-1" , uuid:"200" },
         { url: 'home.html' , hash: "tab=fleet" , uuid:"201" },

@@ -221,9 +221,11 @@
    			initUI();
 	});
 
-//	var _nav_id=0;
-//	var _subnav_id=0;
+
 	var DEFAULT_TEMPLATE = "./temp/overview.html";
+	var _tab;
+	var _sub_nav;
+	var _sub_nav_dropdown;
 
 	function initUI()
 	{
@@ -245,28 +247,32 @@
 	function parseURL()
 	{
 		console.log("debug:parseURL()");
-		var url = $(location).attr('href');
+		//var url = $(location).attr('href');
 		var hash = $(location).attr('hash').split("#").join("");
 			
-			hash = hash.split(";");
+			hash = hash.split("&");
 
 		var hash_params = {};
 
 		$.each( hash , function($index,$val){
-			var at = $val.split("=");
-				hash_params[at[0]] = at[1];
+			var tmp = $val.split("=");
+				hash_params[tmp[0]] = tmp[1];
 		});
 
-		var key = hash_params['tab'];
+		_tab = hash_params['tab'];
+		_sub_nav 			= hash_params['sub'];
+		_sub_nav_dropdown 	= hash_params['dropdown'];
+		
 
-		switch(key)
+		switch(_tab)
 		{
 			case "ship":
 				focusMainTabs("#ship");
 				break;
 			case "fleet":
 				focusMainTabs("#fleet");
-				break;
+			 	break;
+			case "index":
 			default:
 				focusMainTabs("#index");
 				break;
@@ -299,63 +305,133 @@
 		$(elm_id).fadeIn();
 
 		var key = elm_id.split("#").join("");
+
 		switch(elm_id)
 		{
 			case "#fleet":
-				$(location).attr('hash', "#tab=" + key  );
+				_tab = key;
 				loadTemplate( "home_fleet" );
 				break;
 			case "#ship":
-				$(location).attr('hash', "#tab=" + key  );
+				//_tab = key;
 				loadTemplate( "home_ship" );
 				break;
-			case "#overview":
-				break;
+			case "#index":
 			default:
-				$(location).attr('hash', "" );
+				//_tab = "index";
 				loadTemplate( "home_index" );
 				break;
 		}
+		//updateBreakcrum();
+	}
+
+	function updateBreakcrum()
+	{
+		console.log("updateBreakcrum()");
+
+		var hash = "";
+			if( _tab ){
+				hash += "tab="+ _tab;
+			}
+			if( _sub_nav && _sub_nav != "" ){
+				hash += "&sub=" + _sub_nav;	
+			}
+
+			if( _sub_nav_dropdown && _sub_nav_dropdown != "" ){ 
+				hash += "&dropdown=" + _sub_nav_dropdown;	
+			}
+
+
+			console.log("updateBreakcrum:hash:", hash);
+			
+			//return;
+			$(location).attr('hash', hash  );
 	}
 
 	function initSubNav()
 	{
 		console.log("debug:initSubNav()");
-		
-		$("#secondary ul li").off();
-		$("#secondary ul li").click(function(e){
-				console.log("click:", e.target );
+		//_sub_nav = 
+
+		$("#secondary ul li.level-0").off();
+		$("#secondary ul li.level-0").click(function(e){
+				
 				e.preventDefault();
+				
+				if( $( e.target ).hasClass("level-1") ){
+					//NOTE: this is a hack, to get around the nest "ul li a"
+					return;
+				}
+				
+				
+				
+				var key;
+				try{
+					key = $( e.target ).attr('href').split("#").join("");		
+				}catch(e){}
+			
+				if(!key){
+					return;
+				}
+				
 				$("#secondary ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
-				console.log("href:",$( e.target ).attr('href'));
-			var key = $( e.target ).attr('href').split("#").join("");
+				
+
+				console.log("level-0:click:", e.target );
 				focusSubNav( key );
 
-				$(e.target).closest("li").find("ul").slideToggle();
+				if( $(e.target).closest("li.level-0").find("ul") )
+				{
+					$(e.target).closest("li.level-0").find("ul").slideToggle();	
+				}
+				
 		});
-		$("#secondary ul li:first a").trigger("click");
-		focusSubNav();
+
+		if( !_sub_nav || _sub_nav == "" ){
+			$("#secondary ul li.level-0:first a").trigger("click");	
+		}else{
+			$("#secondary ul li.level-0 a").each(function(index,elm){
+				var val = $(elm).attr("href").split("#").join("");
+				if( _sub_nav == val )
+				{
+					console.log("match:", _sub_nav, ", val:", val );
+					$(elm).trigger("click");
+				}
+			})
+		}
+		
 
 
-		$("#secondary-tree li").off();
-		$("#secondary-tree li").click(function(e){
+		$(".secondary-tree li.level-1").off();
+		$(".secondary-tree li.level-1").click(function(e){
 			e.preventDefault();
-			console.log("click");
+			_sub_nav_dropdown = $(e.target).closest("li").find("span").attr("data").split("#").join("") ;
+			console.log("level-1:click:", _sub_nav_dropdown );
+			$(".secondary-tree li").removeClass("selected");
+			$(e.target).closest("li").addClass("selected");
+			updateBreakcrum();
+			
 		});
-		//$("#secondary-tree ul li:first a").trigger("click");
+		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
+			//$("#secondary-tree ul li:first a").trigger("click");
+		}
+		
 	}
-
 
 
 	function focusSubNav(key)
 	{
-
 		console.log( "debug:focusSubNav():key:", key );				
 		loadSubNavContentTemplate(key);
-		$('#secondary ul li ul').hide();
+		$('.secondary-tree').hide();
+		//$('.secondary-tree').slideToggle();	
 
-		
+		_sub_nav = key;
+		_sub_nav_dropdown = undefined;
+		updateBreakcrum();
+
+
 	}
 
 

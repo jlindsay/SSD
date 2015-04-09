@@ -151,6 +151,7 @@ function Keynote()
 			try{
 //				window.location = page.url +"?"+ "uuid="+page.uuid + "&has_notification=" + page.has_notification + "#"+ page.hash ;	
 				window.location = page.url +"?"+ "uuid="+page.uuid + "#"+ page.hash ;	
+				console.log( "window.location:", window.location );
 				$("html, body").animate({ scrollTop: 0 }, "fast");
 			}catch(e)
 			{
