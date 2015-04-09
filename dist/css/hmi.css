@@ -24,14 +24,31 @@
     margin: 0px;
     margin-bottom:100px;
     margin-top: 12px;
-
+    margin-left:20px;
 }
 
 
+.secondary-tree
+{
+    margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    list-style-type: circle;
+    font-size: medium;
+    cursor: pointer;
+    float:left;
+}
+
+
+.asset-pannel.selected {
+    background-color: #505357;
+}
+
 .asset-pannel {
     
-    background-color: #505357;
+    background-color: #979797;
     margin-top: 12px;
+    margin-right:20px;
 }
 
 .asset-pannel ul {
@@ -55,9 +72,9 @@
 
 .content-area{
   display: inline-block;
-  right: 232px;
+  right: 252px;
   left: 230px;
-  min-width: 500px;
+  min-width: 400px;
   top: 170px;
   position: absolute;
   

@@ -94,10 +94,7 @@
 			<span style="margin-left:5px;">Fleet</span></a>
 		</li>
         <li><a href="#ship">
-        	
-        	<svg height="10" width="10">
-  				<rect width="10" height="10" fill="#fd9734" />
-			</svg>
+        	<svg width="10" height="10"><path d=" M 5 0 L 0 10 L 10 10" fill="#ff0000" /></svg>
         	<span style="margin-left:5px;">Ship</span></a>
         </li>
       </ul>
@@ -168,9 +165,6 @@
 </section>
 
 
-<!--div class="footer"> 
-
-</div-->
 
 <script src="./iidx/components/requirejs/require.js"></script>
 <script src="./iidx/js/require.config.js"></script>
@@ -315,14 +309,15 @@
 	{
 		console.log("debug:initSubNav()");
 		$("#secondary ul li").click(function(e){
-			console.log("click:", e.target );
-			e.preventDefault();
-			$("#secondary ul li").removeClass("selected");
-			$(e.target).closest( "li").addClass("selected");
-			console.log("href:",$( e.target ).attr('href'));
+				console.log("click:", e.target );
+				e.preventDefault();
+				$("#secondary ul li").removeClass("selected");
+				$(e.target).closest( "li").addClass("selected");
+				console.log("href:",$( e.target ).attr('href'));
 			var key = $( e.target ).attr('href').split("#").join("");
-			
-			focusSubNav( key );
+				focusSubNav( key );
+
+				$(e.target).closest("li").find("ul").slideToggle();
 		});
 		$("#secondary ul li:first a").trigger("click");
 		focusSubNav();
@@ -333,6 +328,9 @@
 
 		console.log( "debug:focusSubNav():key:", key );				
 		loadSubNavContentTemplate(key);
+		$('#secondary ul li ul').hide();
+
+		
 	}
 
 
@@ -351,7 +349,6 @@
 				{
 	            	$("#content-pannels").fadeIn("fast", function(e){
 	            		console.log("fadeIn()");
-	            		
 	            	});
 	        	});
 			});
@@ -373,12 +370,18 @@
 	            		console.log("fadeIn()");
 	            	});
 	            	
+		            
+		            $(".asset-pannel").removeClass("selected");
+		            $(".asset-pannel:first").addClass("selected");
 		            //$(".asset-pannel").unbind("click");
 		            $(".asset-pannel").click(function(e){
 		            	e.preventDefault();
 		            	console.log( $(e.target).attr('href') );
 
 		            	$("html, body").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
+
+		            	$(".asset-pannel").removeClass("selected");
+		            	$(e.target).closest(".asset-pannel").addClass("selected");
 
 		            	//$("#asset-pannels").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
 
@@ -417,6 +420,10 @@
 
 	}
 
+	function updateBreadcrum()
+	{
+		console.log("debug:updateBreadcrum()" );
+	}
 
 </script>
 
