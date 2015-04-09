@@ -346,7 +346,7 @@
 			html += "<li>" + _sub_nav_dropdown.split("-").join(" ")+"</li>";
 		}
 
-			console.log("updateBreadcrum:hash:", hash);
+//			console.log("updateBreadcrum:hash:", hash);
 
 			$(location).attr('hash', hash  );
 			
@@ -417,6 +417,8 @@
 			console.log("level-1:click:", _sub_nav_dropdown );
 			$(".secondary-tree li").removeClass("selected");
 			$(e.target).closest("li").addClass("selected");
+
+			loadSubNavDropdownContentTemplate(_sub_nav_dropdown);
 			updateBreadcrum();
 			
 		});
@@ -432,6 +434,7 @@
 		console.log( "debug:focusSubNav():key:", key );				
 		loadSubNavContentTemplate(key);
 		$('.secondary-tree').hide();
+		$('.secondary-tree li').removeClass("selected");
 		//$('.secondary-tree').slideToggle();	
 
 		_sub_nav = key;
@@ -441,25 +444,45 @@
 
 	}
 
+	function loadSubNavDropdownContentTemplate(key)
+	{
+			console.log( "debug:loadSubNavDropdownContentTemplate():key:", key );
+		var template = "./temp/sub_dropdown/"+key+".html";
+	
+			$("#content-pannels").fadeOut("fast", function(e){
+				//console.log("debug:loadSubNavDropdownContentTemplate():complete");
+				$("#content-pannels").empty();
+				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
+				{
+	            	$("#content-pannels").fadeIn("fast", function(e){
+	            		//console.log("debug:content-pannels.fadeIn():complete");
+	            	});
+	        	});
+			});
+
+			loadSubNavTemplate(key);
+	}
+
 
 	function loadSubNavContentTemplate(key)
 	{
 			console.log( "debug:loadSubNavContentTemplate():key:", key );
 			
 		var template = "./temp/sub/"+key+".html";
-			console.log( "debug:loadSubNavContentTemplate():template:", template );
+//			console.log( "debug:loadSubNavContentTemplate():template:", template );
 			//$("#content-pannels")
 			//$("#asset-pannels")
 			$("#content-pannels").fadeOut("fast", function(e){
-				console.log("debug:loadSubNavContentTemplatefadeout():complete");
+//				console.log("debug:loadSubNavContentTemplatefadeout():complete");
 				$("#content-pannels").empty();
 				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
 	            	$("#content-pannels").fadeIn("fast", function(e){
-	            		console.log("debug:content-pannels.fadeIn():complete");
+//	            		console.log("debug:content-pannels.fadeIn():complete");
 	            	});
 	        	});
 			});
+
 			loadSubNavTemplate(key);
 	}
 
