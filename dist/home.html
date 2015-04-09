@@ -170,7 +170,11 @@
 
 </nav>
 
-
+<ul id="breadcrumb" class="breadcrumb">
+    <li><a href="#">Vessel name</a></li>
+    <li><a href="#">Ballast & Bilge</a></li>
+    <li class="active">Ballast System #2</li>
+</ul>
 
 <section id="content-body">
 <!-- content is loaded here... -->
@@ -309,43 +313,46 @@
 		switch(elm_id)
 		{
 			case "#fleet":
-				_tab = key;
 				loadTemplate( "home_fleet" );
 				break;
 			case "#ship":
-				//_tab = key;
 				loadTemplate( "home_ship" );
 				break;
 			case "#index":
 			default:
-				//_tab = "index";
 				loadTemplate( "home_index" );
 				break;
 		}
-		//updateBreakcrum();
 	}
 
-	function updateBreakcrum()
+	function updateBreadcrum()
 	{
-		console.log("updateBreakcrum()");
+		console.log("updateBreadcrum()");
 
 		var hash = "";
-			if( _tab ){
-				hash += "tab="+ _tab;
-			}
-			if( _sub_nav && _sub_nav != "" ){
-				hash += "&sub=" + _sub_nav;	
-			}
+		var html = "";
+		
+		if( _tab ){
+			hash += "tab=" + _tab;
+			html += "<li>" + _tab.split("-").join(" ")+"</li>";
+		}
+		if( _sub_nav && _sub_nav != "" ){
+			hash += "&sub=" + _sub_nav;	
+			html += "<li>" + _sub_nav.split("-").join(" ")+"</li>";
+		}
 
-			if( _sub_nav_dropdown && _sub_nav_dropdown != "" ){ 
-				hash += "&dropdown=" + _sub_nav_dropdown;	
-			}
+		if( _sub_nav_dropdown && _sub_nav_dropdown != "" ){ 
+			hash += "&dropdown=" + _sub_nav_dropdown;
+			html += "<li>" + _sub_nav_dropdown.split("-").join(" ")+"</li>";
+		}
 
+			console.log("updateBreadcrum:hash:", hash);
 
-			console.log("updateBreakcrum:hash:", hash);
-			
-			//return;
 			$(location).attr('hash', hash  );
+			
+			$("#breadcrumb").empty();
+			$("#breadcrumb").html(html);
+			$("#breadcrumb li:last").addClass("active");
 	}
 
 	function initSubNav()
@@ -410,7 +417,7 @@
 			console.log("level-1:click:", _sub_nav_dropdown );
 			$(".secondary-tree li").removeClass("selected");
 			$(e.target).closest("li").addClass("selected");
-			updateBreakcrum();
+			updateBreadcrum();
 			
 		});
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
@@ -429,7 +436,7 @@
 
 		_sub_nav = key;
 		_sub_nav_dropdown = undefined;
-		updateBreakcrum();
+		updateBreadcrum();
 
 
 	}
@@ -521,10 +528,7 @@
 
 	}
 
-	function updateBreadcrum()
-	{
-		console.log("debug:updateBreadcrum()" );
-	}
+	
 
 </script>
 
