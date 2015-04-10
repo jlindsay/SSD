@@ -324,6 +324,7 @@
 				loadTemplate( "home_index" );
 				break;
 		}
+
 	}
 
 	function updateBreadcrum()
@@ -359,7 +360,6 @@
 	function initSubNav()
 	{
 		console.log("debug:initSubNav()");
-		//_sub_nav = 
 
 		$("#secondary ul li.level-0").off();
 		$("#secondary ul li.level-0").click(function(e){
@@ -408,7 +408,6 @@
 				}
 			})
 		}
-		
 
 
 		$(".secondary-tree li.level-1").off();
@@ -427,6 +426,16 @@
 			//$("#secondary-tree ul li:first a").trigger("click");
 		}
 		
+	}
+
+	function initSubTabs()
+	{
+		console.log("debug:initSubTabs()");
+		$("#fleet li").off();
+		$("#fleet li").click(function(e){
+			console.log("debug:initSubTabs:CLICK()");
+		});
+
 	}
 
 
@@ -546,6 +555,7 @@
             		console.log("fadeIn()");
             	});
 
+            	initSubTabs();
             	initSubNav();
         	});
 		});
