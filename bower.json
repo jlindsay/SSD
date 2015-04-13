@@ -11,6 +11,10 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "modernizer": "~2.8.2",
+    "responsive": "~4.0.3",
+    "underscore": "~1.8.3",
+    "d3": "~3.5.5"
   }
 }

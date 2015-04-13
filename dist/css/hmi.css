@@ -26,6 +26,7 @@
 
 #secondary ul li {
   height:42px;
+  clear:both;
   
 }
 #secondary ul li.selected a

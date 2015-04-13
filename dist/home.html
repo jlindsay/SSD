@@ -202,7 +202,7 @@
 <!--script src="./js/jquery.scrollTo.js"></script-->
 <script>
 
-	
+
 	require.config({
 		baseUrl: './',
 		urlArgs: String("r="+ (new Date()).getTime()),
@@ -235,7 +235,7 @@
 	function initUI()
 	{
 		console.log("debug:initUI()");
-		
+
 		$("#master-nav li").click(function(e){
 				e.preventDefault();
 			var elm = $(e.target).attr("href");
@@ -243,9 +243,9 @@
 				$(e.target).closest("li").addClass("active");
 				focusMainTabs(elm);
 		});
-		
+
 		parseURL();
-		
+
 
 	}
 
@@ -254,7 +254,7 @@
 		console.log("debug:parseURL()");
 		//var url = $(location).attr('href');
 		var hash = $(location).attr('hash').split("#").join("");
-			
+
 			hash = hash.split("&");
 
 		var hash_params = {};
@@ -267,7 +267,7 @@
 		_tab = hash_params['tab'];
 		_sub_nav 			= hash_params['sub'];
 		_sub_nav_dropdown 	= hash_params['dropdown'];
-		
+
 
 		switch(_tab)
 		{
@@ -305,7 +305,7 @@
 		}else{
 			//$("#master-nav li:first").addClass("active");
 		}
-		
+
 		$("#navbar").fadeIn();
 		$(elm_id).fadeIn();
 
@@ -333,7 +333,7 @@
 
 		var hash = "";
 		var html = "";
-		
+
 		if( _tab ){
 			hash += "tab=" + _tab;
 			html += "<li>" + _tab.split("-").join(" ")+"</li>";
@@ -351,7 +351,7 @@
 //			console.log("updateBreadcrum:hash:", hash);
 
 			$(location).attr('hash', hash  );
-			
+
 			$("#breadcrumb").empty();
 			$("#breadcrumb").html(html);
 			$("#breadcrumb li:last").addClass("active");
@@ -363,16 +363,16 @@
 
 		$("#secondary ul li.level-0").off();
 		$("#secondary ul li.level-0").click(function(e){
-				
+
 				e.preventDefault();
-				
+
 				if( $( e.target ).hasClass("level-1") ){
 					//NOTE: this is a hack, to get around the nest "ul li a"
 					return;
 				}
-				
-				
-				
+
+
+
 				var key;
 				try{
 					key = $( e.target ).attr('href').split("#").join("");		
@@ -381,10 +381,9 @@
 				if(!key){
 					return;
 				}
-				
+
 				$("#secondary ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
-				
 
 				console.log("level-0:click:", e.target );
 				focusSubNav( key );
@@ -393,7 +392,7 @@
 				{
 					$(e.target).closest("li.level-0").find("ul").slideToggle();	
 				}
-				
+
 		});
 
 		if( !_sub_nav || _sub_nav == "" ){
@@ -425,7 +424,7 @@
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
 			//$("#secondary-tree ul li:first a").trigger("click");
 		}
-		
+
 	}
 
 	function initSubTabs()
