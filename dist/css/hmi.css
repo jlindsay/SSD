@@ -46,8 +46,9 @@
     width: 210px;
 }
 
-
-
+#secondary li {
+  clear:both;
+}
 
 .secondary-tree
 {
@@ -87,6 +88,8 @@
     text-overflow: ellipsis;
 }
 */
+
+
 
 
 .asset-pannel.selected {

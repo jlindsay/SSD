@@ -70,6 +70,7 @@ function Keynote()
 	       }
 	    
 	    $(document).keydown(function(e) {
+	    	console.log("keycode:",e.keyCode);
 	        switch(e.keyCode)
 	        {
 	            case 32: // spacebar
