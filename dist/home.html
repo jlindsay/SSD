@@ -361,8 +361,8 @@
 	{
 		console.log("debug:initSubNav()");
 
-		$("#secondary ul li.level-0").off();
-		$("#secondary ul li.level-0").click(function(e){
+		$("#left-nav ul li.level-0").off();
+		$("#left-nav ul li.level-0").click(function(e){
 
 				e.preventDefault();
 
@@ -382,7 +382,7 @@
 					return;
 				}
 
-				$("#secondary ul li.level-0").removeClass("selected");
+				$("#left-nav ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
 
 				console.log("level-0:click:", e.target );
@@ -396,9 +396,9 @@
 		});
 
 		if( !_sub_nav || _sub_nav == "" ){
-			$("#secondary ul li.level-0:first a").trigger("click");	
+			$("#left-nav ul li.level-0:first a").trigger("click");	
 		}else{
-			$("#secondary ul li.level-0 a").each(function(index,elm){
+			$("#left-nav ul li.level-0 a").each(function(index,elm){
 				var val = $(elm).attr("href").split("#").join("");
 				if( _sub_nav == val )
 				{
@@ -409,12 +409,12 @@
 		}
 
 
-		$(".secondary-tree li.level-1").off();
-		$(".secondary-tree li.level-1").click(function(e){
+		$(".left-nav-tree li.level-1").off();
+		$(".left-nav-tree li.level-1").click(function(e){
 			e.preventDefault();
 			_sub_nav_dropdown = $(e.target).closest("li").find("span").attr("data").split("#").join("") ;
 			console.log("level-1:click:", _sub_nav_dropdown );
-			$(".secondary-tree li").removeClass("selected");
+			$(".left-nav-tree li").removeClass("selected");
 			$(e.target).closest("li").addClass("selected");
 
 			loadSubNavDropdownContentTemplate(_sub_nav_dropdown);
@@ -422,7 +422,7 @@
 			
 		});
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
-			//$("#secondary-tree ul li:first a").trigger("click");
+			//$("#left-nav-tree ul li:first a").trigger("click");
 		}
 
 	}
@@ -442,9 +442,9 @@
 	{
 		console.log( "debug:focusSubNav():key:", key );				
 		loadSubNavContentTemplate(key);
-		$('.secondary-tree').hide();
-		$('.secondary-tree li').removeClass("selected");
-		//$('.secondary-tree').slideToggle();	
+		$('.left-nav-tree').hide();
+		$('.left-nav-tree li').removeClass("selected");
+		//$('.left-nav-tree').slideToggle();	
 
 		_sub_nav = key;
 		_sub_nav_dropdown = undefined;

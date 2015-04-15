@@ -8,7 +8,6 @@
 /*  override */
 
 
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -16,11 +15,67 @@
   color:#333;
 }
 
+
+#navbar
+{
+    position: fixed;
+    top:0;
+    width:100%;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+
 #left-nav{
   background-color: #fff;
   overflow: scroll;
   max-width:250px;
+    border-left: 1px solid #d8d8d8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+   height:100%;
+/*    position:absolute;*/
+    position: fixed;
+   bottom:0;
+   top:0;
+   height:100%;
+   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 }
+
+#left-nav ul{
+    padding: 0;
+    padding-top: 99px;
+    list-style-type: none;
+    margin:0px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#left-nav ul li {
+  height:42px;
+  clear:both;
+  
+}
+
+#left-nav ul li {
+  height:42px;
+  clear:both; 
+}
+
+#left-nav ul li a , .truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color:#666;
+  text-decoration: none;
+}
+
+#left-nav ul li.selected a
+{
+  background-color: #c2c2c2;
+}
+
+
+
+
 
 /*
 #secondary ul li a , .truncate {
@@ -52,7 +107,7 @@
   clear:both;
 }
 */
-.secondary-tree
+.left-nav-tree
 {
     margin-left: 1em;
     margin-top: 0;
@@ -66,12 +121,12 @@
 
 }
 
-.secondary-tree li 
+.left-nav-tree li 
 {
   max-width: 155px;
 }
 
-.secondary-tree li.selected 
+.left-nav-tree li.selected 
 {
   background-color:#c2c2c2;
 }
@@ -91,23 +146,44 @@
 }
 */
 
+#asset-pannels
+{
+    background-color: #333;
+    overflow: scroll;
+    
+    border-left: 1px solid #d8d8d8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height:100%;
+    max-width:125px;
+/*    position:absolute;*/
+    padding-top: 99px;
+    position: fixed;
+    bottom:0;
+    top:0;
+    height:100%;
+    
+    right:0;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 
-
+}
 
 .asset-pannel.selected {
     background-color: #505357;
 }
 
 .asset-pannel {
-    
+/*    
     background-color: #979797;
+
     margin-top: 12px;
     margin-right:20px;
+*/
 }
 
 .asset-pannel ul {
   list-style-type: none;
-  width:170px;
+/*  width:170px;    */
 }
 
 
@@ -170,8 +246,8 @@ img {
 
 .breadcrumb
 {
-    
     margin:20px;
+    margin-left:258px;
 }
 
 
