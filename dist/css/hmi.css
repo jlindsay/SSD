@@ -27,7 +27,7 @@
 #left-nav{
   background-color: #fff;
   overflow: scroll;
-  max-width:250px;
+  max-width:255px;
     border-left: 1px solid #d8d8d8;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -45,106 +45,72 @@
     padding-top: 99px;
     list-style-type: none;
     margin:0px;
-    margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 #left-nav ul li {
-  height:42px;
-  clear:both;
-  
+/*    height:35px;  */
+    width:100%;
+    clear:both;
+
 }
 
-#left-nav ul li {
-  height:42px;
-  clear:both; 
-}
 
 #left-nav ul li a , .truncate {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color:#666;
-  text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#666;
+    text-decoration: none;
+    width:100%;
+    display:block;
 }
 
 #left-nav ul li.selected a
 {
-  background-color: #c2c2c2;
+    background-color: #c2c2c2;
 }
 
 
-
-
-
-/*
-#secondary ul li a , .truncate {
-  width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#secondary ul li {
-  height:42px;
-  clear:both;
-  
-}
-#secondary ul li.selected a
+/**
+ * .left-nav-tree is a nested ul of #left-nav
+ */
+#left-nav ul li ul.left-nav-tree
 {
-  background-color: #c2c2c2;
-}
-
-#secondary ul {
-    margin: 0px;
-    margin-bottom:100px;
-    margin-top: 12px;
-    margin-left:20px;
-    width: 210px;
-}
-
-#secondary li {
-  clear:both;
-}
-*/
-.left-nav-tree
-{
-    margin-left: 1em;
     margin-top: 0;
     margin-bottom: 1em;
     list-style-type: circle;
     font-size: medium;
     cursor: pointer;
-    float:left;
-    max-height: 80px;
-    /*max-width:130px;*/
+    padding-top: 0px;
+    list-style-type: none;
 
 }
 
-.left-nav-tree li 
+
+#left-nav ul li ul.left-nav-tree li 
 {
-  max-width: 155px;
+    clear:both;
+ /*   height:35px;*/
+
 }
 
-.left-nav-tree li.selected 
+#left-nav ul li ul.left-nav-tree li a
 {
-  background-color:#c2c2c2;
+    text-overflow: ellipsis;    
 }
-/*
-#secondary ul li.selected .secondary-tree li a, 
-#secondary ul li.selected .secondary-tree li
+
+
+li [class^="icon-"], li [class*=" icon-"]{
+    font-size: 9px;    
+}
+
+#left-nav ul li ul.left-nav-tree li.selected 
 {
-  background: none;
+    background-color:#c2c2c2;
 }
-*/
-/*
-.secondary-tree ul li a {
-    width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-*/
+
 
 #asset-pannels
 {
@@ -183,7 +149,7 @@
 }
 
 .asset-pannel ul {
-    list-style-type: none;
+
 /*  width:170px;    */
     list-style-type: none;
     margin:0px;
