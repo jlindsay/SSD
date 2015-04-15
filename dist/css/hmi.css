@@ -151,7 +151,8 @@
     background-color: #333;
     overflow: scroll;
     
-    border-left: 1px solid #d8d8d8;
+/*    border-left: 1px solid #d8d8d8; */
+    border-left: 1px solid #333;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height:100%;
@@ -182,8 +183,12 @@
 }
 
 .asset-pannel ul {
-  list-style-type: none;
+    list-style-type: none;
 /*  width:170px;    */
+    list-style-type: none;
+    margin:0px;
+    padding-left: 10px;
+
 }
 
 
@@ -192,22 +197,24 @@
   line-height:42px;  
   color:#ffffff;
   text-align: middle;
-
 }
 
 .asset-pannel ul li a{
   color:#ffffff;
   text-decoration: none;
+  max-width: 50px;  
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
 }
 
 .content-area{
   display: inline-block;
-  right: 252px;
+  right: 170px;
   left: 230px;
   min-width: 400px;
-  top: 170px;
-  position: absolute;
-  
+  top: 120px;
+  position: absolute; 
 }
 
 .content-area .pannel{
