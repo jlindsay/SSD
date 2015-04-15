@@ -16,7 +16,13 @@
   color:#333;
 }
 
+#left-nav{
+  background-color: #fff;
+  overflow: scroll;
+  max-width:250px;
+}
 
+/*
 #secondary ul li a , .truncate {
   width: 150px;
   white-space: nowrap;
@@ -33,11 +39,7 @@
 {
   background-color: #c2c2c2;
 }
-/*
-#secondary ul li.selected {
-  
-}
-*/
+
 #secondary ul {
     margin: 0px;
     margin-bottom:100px;
@@ -49,7 +51,7 @@
 #secondary li {
   clear:both;
 }
-
+*/
 .secondary-tree
 {
     margin-left: 1em;
