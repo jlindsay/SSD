@@ -31,7 +31,7 @@ var _pages = [
 
 
     { url: 'summary.html' , hash: "Section-1" , uuid:"200" },
-        { url: 'home.html' , hash: "tab=fleet" , uuid:"201" },
+        { url: 'home.html' , hash: "" , uuid:"201" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
         { url: 'home.html' , hash: "" , uuid:"301" },
