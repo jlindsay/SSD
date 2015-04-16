@@ -11,14 +11,24 @@
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+/*  
   background-color: #d4d4d4;
   color:#333;
+*/
+  background-color: #414141;
+  color:#fff;
 }
 
 .container
 {
     margin: 0px;
     margin-left: 10px;
+}
+
+
+#master-nav
+{
+  margin-left: 155px;
 }
 
 #fleet-view-btn
@@ -212,7 +222,13 @@ li [class^="icon-"], li [class*=" icon-"]{
   max-width: 50px;  
   white-space: nowrap;
   text-overflow: ellipsis;
+  text-align: center;
+  width: 100%;
+}
 
+.asset-pannel [class^="icon-"], .asset-pannel [class*=" icon-"] {
+  font-size: 24px;
+  display: block;
 }
 
 .content-area{
