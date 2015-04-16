@@ -198,7 +198,6 @@
 </section>
 
 
-
 <script src="./iidx/components/requirejs/require.js"></script>
 <script src="./iidx/js/require.config.js"></script>
 <script type="text/javascript">
@@ -316,13 +315,18 @@
 		}
 
 		var elm = $("#master-nav").find("a[href='"+elm_id+"']");//
-			$("#master-nav li").removeClass("active");
+			$("#master-nav li a").removeClass("active");
 		if( elm )
 		{
 			$(elm).closest("li").addClass("active");	
 		}else{
 			//$("#master-nav li:first").addClass("active");
 		}
+
+
+		$("#ship li a").click(function(e){
+			console.log("#ship li a::click()e.target:", e.target);
+		})
 
 		$("#navbar").fadeIn();
 		$(elm_id).fadeIn();
