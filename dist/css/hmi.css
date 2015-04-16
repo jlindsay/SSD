@@ -57,6 +57,21 @@
 
 }
 
+#left-nav ul li a{
+  line-height: 35px;
+  padding-left: 10px;
+}
+
+#left-nav ul li a svg{
+position: relative;
+    float:right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#left-nav ul li a i{
+  margin-right: 5px;
+}
 
 #left-nav ul li a , .truncate {
     white-space: nowrap;
@@ -96,11 +111,21 @@
 
 }
 
-#left-nav ul li ul.left-nav-tree li a
+#left-nav ul li ul.left-nav-tree li span
 {
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
+    line-height: 35px;
+    padding-left: 30px;
+    color:#666;
 }
 
+#left-nav ul li ul.left-nav-tree li span svg
+{
+    position: relative;
+    float:right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
 li [class^="icon-"], li [class*=" icon-"]{
     font-size: 9px;    

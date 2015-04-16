@@ -382,13 +382,15 @@
 
 				$("#left-nav ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
-
 				console.log("level-0:click:", e.target );
-				focusSubNav( key );
+				focusSubNav( key );	
 
-				if( $(e.target).closest("li.level-0").find("ul") )
+				if( $(e.target).closest("li.level-0").find("ul") != null )
 				{
 					$(e.target).closest("li.level-0").find("ul").slideToggle();	
+					$(e.target).closest("li.level-0").find("ul li:first").trigger("click");
+				}else{
+					//
 				}
 
 		});
