@@ -490,12 +490,11 @@
 		var template = "./temp/sub_dropdown/"+key+".html";
 	
 			$("#content-pannels").fadeOut("fast", function(e){
-				//console.log("debug:loadSubNavDropdownContentTemplate():complete");
 				$("#content-pannels").empty();
 				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
 	            	$("#content-pannels").fadeIn("fast", function(e){
-	            		//console.log("debug:content-pannels.fadeIn():complete");
+	            		//
 	            	});
 	        	});
 			});
@@ -544,12 +543,16 @@
 		            
 		            $(".asset-pannel").removeClass("selected");
 		            $(".asset-pannel:first").addClass("selected");
-		            //$(".asset-pannel").unbind("click");
-		            $(".asset-pannel").click(function(e){
-		            	e.preventDefault();
-		            	console.log( $(e.target).attr('href') );
 
-		            	$("html, body").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
+		            $(".asset-pannel li a").click(function(e){
+		            	e.preventDefault();
+		            	
+		            	var elm = $(e.target ).closest("li").find("a");//.attr("href");
+		            	console.log( "debug:click:", elm );
+		            	var offset = Number( $( $(elm).attr('href') ).offset().top ); 
+		            		offset -= 115;
+		            		console.log("offset:", offset);
+		            	$("html, body").animate({ scrollTop:  offset }, 500);
 
 		            	$(".asset-pannel").removeClass("selected");
 		            	$(e.target).closest(".asset-pannel").addClass("selected");
@@ -560,7 +563,7 @@
 						
 	            	});
 	            	
-	            	//$("#asset-pannels .asset-pannel ul li:first a").trigger("click");
+	            	
 	            	
 
 	        	});
