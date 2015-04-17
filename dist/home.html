@@ -89,7 +89,7 @@
 		<ul id="master-nav" class="nav navbar-nav">
 			<li><a href="#ship">
 					<svg width="10" height="10"><path d=" M 5 0 L 0 10 L 10 10" fill="#ff0000" /></svg>
-					<span style="margin-left:5px;">Ship</span>
+					<span>Ship</span>
 				</a>
 			</li>
 		</ul>
@@ -101,7 +101,7 @@
         		<svg height="10" width="10">
   					<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
-				<span style="margin-left:5px;">A</span>
+				<span>A</span>
 			</a>
 		</li>
         <li>		
@@ -109,7 +109,7 @@
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
-				<span style="margin-left:5px;">B</span>
+				<span>B</span>
 			</a>
 		</li>
         <li>
@@ -117,7 +117,7 @@
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
-				<span style="margin-left:5px;">C</span>
+				<span>C</span>
 			</a>
 		</li>
       </ul>
@@ -251,9 +251,15 @@
 	{
 		console.log("debug:initUI()");
 
-		$("#master-nav li").click(function(e){
+		$("#master-nav li a").click(function(e){
+				console.log("ping");
 				e.preventDefault();
 			var elm = $(e.target).attr("href");
+				if(!elm){
+					elm = $(e.target).closest("a").attr("href");
+				}
+
+				console.log("debug:elm:", e.target);
 				$("#master-nav li").removeClass("active");
 				$(e.target).closest("li").addClass("active");
 				focusMainTabs(elm);
@@ -286,14 +292,15 @@
 
 		switch(_tab)
 		{
-			/*
+			
 			case "ship":
 				focusMainTabs("#ship");
 				break;
-			*/
+			/*
 			case "fleet":
 				focusMainTabs("#fleet");
 			 	break;
+			*/
 			case "index":
 			default:
 				focusMainTabs("#index");
@@ -323,11 +330,11 @@
 			//$("#master-nav li:first").addClass("active");
 		}
 
-
-		$("#ship li a").click(function(e){
+/*
+		$("#ship").click(function(e){
 			console.log("#ship li a::click()e.target:", e.target);
 		})
-
+*/
 		$("#navbar").fadeIn();
 		$(elm_id).fadeIn();
 
@@ -335,17 +342,17 @@
 
 		switch(elm_id)
 		{
-			/*
+/*
 			case "#fleet":
 				loadTemplate( "home_fleet" );
 				break;
-			*/
+*/
 			case "#ship":
 				loadTemplate( "home_ship" );
 				break;
 			case "#index":
 			default:
-				loadTemplate( "home_index" );
+//				loadTemplate( "home_index" );
 				break;
 		}
 
