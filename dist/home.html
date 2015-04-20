@@ -246,6 +246,8 @@
 	var _tab;
 	var _sub_nav;
 	var _sub_nav_dropdown;
+	var _pannels=[];
+	var _content_pannels=[];
 
 	function initUI()
 	{
@@ -516,6 +518,8 @@
 				$("#content-pannels").empty();
 				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
+					//$("#content-pannels")
+					_content_pannels = $("#content-pannels .pannel");
 	            	$("#content-pannels").fadeIn("fast", function(e){
 //	            		console.log("debug:content-pannels.fadeIn():complete");
 	            	});
@@ -524,23 +528,40 @@
 
 			loadSubNavTemplate(key);
 	}
-
+	
 	function loadSubNavTemplate(key)
 	{
 			console.log( "debug:loadSubNavTemplate():key:", key );
 		var template = "./temp/nav/"+key+".html";
 			console.log( "debug:loadTemplate():template:", template );
 
+			$(document).on('scroll', function(e) {
+    			var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
+			    $.each(_pannels, function(index,elm){
+				    if( ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
+				    	$(".asset-pannel").removeClass("selected");
+				    	$(elm).addClass("selected");
+				    }
+			    });
+			});
+			
+			
+
 			$("#asset-pannels").fadeOut("fast", function(e){
 				console.log("debug:asset-pannels:fadeout():complete");
+
+            	$("#asset-pannels").fadeIn("fast", function(e){
+            		console.log("fadeIn()");
+            	});
+	            
+
+
 				$("#asset-pannels").empty();
 				$("#asset-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
 				{
-	            	$("#asset-pannels").fadeIn("fast", function(e){
-	            		console.log("fadeIn()");
-	            	});
-	            	
-		            
+	            	console.log( "total-asspet-pannels:", $("#asset-pannels .asset-pannel").length );
+					_pannels = $(".asset-pannel");
+
 		            $(".asset-pannel").removeClass("selected");
 		            $(".asset-pannel:first").addClass("selected");
 
@@ -559,12 +580,8 @@
 
 		            	//$("#asset-pannels").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
 
-		            	
 						
 	            	});
-	            	
-	            	
-	            	
 
 	        	});
 			});
