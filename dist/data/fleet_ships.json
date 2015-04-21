@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "title":"Virtual Small Warning", "addressLine1":"","addressLine2":"","zip":"", "tel": "" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          302.51953125,
+          33.797408767572485
+        ]
+      },
+      "metadata"   : { "type":"virtual-mini", "state": "warning" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title":"Virtual Small Warning", "addressLine1":"","addressLine2":"","zip":"", "tel": "" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          309.7265625,
+          52.696361078274485
+        ]
+      },
+      "metadata"   : { "type":"virtual-mini", "state": "warning" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title":"Virtual Small Warning", "addressLine1":"","addressLine2":"","zip":"", "tel": "" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          281.953125,
+          30.14512718337613
+        ]
+      },
+      "metadata"   : { "type":"virtual-mini", "state": "warning" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title":"Virtual Small Warning", "addressLine1":"","addressLine2":"","zip":"", "tel": "" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          302.080078125,
+          45.706179285330855
+        ]
+      },
+      "metadata"   : { "type":"virtual-mini", "state": "warning" }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title":"Virtual Small Warning", "addressLine1":"","addressLine2":"","zip":"", "tel": "" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          294.87304687499994,
+          14.349547837185375
+        ]
+      },
+      "metadata"   : { "type":"virtual-mini", "state": "warning" }
+    }
+  ]
+}
