@@ -2,6 +2,7 @@ var _pages = [
 
     { url: 'index.html' , hash: "" , uuid:"000" },
 
+
     { url: 'summary.html' , hash: "Section-1" , uuid:"100" },
         { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"101" },
         { url: 'home.html' , hash: "tab=ship&sub=acoustics" , uuid:"102" },
@@ -31,7 +32,7 @@ var _pages = [
 
 
     { url: 'summary.html' , hash: "Section-1" , uuid:"200" },
-        { url: 'home.html' , hash: "" , uuid:"201" },
+        { url: 'fleet-view.html' , hash: "" , uuid:"201" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
         { url: 'home.html' , hash: "" , uuid:"301" },
