@@ -43,7 +43,7 @@
 
 #left-nav
 {
-
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 #left-nav ul {
@@ -51,7 +51,18 @@
 }
 
 #left-nav ul li{
+	font-size: 18px;
+	color:#666;
+}
 
+#left-nav ul li .description{
+	font-size: 13px;
+	color:#666;
+}
+
+#left-nav ul li .details{
+	font-size: 11px;
+	color:#aaa;
 }
 </style>
 
@@ -108,20 +119,35 @@
 		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
 		</li>
 		<li class="list-group-item">DS-01 
-			<input class="btn btn-danger" type="button" value="Poor">
- 			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i></li>
+			<input class="btn btn-danger" type="button" value="POOR">
+ 			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i>
+ 			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">9% Average Downtime</div>
+ 		</li>
 		<li class="list-group-item">DS-02 
-			<input class="btn btn-success" type="button" value="Poor">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i></li>
+			<input class="btn btn-success" type="button" value="POOR">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">16% Average Downtime</div>
+		</li>
 		<li class="list-group-item">DS-03 
-			<input class="btn btn-success" type="button" value="Poor">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i></li>
+			<input class="btn btn-success" type="button" value="POOR">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">21% Average Downtime</div>
+		</li>
 		<li class="list-group-item">DS-04 
-			<input class="btn btn-warning" type="button" value="Poor">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i></li>
+			<input class="btn btn-warning" type="button" value="INTERMEDIATE">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">7% Average Downtime</div>
+		</li>
 		<li class="list-group-item">DS-05 
-			<input class="btn btn-success" type="button" value="Poor">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i></li>
+			<input class="btn btn-success" type="button" value="POOR">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">9% Average Downtime</div>
+		</li>
 	</ul>
 </nav>
 
