@@ -33,10 +33,12 @@ var _pages = [
 
     { url: 'summary.html' , hash: "Fleet-View" , uuid:"200" },
         { url: 'fleet-view.html' , hash: "" , uuid:"201" },
+        
         { url: 'summary.html' , hash: "ship_id=1" , uuid:"202" },
         { url: 'summary.html' , hash: "ship_id=2" , uuid:"203" },
         { url: 'summary.html' , hash: "ship_id=3" , uuid:"204" },
         { url: 'summary.html' , hash: "ship_id=4" , uuid:"205" },
+        { url: 'fleet-view+google-maps.html' , hash: "" , uuid:"210" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
         { url: 'home.html' , hash: "" , uuid:"301" },
