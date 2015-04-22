@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sea Stream Demo: Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./iidx/components/brandkit/favicon/favicon-144px.png">
+
+  <!-- For iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./iidx/components/brandkit/favicon/favicon-114px.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./iidx/components/brandkit/favicon/favicon-72px.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="./iidx/components/brandkit/favicon/favicon.png">
+
+  <link rel="icon" href="./iidx/components/brandkit/favicon/favicon.ico">
+  <link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
+  <link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
+
+
+
+  <link href="./css/hmi.css" rel="stylesheet" type="text/css">
+  <!--link href="./css/styles.css" rel="stylesheet" type="text/css"-->
+
+  <!--link href="./css/main.css" rel="stylesheet" type="text/css"-->
+
+  <!--[if lt IE 9]>
+    <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+  <![endif]-->
+
+  <script src="./iidx/components/modernizr/modernizr.js"></script>
+
+<style>
+
+#left-nav
+{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#left-nav ul {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#left-nav ul li{
+	font-size: 18px;
+	color:#666;
+}
+
+#left-nav ul li .description{
+	font-size: 13px;
+	color:#666;
+}
+
+#left-nav ul li .details{
+	font-size: 11px;
+	color:#aaa;
+}
+</style>
+
+</head>
+<body>
+
+<nav id="navbar" class="navbar navbar-static-top navbar-default" role="navigation" >
+
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./index.html"><span class="ge-logo"></span> <span>Sea Stream Demo<small><i>powered by</i> GE Software</small></span></a>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+  <div class="pull-right profile">
+      <div class="btn-toolbar pull-left">
+       
+        
+        <div class="btn-group open">
+          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i><span class="user-name">Tom Edison</span> <i class="icon-chevron-down"></i></button>
+          
+        </div>
+        
+        <img class="circular" src="./img/people/jeff-crossman.jpg" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="primary-navbar nav-collapse">
+    <div class="container">
+		<button id="fleet-view-btn" class="btn btn-primary pull-left"><i class="icon-sitemap pull-left"></i>Fleet View<span></button>
+  </div>
+
+</nav>
+
+<nav id="left-nav" style="width:400px;max-width:400px; padding:20px; padding-top:120px; height:auto;">
+	<h4 style="color:#333;"><strong>SMARTSIGNAL INCIDENtS</strong></h4>
+	<ul class="list-group" style="padding-top:0px;">
+		<li class="list-group-item">DS-01 <div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
+			
+			<div class="description">Overall Risk  <div class="pull-right" style="color:#333; font-weight:bold;">87%</div></div>
+ 			<div style="width:100%; border:1px #ccc solid;">
+ 				<div style="width:80%; height:10px;background-color:#dc2839;"></div>
+ 			</div>
+ 			<div class="details">Gearbox Temerature Anomaly</div>
+		</li>
+		
+	</ul>
+
+	
+	<h4 style="color:#333;"><strong>SHIPS</strong></h4>
+	<ul class="list-group" style="padding-top:0px;">
+		<li class="list-group-item">
+		<i class="icon-search" style="font-size:18px;color:#aaa;"></i> Search
+		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
+		</li>
+		<li class="list-group-item">DS-01 
+			<input class="btn btn-danger" type="button" value="POOR">
+ 			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+ 			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">9% Average Downtime</div>
+ 		</li>
+		<li class="list-group-item">DS-02 
+			<input class="btn btn-success" type="button" value="GOOD">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">16% Average Downtime</div>
+		</li>
+		<li class="list-group-item">DS-03 
+			<input class="btn btn-success" type="button" value="GOOD">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">21% Average Downtime</div>
+		</li>
+		<li class="list-group-item">DS-04 
+			<input class="btn btn-warning" type="button" value="INTERMEDIATE">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">7% Average Downtime</div>
+		</li>
+		<li class="list-group-item">DS-05 
+			<input class="btn btn-success" type="button" value="GOOD">
+			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+			<div class="description">Acme Drilling Co.</div>
+ 			<div class="details">9% Average Downtime</div>
+		</li>
+	</ul>
+</nav>
+
+<div class="content" style="left:400px;right:0px;margin-top:97px; position:relative;">
+	<div id="app-window">
+	  <div class="map" data-map-name="default" data-toggle="geolocate streetview" style="height: 332px;">
+	      <div class="map-toolbar">
+	        <div class="pull-left overlay-chooser" style="width:50%;max-width:350px;">
+	          <div class="input-group">
+	            <span class="input-group-btn">
+	              <button class="btn btn-default"><i class="icon-search"></i></button>
+	            </span>
+	            <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control tt-hint" autocomplete="off" readonly="" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(245, 245, 245);"><input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'GE Sans', ge-sans, 'GE Inspira', ge-inspira, Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-default"></div></span></span>
+	            <div class="input-group-btn">
+	              <button class="btn btn-default">
+	                <i class="icon-map-marker"></i>
+	              </button>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="btn-group pull-right overlay-chooser">
+	          <ul class="dropdown-menu"><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_Vector_46"><span></span><label>Address Markers</label></li><li class="divider"></li><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_Vector_38"><span></span><label>GeoJSON Example</label></li><li class="divider"></li><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_WMS_2"><span></span><label>NDFD Wind Vectors</label></li></ul>
+	        </div>
+	      </div>
+
+	</div>
+</div>
+
+<script src="./iidx/components/requirejs/require.js"></script>
+<script src="./iidx/js/require.config.js"></script>
+<script type="text/javascript">
+
+	require.config({
+    	baseUrl: './iidx/'
+  	});
+
+</script>
+
+<script src="./iidx/components/jquery/jquery.js"></script>
+<script src="./js/globle.js"></script>
+<script src="./js/keynote.js"></script>
+<script>
+
+	require.config({
+		baseUrl: './',
+		urlArgs: String("r="+ (new Date()).getTime()),
+  		paths: {
+			'cookies': 'js/jquery.cookie',
+    		'url': 'js/jquery.url',
+    		'keynote': 'js/keynote',
+    		'scrollTo':'js/jquery.scrollTo.js'
+		},
+		shim: {
+			'url': ['jquery'],
+			'cookies': ['jquery'],
+			'scrollTo' : ['jquery']
+		}
+
+	});
+
+	require(['jquery','cookies', 'url', 'keynote'], function($) {
+   			console.log("deubg:init()");
+   		var _keynote = new Keynote().init( { pages: _pages } );
+   			initUI();
+	});
+
+	function initUI()
+	{
+		console.log("debug:initUI()");
+
+	}
+
+</script>
+<script>
+    // Load common code that includes config,
+    // then load the app logic for this page.
+  require(['./iidx/js/require.config.js'], function () {
+        require.config({
+        baseUrl: './iidx/',
+        config: { 'map-loader': {
+              configFileName: './data/map-config-search-evaluate.json'
+          }
+        }
+      });
+
+
+     require(['jquery', 'map-core', 'map-markers', 'map-search', 'map-zoom', 'map-layer-list', 'map-street-view'], function($, Mapping, markers, search){
+        var $map = $(".map");
+        console.log("$map:", $map);
+        // Listen for map initialisation
+        $.subscribe('mapInitialised', function(mapName, olMap){
+          var $mapContainer = $("div.map[data-map-name='"+mapName+"']");
+
+          require(['map-markers-component/map-vector-data-layer'], function(vectorLayer){
+
+            // Load the polygon/line example data
+            $.ajax({
+                url : './iidx/docs/data/GeoJSON_geometries.json',
+                async : true,
+                dataType: "json",
+                cache: false
+            }).done(function(data) {
+
+              // Create the layer
+              vectorLayer.addGeoJSON(data, olMap, {}, 'GeoJSON Example');
+
+              // Load some example marker data
+              $.ajax({
+                  url : './data/fleet_ships.json',
+                  async : true,
+                  dataType: "json",
+                  cache: false
+              }).done(function(data) {
+                // Template for the popover
+                var richPopover = '<div class="popover top" data-popover-id="{{popoverId}}">'+
+                                    '<div class="arrow"></div>'+
+                                    '<header class="panel-header">'+
+                                      '<div class="left"><i class="icon-map-marker"></i></div>'+
+                                      '<div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div>'+
+                                    '</header>'+
+                                    '<div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div>'+
+                                    '<footer class="panel-footer">'+
+                                      '<div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div>'+
+                                      '<div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div>'+
+                                    '</footer>'+
+                                  '</div>';
+
+                var markerOptions = { popovers: true,
+                                      popoverTemplate: richPopover };
+
+                // Specify the data fields used by the search dropdown
+                var indexOptions =  { indexAttribs : [ "addressLine1", "addressLine2", "zip" ] };
+
+                // Create the data vector layer
+                markers.addMarkers(data, olMap, markerOptions, 'Address Markers', indexOptions);
+             });
+            });
+          });
+
+          // Make the map full screen
+          $mapContainer.height($(window).height() - $mapContainer.offset().top);
+
+          // Make sure the map stays full screen when resizing
+          $(window).resize(function(){
+            $mapContainer.height(
+              $(window).height() - $mapContainer.offset().top
+            );
+          });
+          olMap.updateSize();
+        });
+
+        // Initialise the map
+        $map.initializeMap();
+
+        // Create the search box
+        $('#query').assetOrAddressSearch({positionElementID: 'searchSubmitBtn', type: 'asset', isFaceted: false});
+      });
+   });  
+</script>
+<script src="./iidx/components/respond/respond.src.js"></script>
+
+</body>
+</html>
+
+
+

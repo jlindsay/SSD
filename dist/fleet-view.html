@@ -38,7 +38,7 @@
   <![endif]-->
 
   <script src="./iidx/components/modernizr/modernizr.js"></script>
-
+  <script src="./bower/jquery/dist/jquery.js"></script>
 <style>
 
 #left-nav
@@ -159,37 +159,33 @@
 	</ul>
 </nav>
 
-<div class="content" style="left:400px;right:0px;margin-top:97px; position:relative;">
-	<div id="app-window">
-	  <div class="map" data-map-name="default" data-toggle="geolocate streetview" style="height: 332px;">
-	      <div class="map-toolbar">
-	        <div class="pull-left overlay-chooser" style="width:50%;max-width:350px;">
-	          <div class="input-group">
-	            <span class="input-group-btn">
-	              <button class="btn btn-default"><i class="icon-search"></i></button>
-	            </span>
-	            <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control tt-hint" autocomplete="off" readonly="" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(245, 245, 245);"><input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'GE Sans', ge-sans, 'GE Inspira', ge-inspira, Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-default"></div></span></span>
-	            <div class="input-group-btn">
-	              <button class="btn btn-default">
-	                <i class="icon-map-marker"></i>
-	              </button>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="btn-group pull-right overlay-chooser">
-	          <ul class="dropdown-menu"><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_Vector_46"><span></span><label>Address Markers</label></li><li class="divider"></li><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_Vector_38"><span></span><label>GeoJSON Example</label></li><li class="divider"></li><li class="enabled" rel="tooltip" data-placement="left" data-title="Click and drag to quickly change multiple layers" data-container="body" data-layer-id="OpenLayers_Layer_WMS_2"><span></span><label>NDFD Wind Vectors</label></li></ul>
-	        </div>
-	      </div>
 
-	</div>
-</div>
+<section id="content" style="left:400px;right:0px;margin-top:97px; position:relative; overflow:hidden;">
+      <div class="parent" style="overflow: hidden; position: relative;">
+        <div class="panzoom" style="transform: matrix(1.2, 0, 0, 1.2, -144.314285714285, 28.5160714285843); backface-visibility: hidden; transform-origin: 50% 50% 0px; cursor: move; transition: none; -webkit-transition: none;">
+            <a href="home.html?uuid=202"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
+            <a href="home.html?uuid=203"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
+            <a href="home.html?uuid=204"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
+            <a href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
+            <img id="my-map" class="map" src="./img/google-map.png" style="z-index=1; position:realative;" >
+        </div>
+      </div>
+</section>    
+
+
+
+    
+
+
+
 
 <script src="./iidx/components/requirejs/require.js"></script>
 <script src="./iidx/js/require.config.js"></script>
 <script type="text/javascript">
 
 	require.config({
-    	baseUrl: './iidx/'
+    	baseUrl: './iidx/',
+        
   	});
 
 </script>
@@ -197,124 +193,131 @@
 <script src="./iidx/components/jquery/jquery.js"></script>
 <script src="./js/globle.js"></script>
 <script src="./js/keynote.js"></script>
+
+<style>
+  img{  
+
+      max-width: none;
+      width: none;
+      height: none;
+      vertical-align: none;
+      border: none;
+}
+
+
+.my-ship-icon{
+ opacity:1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer; cursor: hand;
+}
+
+.my-ship-icon:hover{
+      opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+
+}
+</style>
+
 <script>
 
 	require.config({
 		baseUrl: './',
 		urlArgs: String("r="+ (new Date()).getTime()),
   		paths: {
-			'cookies': 'js/jquery.cookie',
-    		'url': 'js/jquery.url',
-    		'keynote': 'js/keynote',
-    		'scrollTo':'js/jquery.scrollTo.js'
+			'cookies'        : 'js/jquery.cookie',
+    		'url'             : 'js/jquery.url',
+    		'keynote'         : 'js/keynote',
+    		'scrollTo'        :'js/jquery.scrollTo.js',
+            "jquery.panzoom"    : './bower/jquery.panzoom/dist/jquery.panzoom'
 		},
 		shim: {
-			'url': ['jquery'],
-			'cookies': ['jquery'],
-			'scrollTo' : ['jquery']
+			'url'        : ['jquery'],
+			'cookies'    : ['jquery'],
+			'scrollTo'   : ['jquery'],
+            'jquery.panzoom' : ['jquery'],
 		}
 
 	});
 
-	require(['jquery','cookies', 'url', 'keynote'], function($) {
+	require(['jquery','cookies', 'url', 'jquery.panzoom'], function($) {
    			console.log("deubg:init()");
    		var _keynote = new Keynote().init( { pages: _pages } );
    			initUI();
 	});
 
-	function initUI()
-	{
-		console.log("debug:initUI()");
+    function initUI()
+    {
+//        console.log("ping");
+        var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:relative;z-index:999; "> \
+                        <div class="arrow"></div> \
+                        <header class="panel-header"> \
+                          <div class="left"><i class="icon-map-marker"></i></div> \
+                          <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
+                        </header> \
+                        <div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div> \
+                        <footer class="panel-footer"> \
+                          <div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div> \
+                          <div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div> \
+                        </footer> \
+                      </div>';
 
-	}
-
-</script>
-<script>
-    // Load common code that includes config,
-    // then load the app logic for this page.
-  require(['./iidx/js/require.config.js'], function () {
-        require.config({
-        baseUrl: './iidx/',
-        config: { 'map-loader': {
-              configFileName: './data/map-config-search-evaluate.json'
-          }
-        }
-      });
-
-
-     require(['jquery', 'map-core', 'map-markers', 'map-search', 'map-zoom', 'map-layer-list', 'map-street-view'], function($, Mapping, markers, search){
-        var $map = $(".map");
-        console.log("$map:", $map);
-        // Listen for map initialisation
-        $.subscribe('mapInitialised', function(mapName, olMap){
-          var $mapContainer = $("div.map[data-map-name='"+mapName+"']");
-
-          require(['map-markers-component/map-vector-data-layer'], function(vectorLayer){
-
-            // Load the polygon/line example data
-            $.ajax({
-                url : './iidx/docs/data/GeoJSON_geometries.json',
-                async : true,
-                dataType: "json",
-                cache: false
-            }).done(function(data) {
-
-              // Create the layer
-              vectorLayer.addGeoJSON(data, olMap, {}, 'GeoJSON Example');
-
-              // Load some example marker data
-              $.ajax({
-                  url : './data/fleet_ships.json',
-                  async : true,
-                  dataType: "json",
-                  cache: false
-              }).done(function(data) {
-                // Template for the popover
-                var richPopover = '<div class="popover top" data-popover-id="{{popoverId}}">'+
-                                    '<div class="arrow"></div>'+
-                                    '<header class="panel-header">'+
-                                      '<div class="left"><i class="icon-map-marker"></i></div>'+
-                                      '<div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div>'+
-                                    '</header>'+
-                                    '<div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div>'+
-                                    '<footer class="panel-footer">'+
-                                      '<div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div>'+
-                                      '<div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div>'+
-                                    '</footer>'+
-                                  '</div>';
-
-                var markerOptions = { popovers: true,
-                                      popoverTemplate: richPopover };
-
-                // Specify the data fields used by the search dropdown
-                var indexOptions =  { indexAttribs : [ "addressLine1", "addressLine2", "zip" ] };
-
-                // Create the data vector layer
-                markers.addMarkers(data, olMap, markerOptions, 'Address Markers', indexOptions);
-             });
-            });
+        var $panzoom = $('.panzoom').panzoom();
+            
+            $panzoom.parent().on('mousewheel.focal', function( e ) {
+                    console.log(e);
+                        e.preventDefault();
+                    var delta = e.delta || e.originalEvent.wheelDelta;
+                    var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                        console.log(zoomOut);
+                        $panzoom.panzoom('zoom', zoomOut, {
+                            increment: 0.1,
+                            animate: false,
+                            focal: e
+                });
           });
 
-          // Make the map full screen
-          $mapContainer.height($(window).height() - $mapContainer.offset().top);
 
-          // Make sure the map stays full screen when resizing
-          $(window).resize(function(){
-            $mapContainer.height(
-              $(window).height() - $mapContainer.offset().top
-            );
-          });
-          olMap.updateSize();
+
+
+
+/*
+        $(".panzoom").css({"transform": "matrix(0.4, 0, 0, 0.4, -559.650216450218, 329.687175324678)",
+                            "transform-origin": "50% 50% 0px" });
+*/
+        $(".my-ship-icon").click(function(e){
+            e.preventDefault();
+            
+            $(".my-popover").remove();
+            var id = "p-0";
+            var tmp = html;
+                tmp = tmp.split("{{popoverId}}").join(id);
+                console.log(tmp);
+                $("#content .parent .panzoom").prepend(tmp);
+                var position = $(e.target).position();
+                var offset = $(e.target).offset();
+
+                console.log( position, offset );
+                //$(id).css("position", "realative");
+                $("#"+id).css("top", offset.top );
+                $("#"+id).css("left", offset.left );
+                //$(id).fadeIn();
+            console.log("shit happens!");
         });
 
-        // Initialise the map
-        $map.initializeMap();
+    }
 
-        // Create the search box
-        $('#query').assetOrAddressSearch({positionElementID: 'searchSubmitBtn', type: 'asset', isFaceted: false});
-      });
-   });  
+
+
+    
+      
+
 </script>
+
 <script src="./iidx/components/respond/respond.src.js"></script>
 
 </body>

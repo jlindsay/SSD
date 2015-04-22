@@ -15,6 +15,7 @@
     "modernizer": "~2.8.2",
     "responsive": "~4.0.3",
     "underscore": "~1.8.3",
-    "d3": "~3.5.5"
+    "d3": "~3.5.5",
+    "jquery.panzoom": "~2.0.5"
   }
 }

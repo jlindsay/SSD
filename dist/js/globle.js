@@ -3,7 +3,7 @@ var _pages = [
     { url: 'index.html' , hash: "" , uuid:"000" },
 
 
-    { url: 'summary.html' , hash: "Section-1" , uuid:"100" },
+    { url: 'summary.html' , hash: "Ships" , uuid:"100" },
         { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"101" },
         { url: 'home.html' , hash: "tab=ship&sub=acoustics" , uuid:"102" },
         { url: 'home.html' , hash: "tab=ship&sub=ballast-and-bilge" , uuid:"103" },
@@ -31,8 +31,12 @@ var _pages = [
 
 
 
-    { url: 'summary.html' , hash: "Section-1" , uuid:"200" },
+    { url: 'summary.html' , hash: "Fleet-View" , uuid:"200" },
         { url: 'fleet-view.html' , hash: "" , uuid:"201" },
+        { url: 'summary.html' , hash: "ship_id=1" , uuid:"202" },
+        { url: 'summary.html' , hash: "ship_id=2" , uuid:"203" },
+        { url: 'summary.html' , hash: "ship_id=3" , uuid:"204" },
+        { url: 'summary.html' , hash: "ship_id=4" , uuid:"205" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
         { url: 'home.html' , hash: "" , uuid:"301" },
