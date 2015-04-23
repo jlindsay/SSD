@@ -127,34 +127,43 @@
 		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
 		</li>
 		<li class="list-group-item">DS-01 
-			<input class="btn btn-danger" type="button" value="POOR">
- 			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
- 			<div class="description">Acme Drilling Co.</div>
- 			<div class="details">9% Average Downtime</div>
+			   <input name="data" value="#a" type="hidden" />
+        <input class="btn btn-danger" type="button" value="POOR">
+   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+   			<div class="description">Acme Drilling Co.</div>
+   			<div class="details">9% Average Downtime</div>
+      
  		</li>
 		<li class="list-group-item">DS-02 
-			<input class="btn btn-success" type="button" value="GOOD">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
-			<div class="description">Acme Drilling Co.</div>
- 			<div class="details">16% Average Downtime</div>
+			   <input name="data" value="#b" type="hidden" />
+        <input class="btn btn-success" type="button" value="GOOD">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+  			<div class="description">Acme Drilling Co.</div>
+   			<div class="details">16% Average Downtime</div>
+      
 		</li>
 		<li class="list-group-item">DS-03 
-			<input class="btn btn-success" type="button" value="GOOD">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
-			<div class="description">Acme Drilling Co.</div>
- 			<div class="details">21% Average Downtime</div>
+			   <input name="data" value="#c" type="hidden" />
+        <input class="btn btn-success" type="button" value="GOOD">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+  			<div class="description">Acme Drilling Co.</div>
+   			<div class="details">21% Average Downtime</div>
+      
 		</li>
 		<li class="list-group-item">DS-04 
-			<input class="btn btn-warning" type="button" value="INTERMEDIATE">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
-			<div class="description">Acme Drilling Co.</div>
- 			<div class="details">7% Average Downtime</div>
+        <input name="data" value="#d" type="hidden" />
+        <input class="btn btn-warning" type="button" value="INTERMEDIATE">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+  			<div class="description">Acme Drilling Co.</div>
+   			<div class="details">7% Average Downtime</div>
 		</li>
 		<li class="list-group-item">DS-05 
-			<input class="btn btn-success" type="button" value="GOOD">
-			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
-			<div class="description">Acme Drilling Co.</div>
- 			<div class="details">9% Average Downtime</div>
+			   <input name="data" value="#e" type="hidden" />
+        <input class="btn btn-success" type="button" value="GOOD">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+  			<div class="description">Acme Drilling Co.</div>
+   			<div class="details">9% Average Downtime</div>
+      
 		</li>
 	</ul>
 </nav>
@@ -163,11 +172,12 @@
 <section id="content" style="left:400px;right:0px;margin-top:97px; position:relative; overflow:hidden;">
       <div class="parent" style="overflow: hidden; position: relative;">
         <div class="panzoom" style="transform: matrix(1.2, 0, 0, 1.2, -144.314285714285, 28.5160714285843); backface-visibility: hidden; transform-origin: 50% 50% 0px; cursor: move; transition: none; -webkit-transition: none;">
-            <a href="home.html?uuid=202"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
-            <a href="home.html?uuid=203"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
-            <a href="home.html?uuid=204"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
-            <a href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
-            <img id="my-map" class="map" src="./img/google-map.png" style="z-index=1; position:realative;" >
+            <a id="a" href="home.html?uuid=202"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
+            <a id="b" href="home.html?uuid=203"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
+            <a id="c" href="home.html?uuid=204"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
+            <a id="d" href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
+            <a id="d" href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1250px;"></a>
+            <img id="my-map" class="map" src="./img/google-map.png">
         </div>
       </div>
 </section>    
@@ -253,24 +263,14 @@
     function initUI()
     {
 //        console.log("ping");
-        var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:relative;z-index:999; "> \
-                        <div class="arrow"></div> \
-                        <header class="panel-header"> \
-                          <div class="left"><i class="icon-map-marker"></i></div> \
-                          <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
-                        </header> \
-                        <div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div> \
-                        <footer class="panel-footer"> \
-                          <div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div> \
-                          <div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div> \
-                        </footer> \
-                      </div>';
+        
 
         var $panzoom = $('.panzoom').panzoom();
             
             $panzoom.parent().on('mousewheel.focal', function( e ) {
-                    console.log(e);
+                        //console.log(e);
                         e.preventDefault();
+                        $(".my-popover").remove();
                     var delta = e.delta || e.originalEvent.wheelDelta;
                     var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
                         console.log(zoomOut);
@@ -291,27 +291,76 @@
 */
         $(".my-ship-icon").click(function(e){
             e.preventDefault();
-            
+        });
+        $(".my-ship-icon").hover(showPopup);
+        $(".panzoom").mousedown(function(e){
+            $(".my-popover").remove();
+        })
+        //100 + $wrap.width()/2,100+ $wrap.height()/2
+        $('.panzoom').hide();
+        $('.panzoom').fadeIn("fast", function(e){
+           
+        })
+        $(".panzoom").panzoom('zoom', .7, {relative: false, animate: false} ) // center  
+        $(".panzoom").panzoom('pan', -726, -674, {relative: false, animate: true} ) // center  
+        
+        //$("#left-nav ul li").css( "cursor","");
+        $("#left-nav ul li").click(function(e){
+         // console.log(e.target)
+            var id = $(e.target).closest("li").find("input[name=data]").val()
+            console.log("click:", id );
+            var elm = $(id).find("img");
+            showPopup({target : elm, preventDefault:function(){} })
+            //console.log($(id))
+        })
+    }
+
+    function showPopup(e)
+    {
+          var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
+                        <div class="arrow"></div> \
+                        <header class="panel-header"> \
+                          <div class="left"><i class="icon-map-marker"></i></div> \
+                          <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
+                        </header> \
+                        <div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div> \
+                        <footer class="panel-footer"> \
+                          <div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div> \
+                          <div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div> \
+                        </footer> \
+                      </div>';
+            e.preventDefault();
             $(".my-popover").remove();
             var id = "p-0";
+            var title = "na";
+            var zip = "na";
+            var tel = "na";
+            var message = "na";
+            var addressLine1 = "na";
+            var addressLine2 = "na";
+
             var tmp = html;
-                tmp = tmp.split("{{popoverId}}").join(id);
+                tmp = tmp.split("{{popoverId}}").join(id)
+                      .split("{{title}}").join(title)
+                      .split("{{message}}").join(message)
+                      .split("{{addressLine1}}").join(addressLine1)
+                      .split("{{addressLine2}}").join(addressLine2)
+                      .split("{{zip}}").join(zip)
+                      .split("{{tel}}").join(tel)
+                      
                 console.log(tmp);
-                $("#content .parent .panzoom").prepend(tmp);
+                $(document.body).prepend(tmp);
                 var position = $(e.target).position();
                 var offset = $(e.target).offset();
 
-                console.log( position, offset );
+                    console.log( position, offset );
                 //$(id).css("position", "realative");
-                $("#"+id).css("top", offset.top );
-                $("#"+id).css("left", offset.left );
+                //console.log( $("#"+id).width() );
+                $("#"+id).css("top", Number(offset.top) - 230 );
+                $("#"+id).css("left", Number(offset.left) - 123 );
                 //$(id).fadeIn();
             console.log("shit happens!");
-        });
-
-    }
-
-
+        };
 
     
       
