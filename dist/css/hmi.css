@@ -196,6 +196,8 @@ li [class^="icon-"], li [class*=" icon-"]{
     background-color: #505357;
 }
 
+
+
 .asset-pannel {
 /*    
     background-color: #979797;
@@ -298,6 +300,16 @@ img {
 
 .content-area .pannel header .pannel-alert{
   background-color:#dc2838;
+}
+.content-area .pannel header h1{
+  color:#fff;
+  }
+.content-area .pannel header{
+  background-color:#505357
+}
+.pannel header img{
+  height:30px;
+  width:30px;
 }
 
 .breadcrumb
