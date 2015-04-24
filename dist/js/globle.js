@@ -41,7 +41,7 @@ var _pages = [
         { url: 'fleet-view+google-maps.html' , hash: "" , uuid:"210" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
-        { url: 'home.html' , hash: "" , uuid:"301" },
+        { url: 'home.html' , hash: "tab=ship&sub_tab=#drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"301" },
 
 
     { url: 'summary.html' , hash: "Section-3" , uuid:"400" },

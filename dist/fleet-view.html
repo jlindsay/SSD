@@ -318,35 +318,51 @@
     function showPopup(e)
     {
           var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
-                        <div class="arrow"></div> \
+                        <!--div class="arrow"></div--> \
                         <header class="panel-header"> \
-                          <div class="left"><i class="icon-map-marker"></i></div> \
+                          <!--div class="left"><i class="icon-map-marker"></i></div--> \
                           <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
                         </header> \
-                        <div class="popover-content panel-content"><ul class="inline"><li>{{addressLine1}}<br/>{{zip}}&nbsp;{{addressLine2}}<br/>{{tel}}<br/></li></ul></div> \
+                        <div class="popover-content panel-content">   \
+                            <ul class="inline">   \
+                                <li>IMO Number<br/></li>   \
+                                <li>Ship Name<br/></li>   \
+                                <li>Ship Category<br/></li>   \
+                                <li>Operator<br/></li>   \
+                                <li>Registered Owner<br/></li>   \
+                                <li>Technical Manager<br/></li>   \
+                                <li>Last Seen<br/></li>   \
+                                <li>Move Status<br/></li>   \
+                                <li>MT Photo/Info<br/></li>   \
+                            </ul>   \
+                            <div class="actions" style="">\
+                                <button class="btn btn-primary pull-right my-btn">Ship Overview</button>  \
+                             </div> \
+                        </div> \
+                        <div class="break">GE SmartSignal</div>       \
                         <footer class="panel-footer"> \
-                          <div class="secondary"><a class="btn btn-map"><i class="icon-phone"></i></a></div> \
-                          <div class="primary"><a class="btn btn-map"><i class="icon-star"></i>Bookmark</a><a class="btn btn-map"><i class="icon-pencil"></i></a></div> \
+                             <div>Gearbox Temerature Anomaly</div>    \
+                             <div>DIAGNOSIS</div> \
+                             <div>SmartSignal has detected a small increase in bearing metal temperature on th einboard driver bearing on the gearbox of the top drive. Actual values are reaching 210 degrees Fahrenheit, while values were expected to be around 200 degrees Fahrenheit.  A small increase in vibrations is also being detected on the same bearing.  Vibrations have increased from expected values around 0.3 mils to values as high as 0.5 mils.</div> \
+                             <div> \
+                                <a href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Details</a>   \
+                             </div>\
                         </footer> \
                       </div>';
             e.preventDefault();
             $(".my-popover").remove();
             var id = "p-0";
-            var title = "na";
-            var zip = "na";
-            var tel = "na";
-            var message = "na";
-            var addressLine1 = "na";
-            var addressLine2 = "na";
-
+            var title = "DS-01";
+            //var zip = "na";
+            //var tel = "na";
+            //var message = "na";
+            //var addressLine1 = "na";
+            //var addressLine2 = "na";
+            var uuid = "301";
             var tmp = html;
                 tmp = tmp.split("{{popoverId}}").join(id)
                       .split("{{title}}").join(title)
-                      .split("{{message}}").join(message)
-                      .split("{{addressLine1}}").join(addressLine1)
-                      .split("{{addressLine2}}").join(addressLine2)
-                      .split("{{zip}}").join(zip)
-                      .split("{{tel}}").join(tel)
+                      .split("{{uuid}}").join(uuid)
                       
                 console.log(tmp);
                 $(document.body).prepend(tmp);
@@ -366,6 +382,39 @@
       
 
 </script>
+
+<style>
+.my-popover
+{
+
+}
+.my-popover footer
+{
+    background-color: #fff;
+}
+.my-popover .my-btn{
+ 
+    margin-bottom: 10px;
+}
+.my-popover .break{
+    background-color: #de2533;
+    color: #fff;
+    padding:10px;
+    clear:both;
+    
+}
+.my-popover header .popover-title h3{
+  color: #fff;
+}
+.my-popover header .popover-title{
+  text-align: center;
+  background-color: #505357;
+  color: #fff;
+
+
+}
+
+</style>
 
 <script src="./iidx/components/respond/respond.src.js"></script>
 
