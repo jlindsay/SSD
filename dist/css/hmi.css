@@ -242,11 +242,16 @@ li [class^="icon-"], li [class*=" icon-"]{
   display: block;
 
 }
-.asset-pannel [class^="icon-"], .asset-pannel [class*=" icon-"] {
+.asset-pannel [class^="icon-"], .asset-pannel [class*=" icon-"],
+.asset-pannel img {
   font-size: 24px;
   display: block;
   margin-left:35px;
+  height:30px;
+  width:30px;
 }
+
+
 
 .content-area{
   display: inline-block;
