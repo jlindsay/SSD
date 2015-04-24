@@ -384,18 +384,16 @@
                           .split("{{photo_info}}").join(ship_data.photo_info)
                           .split("{{uuid}}").join(ship_data.uuid)
                       
-                //console.log(tmp);
+                
                 $(document.body).prepend(tmp);
                 var position = $(e.target).position();
                 var offset = $(e.target).offset();
 
-                    console.log( position, offset );
-                //$(id).css("position", "realative");
-                //console.log( $("#"+id).width() );
+                    //console.log( position, offset );
                 $("#"+id).css("top", Number(offset.top) + 35 );
                 $("#"+id).css("left", Number(offset.left) - 123 );
-                //$(id).fadeIn();
-            console.log("shit happens!");
+                
+    //        console.log("shit happens!");
         };
 
     
@@ -467,7 +465,7 @@
 <style>
 .my-popover
 {
-    min-width:350px;
+    min-width:500px;
 }
 .my-popover footer
 {
@@ -491,8 +489,6 @@
   text-align: center;
   background-color: #505357;
   color: #fff;
-
-
 }
 
 </style>
