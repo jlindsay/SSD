@@ -291,6 +291,10 @@ img {
 
 }
 
+.content-area .pannel header .pannel-alert{
+  background-color:#dc2838;
+}
+
 .breadcrumb
 {
     margin:20px;
