@@ -127,43 +127,47 @@
 		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
 		</li>
 		<li class="list-group-item">DS-01 
-			   <input name="data" value="#a" type="hidden" />
-        <input class="btn btn-danger" type="button" value="POOR">
+			<input name="data" value="#a" type="hidden" />
+            <input name="id" value="#ds_01" type="hidden" />
+            <input class="btn btn-danger" type="button" value="POOR">
    			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
    			<div class="description">Acme Drilling Co.</div>
    			<div class="details">9% Average Downtime</div>
       
  		</li>
 		<li class="list-group-item">DS-02 
-			   <input name="data" value="#b" type="hidden" />
-        <input class="btn btn-success" type="button" value="GOOD">
+			<input name="data" value="#b" type="hidden" />
+            <input name="id" value="#ds_02" type="hidden" />
+            <input class="btn btn-success" type="button" value="GOOD">
   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
   			<div class="description">Acme Drilling Co.</div>
    			<div class="details">16% Average Downtime</div>
       
 		</li>
 		<li class="list-group-item">DS-03 
-			   <input name="data" value="#c" type="hidden" />
-        <input class="btn btn-success" type="button" value="GOOD">
+			<input name="data" value="#c" type="hidden" />
+            <input name="id" value="#ds_03" type="hidden" />
+            <input class="btn btn-success" type="button" value="GOOD">
   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
   			<div class="description">Acme Drilling Co.</div>
    			<div class="details">21% Average Downtime</div>
       
 		</li>
 		<li class="list-group-item">DS-04 
-        <input name="data" value="#d" type="hidden" />
-        <input class="btn btn-warning" type="button" value="INTERMEDIATE">
+            <input name="data" value="#d" type="hidden" />
+            <input name="id" value="#ds_04" type="hidden" />
+            <input class="btn btn-warning" type="button" value="INTERMEDIATE">
   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
   			<div class="description">Acme Drilling Co.</div>
    			<div class="details">7% Average Downtime</div>
 		</li>
 		<li class="list-group-item">DS-05 
-			   <input name="data" value="#e" type="hidden" />
-        <input class="btn btn-success" type="button" value="GOOD">
+			<input name="data" value="#e" type="hidden" />
+            <input name="id" value="#ds_05" type="hidden" />
+            <input class="btn btn-success" type="button" value="GOOD">
   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
   			<div class="description">Acme Drilling Co.</div>
    			<div class="details">9% Average Downtime</div>
-      
 		</li>
 	</ul>
 </nav>
@@ -172,11 +176,11 @@
 <section id="content" style="left:400px;right:0px;margin-top:97px; position:relative; overflow:hidden;">
       <div class="parent" style="overflow: hidden; position: relative;">
         <div class="panzoom" style="transform: matrix(1.2, 0, 0, 1.2, -144.314285714285, 28.5160714285843); backface-visibility: hidden; transform-origin: 50% 50% 0px; cursor: move; transition: none; -webkit-transition: none;">
-            <a id="a" href="home.html?uuid=202"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
-            <a id="b" href="home.html?uuid=203"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
-            <a id="c" href="home.html?uuid=204"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
-            <a id="d" href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
-            <a id="d" href="home.html?uuid=205"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1250px;"></a>
+            <a id="a" data='ds_01' href="home.html?uuid=301"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
+            <a id="b" data='ds_02' href="home.html?uuid=302"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
+            <a id="c" data='ds_03' href="home.html?uuid=303"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
+            <a id="d" data='ds_04' href="home.html?uuid=304"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
+            <a id="d" data='ds_05' href="home.html?uuid=305"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1250px;"></a>
             <img id="my-map" class="map" src="./img/google-map.png">
         </div>
       </div>
@@ -307,16 +311,24 @@
         //$("#left-nav ul li").css( "cursor","");
         $("#left-nav ul li").click(function(e){
          // console.log(e.target)
-            var id = $(e.target).closest("li").find("input[name=data]").val()
-            console.log("click:", id );
-            var elm = $(id).find("img");
-            showPopup({target : elm, preventDefault:function(){} })
+            e.preventDefault();
+            var elm_id = $(e.target).closest("li").find("input[name=data]").val()
+            var id = $(e.target).closest("li").find("input[name=id]").val()
+            console.log("click:", elm_id );
+            var elm = $(elm_id).find("img");
+            showPopup({target : elm, preventDefault:function(){}, id:id })
             //console.log($(id))
         })
     }
 
     function showPopup(e)
     {
+        //try{
+            e.preventDefault()
+        //}catch(e){
+
+        //}
+        
           var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
                         <!--div class="arrow"></div--> \
                         <header class="panel-header"> \
@@ -325,15 +337,15 @@
                         </header> \
                         <div class="popover-content panel-content">   \
                             <ul class="inline">   \
-                                <li>IMO Number<br/></li>   \
-                                <li>Ship Name<br/></li>   \
-                                <li>Ship Category<br/></li>   \
-                                <li>Operator<br/></li>   \
-                                <li>Registered Owner<br/></li>   \
-                                <li>Technical Manager<br/></li>   \
-                                <li>Last Seen<br/></li>   \
-                                <li>Move Status<br/></li>   \
-                                <li>MT Photo/Info<br/></li>   \
+                                <li>IMO Number:{{imp_number}}</li>   \
+                                <li>Ship Name:{{ship_name}}</li>   \
+                                <li>Ship Category:{{ship_category}}</li>   \
+                                <li>Operator:{{operator}}</li>   \
+                                <li>Registered Owner:{{registered_owner}}</li>   \
+                                <li>Technical Manager:{{technical_manager}}</li>   \
+                                <li>Last Seen:{{last_seen}}</li>   \
+                                <li>Move Status:{{move_status}}</li>   \
+                                <li>MT Photo/Info:{{photo_info}}</li>   \
                             </ul>   \
                             <div class="actions" style="">\
                                 <button class="btn btn-primary pull-right my-btn">Ship Overview</button>  \
@@ -349,22 +361,30 @@
                              </div>\
                         </footer> \
                       </div>';
-            e.preventDefault();
+            
+
             $(".my-popover").remove();
             var id = "p-0";
-            var title = "DS-01";
-            //var zip = "na";
-            //var tel = "na";
-            //var message = "na";
-            //var addressLine1 = "na";
-            //var addressLine2 = "na";
-            var uuid = "301";
+            var key = $(e.target).closest("a").attr("data");
+  
+
+            var ship_data = ship_dataset[key];
+            
             var tmp = html;
                 tmp = tmp.split("{{popoverId}}").join(id)
-                      .split("{{title}}").join(title)
-                      .split("{{uuid}}").join(uuid)
+                          .split("{{title}}").join(ship_data.title)
+                          .split("{{imp_number}}").join(ship_data.imp_number)
+                          .split("{{ship_name}}").join(ship_data.ship_name)
+                          .split("{{ship_category}}").join(ship_data.ship_category)
+                          .split("{{operator}}").join(ship_data.operator)
+                          .split("{{registered_owner}}").join(ship_data.registered_owner)
+                          .split("{{technical_manager}}").join(ship_data.technical_manager)
+                          .split("{{last_seen}}").join(ship_data.last_seen)
+                          .split("{{move_status}}").join(ship_data.move_status)
+                          .split("{{photo_info}}").join(ship_data.photo_info)
+                          .split("{{uuid}}").join(ship_data.uuid)
                       
-                console.log(tmp);
+                //console.log(tmp);
                 $(document.body).prepend(tmp);
                 var position = $(e.target).position();
                 var offset = $(e.target).offset();
@@ -372,15 +392,76 @@
                     console.log( position, offset );
                 //$(id).css("position", "realative");
                 //console.log( $("#"+id).width() );
-                $("#"+id).css("top", Number(offset.top) - 230 );
+                $("#"+id).css("top", Number(offset.top) + 35 );
                 $("#"+id).css("left", Number(offset.left) - 123 );
                 //$(id).fadeIn();
             console.log("shit happens!");
         };
 
     
-      
+        var ship_dataset = {
+             'ds_01' : {   title : "DS-01",
+                            imp_number : "NA",
+                            ship_name : "NA",
+                            ship_category : "NA",
+                            operator : "NA",
+                            registered_owner : "NA",
+                            technical_manager : "NA",
+                            last_seen : "NA",
+                            move_status : "NA",
+                            photo_info : "NA",
+                            uuid : "301"
+                        }, 
+             'ds_02' : {   title : "DS-02",
+                            imp_number : "NA",
+                            ship_name : "NA",
+                            ship_category : "NA",
+                            operator : "NA",
+                            registered_owner : "NA",
+                            technical_manager : "NA",
+                            last_seen : "NA",
+                            move_status : "NA",
+                            photo_info : "NA",
+                            uuid : "301"
+                        }, 
+            'ds_03' : {   title : "DS-03",
+                            imp_number : "NA",
+                            ship_name : "NA",
+                            ship_category : "NA",
+                            operator : "NA",
+                            registered_owner : "NA",
+                            technical_manager : "NA",
+                            last_seen : "NA",
+                            move_status : "NA",
+                            photo_info : "NA",
+                            uuid : "301"
+                        },
 
+            'ds_04' : {   title : "DS-04",
+                            imp_number : "NA",
+                            ship_name : "NA",
+                            ship_category : "NA",
+                            operator : "NA",
+                            registered_owner : "NA",
+                            technical_manager : "NA",
+                            last_seen : "NA",
+                            move_status : "NA",
+                            photo_info : "NA",
+                            uuid : "301"
+                        },
+             'ds_05' : {   title : "DS-05",
+                            imp_number : "NA",
+                            ship_name : "NA",
+                            ship_category : "NA",
+                            operator : "NA",
+                            registered_owner : "NA",
+                            technical_manager : "NA",
+                            last_seen : "NA",
+                            move_status : "NA",
+                            photo_info : "NA",
+                            uuid : "301"
+                        }
+            }
 </script>
 
 <style>
