@@ -124,7 +124,7 @@
 
       <ul id="ship" class="nav navbar-nav" style="margin-left:40px;display:none;">
         <li>
-        	<a class="active" href="#">
+        	<a class="active" href="#bop">
 	            <svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -132,7 +132,7 @@
 			</a>
 		</li>
         <li>
-        	<a href="#">
+        	<a href="#well">
 	            <svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -140,7 +140,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#">        	
+        	<a href="#riser">        	
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -148,7 +148,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#">
+        	<a href="#drillfloor">
 	        	<svg width="10" height="10">
 	        		<path d=" 	M 5 0 
 					        	L 0 10 
@@ -158,7 +158,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#">        	
+        	<a href="#fire-and-gas">        	
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -166,7 +166,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#">        	
+        	<a href="#power-managment">        	
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -174,7 +174,7 @@
 			</a>
         </li>
         <li>	
-        	<a href="#">        	
+        	<a href="#dynamic-position">        	
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -244,6 +244,7 @@
 
 	var DEFAULT_TEMPLATE = "./temp/overview.html";
 	var _tab;
+	var _sub_tab;
 	var _sub_nav;
 	var _sub_nav_dropdown;
 	var _pannels=[];
@@ -287,7 +288,8 @@
 				hash_params[tmp[0]] = tmp[1];
 		});
 
-		_tab = hash_params['tab'];
+		_tab 				= hash_params['tab'];
+		_sub_tab 			= hash_params['sub-tab'];
 		_sub_nav 			= hash_params['sub'];
 		_sub_nav_dropdown 	= hash_params['dropdown'];
 
@@ -332,23 +334,16 @@
 			//$("#master-nav li:first").addClass("active");
 		}
 
-/*
-		$("#ship").click(function(e){
-			console.log("#ship li a::click()e.target:", e.target);
-		})
-*/
 		$("#navbar").fadeIn();
 		$(elm_id).fadeIn();
 
 		var key = elm_id.split("#").join("");
 
+		initSubTab();
+
+
 		switch(elm_id)
 		{
-/*
-			case "#fleet":
-				loadTemplate( "home_fleet" );
-				break;
-*/
 			case "#ship":
 				loadTemplate( "home_ship" );
 				break;
@@ -357,7 +352,6 @@
 //				loadTemplate( "home_index" );
 				break;
 		}
-
 	}
 
 	function updateBreadcrum()
@@ -370,6 +364,10 @@
 		if( _tab ){
 			hash += "tab=" + _tab;
 			html += "<li>" + _tab.split("-").join(" ")+"</li>";
+		}
+		if( _sub_tab ){
+			hash += "&sub_tab=" + _sub_tab;
+			html += "<li>" + _sub_tab.split("-").join(" ")+"</li>";
 		}
 		if( _sub_nav && _sub_nav != "" ){
 			hash += "&sub=" + _sub_nav;	
@@ -388,6 +386,59 @@
 			$("#breadcrumb").empty();
 			$("#breadcrumb").html(html);
 			$("#breadcrumb li:last").addClass("active");
+	}
+
+	function initSubTab()
+	{
+		console.log("debug:initSubTab()");
+		$("#ship li").click(function(e){
+			e.preventDefault();
+			var elm = $(e.target).closest("li").find("a");
+			var href = $(elm).attr("href");
+				_sub_tab = href;//href.split("#").join("");
+				//_sub_nav = "";
+				console.log("sub_tab:click:", href);
+				//loadTemplate( _sub_tab );
+				focusSubtab();
+				//updateBreadcrum();
+		});
+
+		//updateBreadcrum();
+		
+
+	}
+
+	function focusSubtab()
+	{
+		switch( _sub_tab )
+		{
+			case "#drillfloor":
+				console.log("ping:focusSubtab:", _sub_tab);
+				loadTemplate( "home_ship_drillfloor" );
+				break;
+/*			case "#bop":
+				loadTemplate( "home_ship_bop" );
+				break;
+			case "#well":
+				loadTemplate( "home_ship_well" );
+				break;
+			case "#riser":
+				loadTemplate( "home_ship_riser" );
+				break;
+			
+			case "#fire-and-gas":
+				loadTemplate( "home_ship_fire-and-gas" );
+				break;
+			case "#power-managment":
+				loadTemplate( "home_ship_power-managment" );
+				break;
+			case "#dynamic-position":
+				loadTemplate( "home_ship_dynamic-position" );
+				break;
+*/
+			default:
+				break;
+		}
 	}
 
 	function initSubNav()
@@ -482,8 +533,6 @@
 		_sub_nav = key;
 		_sub_nav_dropdown = undefined;
 		updateBreadcrum();
-
-
 	}
 
 	function loadSubNavDropdownContentTemplate(key)
