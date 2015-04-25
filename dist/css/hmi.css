@@ -303,11 +303,37 @@ img {
 }
 .content-area .pannel header h1{
   color:#fff;
+  display:inline-block;
   }
 .content-area .pannel header{
   background-color:#505357
 }
+
+.content-area .pannel header span.action-btns img.sort,
+.content-area .pannel header span.action-btns img.filter
+.content-area .pannel header span.action-btns img.add,
+{
+  width:100px;
+  height:34px;
+  display:inline-block;
+  clear:both;
+}
+
+.content-area .pannel header span.action-btns img.sort
+{
+  width:100px;
+}
+.content-area .pannel header span.action-btns img.filter
+{
+  width:100px;
+}
+.content-area .pannel header span.action-btns img.add
+{
+  width:60px;
+}
+
 .pannel header img{
+  margin-top: 10px;
   height:30px;
   width:30px;
 }
