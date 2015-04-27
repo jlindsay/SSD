@@ -339,8 +339,11 @@
 
 		var key = elm_id.split("#").join("");
 
-		initSubTab();
 
+		console.log("focusMainTabs():sub_tab:", _sub_tab)
+
+		initSubTab();
+		//return;
 
 		switch(elm_id)
 		{
@@ -390,19 +393,20 @@
 
 	function initSubTab()
 	{
-		console.log("debug:initSubTab()");
+		console.log("debug:initSubTab():_sub_tab", _sub_tab);
 		$("#ship li").click(function(e){
 			e.preventDefault();
 			var elm = $(e.target).closest("li").find("a");
 			var href = $(elm).attr("href");
-				_sub_tab = href;//href.split("#").join("");
+				_sub_tab = href.split("#").join("");
 				//_sub_nav = "";
 				console.log("sub_tab:click:", href);
 				//loadTemplate( _sub_tab );
 				focusSubtab();
 				//updateBreadcrum();
 		});
-
+		focusSubtab();
+		//focusSubNav();
 		//updateBreadcrum();
 		
 
@@ -410,9 +414,13 @@
 
 	function focusSubtab()
 	{
+		console.log("focusSubtab():sub_tab:", _sub_tab );
+		if(!_sub_tab){
+			return;
+		}
 		switch( _sub_tab )
 		{
-			case "#drillfloor":
+			case "drillfloor":
 				console.log("ping:focusSubtab:", _sub_tab);
 				loadTemplate( "home_ship_drillfloor" );
 				break;
