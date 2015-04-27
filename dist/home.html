@@ -147,7 +147,7 @@
 				<span style="margin-left:5px;">Riser</span>
 			</a>
         </li>
-        <li>
+        <li id="drillfloor">
         	<a href="#drillfloor">
 	        	<svg width="10" height="10">
 	        		<path d=" 	M 5 0 
@@ -340,9 +340,6 @@
 		var key = elm_id.split("#").join("");
 
 
-		//console.log("focusMainTabs():sub_tab:", _sub_tab)
-		//NOTE: HACK: I know this is hacky
-		
 		
 		//return;
 
@@ -351,7 +348,7 @@
 			case "#ship":
 				if( _sub_tab == "drillfloor" ){
 					initSubTab();
-					return
+					
 				}else{
 					loadTemplate( "home_ship" );
 				}
@@ -409,12 +406,26 @@
 				//_sub_nav = "";
 				console.log("sub_tab:click:", href);
 				//loadTemplate( _sub_tab );
+				$("#master-nav li").removeClass("active");
+				$("#ship li").removeClass("active");
+				$(elm).closest("li").addClass("active");
 				focusSubtab();
 				//updateBreadcrum();
 		});
 		focusSubtab();
 		//focusSubNav();
 		//updateBreadcrum();
+
+/*
+		var elm = $("#master-nav").find("a[href='"+elm_id+"']");//
+			$("#master-nav li a").removeClass("active");
+		if( elm )
+		{
+			$(elm).closest("li").addClass("active");	
+		}else{
+			//$("#master-nav li:first").addClass("active");
+		}
+		*/
 	}
 
 	function focusSubtab()
@@ -423,10 +434,13 @@
 		if(!_sub_tab){
 			return;
 		}
+		
 		switch( _sub_tab )
 		{
 			case "drillfloor":
 				console.log("ping:focusSubtab:", _sub_tab);
+				$("#master-nav li").removeClass("active");
+				$("#drillfloor").addClass("active");
 				loadTemplate( "home_ship_drillfloor" );
 				break;
 /*			case "#bop":
