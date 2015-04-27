@@ -265,6 +265,12 @@
 				console.log("debug:elm:", e.target);
 				$("#master-nav li").removeClass("active");
 				$(e.target).closest("li").addClass("active");
+				_sub_tab = "";
+				_sub = "overview";
+				//$(location).attr('hash', "#tab=ship&sub=overview")
+				
+				$("#ship li").removeClass("active");
+
 				focusMainTabs(elm);
 		});
 
@@ -342,11 +348,11 @@
 
 		
 		//return;
-
+		console.log("ping:_sub_tab:", _sub_tab, ", _tab:" , _tab);
 		switch(elm_id)
 		{
 			case "#ship":
-				if( _sub_tab == "drillfloor" ){
+				if( _sub_tab == "drillfloor" && _tab == "ship" ){
 					initSubTab();
 					
 				}else{
@@ -399,7 +405,7 @@
 	{
 		console.log("debug:initSubTab():_sub_tab", _sub_tab);
 		$("#ship li").click(function(e){
-			e.preventDefault();
+				e.preventDefault();
 			var elm = $(e.target).closest("li").find("a");
 			var href = $(elm).attr("href");
 				_sub_tab = href.split("#").join("");
@@ -416,16 +422,7 @@
 		//focusSubNav();
 		//updateBreadcrum();
 
-/*
-		var elm = $("#master-nav").find("a[href='"+elm_id+"']");//
-			$("#master-nav li a").removeClass("active");
-		if( elm )
-		{
-			$(elm).closest("li").addClass("active");	
-		}else{
-			//$("#master-nav li:first").addClass("active");
-		}
-		*/
+
 	}
 
 	function focusSubtab()
