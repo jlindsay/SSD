@@ -331,8 +331,8 @@
 
         //}
         
-          var html = '<div id="{{popoverId}}" class="my-popover popover top" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
-                        <!--div class="arrow"></div--> \
+          var html = '<div id="{{popoverId}}" rel="popover" class="my-popover popover bottom" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
+                        <div class="arrow" ></div> \
                         <header class="panel-header"> \
                           <!--div class="left"><i class="icon-map-marker"></i></div--> \
                           <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
@@ -388,12 +388,13 @@
                       
                 
                 $(document.body).prepend(tmp);
+                //$(".my-popover").popover({position:"bottom"});
                 var position = $(e.target).position();
                 var offset = $(e.target).offset();
 
                     //console.log( position, offset );
-                $("#"+id).css("top", Number(offset.top) + 35 );
-                $("#"+id).css("left", Number(offset.left) - 123 );
+                $("#"+id).css("top", Number(offset.top) + 25 );
+                $("#"+id).css("left", Number(offset.left) - 235 );
 
     //        console.log("shit happens!");
         };
@@ -498,6 +499,11 @@
   color: #fff;
 }
 
+.my-popover > .arrow, .my-popover > .arrow:after
+{
+    /*border-style:;*/
+    /*background-color: #505357;    */
+}
 </style>
 
 <script src="./iidx/components/respond/respond.src.js"></script>
