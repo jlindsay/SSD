@@ -85,7 +85,7 @@
   <div class="primary-navbar nav-collapse">
     <div class="container">
 		<!--button class="btn btn-primary">Fleet View</button-->
-		<button id="fleet-view-btn" class="btn btn-primary pull-left"><i class="icon-sitemap pull-left"></i>Fleet View<span></button>
+		<a id="fleet-view-btn" href="./fleet-view.html?uuid=201#" class="btn btn-primary pull-left"><i class="icon-sitemap pull-left"></i>Fleet View<span></a>
 		<ul id="master-nav" class="nav navbar-nav">
 			<li><a href="#ship">
 					<svg width="10" height="10"><path d=" M 5 0 L 0 10 L 10 10" fill="#ff0000" /></svg>
@@ -340,15 +340,22 @@
 		var key = elm_id.split("#").join("");
 
 
-		console.log("focusMainTabs():sub_tab:", _sub_tab)
-
-		initSubTab();
+		//console.log("focusMainTabs():sub_tab:", _sub_tab)
+		//NOTE: HACK: I know this is hacky
+		
+		
 		//return;
 
 		switch(elm_id)
 		{
 			case "#ship":
-				loadTemplate( "home_ship" );
+				if( _sub_tab == "drillfloor" ){
+					initSubTab();
+					return
+				}else{
+					loadTemplate( "home_ship" );
+				}
+				
 				break;
 			case "#index":
 			default:
@@ -408,8 +415,6 @@
 		focusSubtab();
 		//focusSubNav();
 		//updateBreadcrum();
-		
-
 	}
 
 	function focusSubtab()

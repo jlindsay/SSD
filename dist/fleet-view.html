@@ -107,7 +107,7 @@
 
 <nav id="left-nav" style="width:400px;max-width:400px; padding:20px; padding-top:120px; height:auto;">
 	<h4 style="color:#333;"><strong>SMARTSIGNAL INCIDENtS</strong></h4>
-	<ul class="list-group" style="padding-top:0px;">
+	<ul class="list-group smart-signal" style="padding-top:0px;">
 		<li class="list-group-item">DS-01 <div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
 			
 			<div class="description">Overall Risk  <div class="pull-right" style="color:#333; font-weight:bold;">87%</div></div>
@@ -121,7 +121,7 @@
 
 	
 	<h4 style="color:#333;"><strong>SHIPS</strong></h4>
-	<ul class="list-group" style="padding-top:0px;">
+	<ul class="list-group ships" style="padding-top:0px;">
 		<li class="list-group-item">
 		<i class="icon-search" style="font-size:18px;color:#aaa;"></i> Search
 		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
@@ -135,7 +135,7 @@
    			<div class="details">9% Average Downtime</div>
       
  		</li>
-		<li class="list-group-item">DS-02 
+		<li class="list-group-item" id="ds-02-item">DS-02 
 			<input name="data" value="#b" type="hidden" />
             <input name="id" value="#ds_02" type="hidden" />
             <input class="btn btn-success" type="button" value="GOOD">
@@ -304,16 +304,23 @@
         $(".panzoom").panzoom('pan', -726, -674, {relative: false, animate: true} ) // center  
         
         //$("#left-nav ul li").css( "cursor","");
-        $("#left-nav ul li").click(function(e){
+        $("#left-nav ul.ships li").click(function(e){
          // console.log(e.target)
             e.preventDefault();
             var elm_id = $(e.target).closest("li").find("input[name=data]").val()
             var id = $(e.target).closest("li").find("input[name=id]").val()
             console.log("click:", elm_id );
             var elm = $(elm_id).find("img");
+            console.log("elm:", elm);
             showPopup({target : elm, preventDefault:function(){}, id:id })
             //console.log($(id))
-        })
+        });
+
+        $("#left-nav ul.smart-signal li").click(function(e){
+            e.preventDefault();
+            console.log("smart-signal::click:");
+            $("#ds-02-item").trigger("click");
+        });
     }
 
     function showPopup(e)
@@ -332,15 +339,15 @@
                         </header> \
                         <div class="popover-content panel-content">   \
                             <ul class="inline">   \
-                                <li>IMO Number:{{imp_number}}</li>   \
-                                <li>Ship Name:{{ship_name}}</li>   \
-                                <li>Ship Category:{{ship_category}}</li>   \
-                                <li>Operator:{{operator}}</li>   \
-                                <li>Registered Owner:{{registered_owner}}</li>   \
-                                <li>Technical Manager:{{technical_manager}}</li>   \
-                                <li>Last Seen:{{last_seen}}</li>   \
-                                <li>Move Status:{{move_status}}</li>   \
-                                <li>MT Photo/Info:{{photo_info}}</li>   \
+                                <li>IMO Number<span class="offset_space">:{{imp_number}}</span></li>   \
+                                <li>Ship Name<span class="offset_space">:{{ship_name}}</span></li>   \
+                                <li>Ship Category<span class="offset_space">:{{ship_category}}</span></li>   \
+                                <li>Operator<span class="offset_space">:{{operator}}</span></li>   \
+                                <li>Registered Owner<span class="offset_space">:{{registered_owner}}</span></li>   \
+                                <li>Technical Manager<span class="offset_space">:{{technical_manager}}</span></li>   \
+                                <li>Last Seen<span class="offset_space">:{{last_seen}}</span></li>   \
+                                <li>Move Status<span class="offset_space">:{{move_status}}</span></li>   \
+                                <li>MT Photo/Info<span class="offset_space">:{{photo_info}}</span></li>   \
                             </ul>   \
                             <div class="actions" style="">\
                                 <button class="btn btn-primary pull-right my-btn">Ship Overview</button>  \
@@ -394,70 +401,75 @@
     
         var ship_dataset = {
              'ds_01' : {   title : "DS-01",
-                            imp_number : "NA",
-                            ship_name : "NA",
-                            ship_category : "NA",
-                            operator : "NA",
-                            registered_owner : "NA",
-                            technical_manager : "NA",
-                            last_seen : "NA",
-                            move_status : "NA",
-                            photo_info : "NA",
+                            imp_number : "9234564",
+                            ship_name : "DS-01",
+                            ship_category : "Drill Ship",
+                            operator : "ACME Oil co.",
+                            registered_owner : "ACME Drilling co.",
+                            technical_manager : "ACME Drilling co.",
+                            last_seen : "4 May 2014 15:07 GMT",
+                            move_status : "Stationary",
+                            photo_info : "<a href='#'>Click Here</a>",
                             uuid : "301"
                         }, 
              'ds_02' : {   title : "DS-02",
-                            imp_number : "NA",
-                            ship_name : "NA",
-                            ship_category : "NA",
-                            operator : "NA",
-                            registered_owner : "NA",
-                            technical_manager : "NA",
-                            last_seen : "NA",
-                            move_status : "NA",
-                            photo_info : "NA",
-                            uuid : "301"
+                            imp_number : "9234559",
+                            ship_name : "DS-02",
+                            ship_category : "Drill Ship",
+                            operator : "ACME Oil co.",
+                            registered_owner : "ACME Drilling co.",
+                            technical_manager : "ACME Drilling co.",
+                            last_seen : "4 May 2014 15:07 GMT",
+                            move_status : "Stationary",
+                            photo_info : "<a href='#'>Click Here</a>",
+                            uuid : "302"
                         }, 
             'ds_03' : {   title : "DS-03",
-                            imp_number : "NA",
-                            ship_name : "NA",
-                            ship_category : "NA",
-                            operator : "NA",
-                            registered_owner : "NA",
-                            technical_manager : "NA",
-                            last_seen : "NA",
-                            move_status : "NA",
-                            photo_info : "NA",
-                            uuid : "301"
+                            imp_number : "9234343",
+                            ship_name : "DS-03",
+                            ship_category : "Drill Ship",
+                            operator : "ACME Oil co.",
+                            registered_owner : "ACME Drilling co.",
+                            technical_manager : "ACME Drilling co.",
+                            last_seen : "4 May 2014 15:07 GMT",
+                            move_status : "Stationary",
+                            photo_info : "<a href='#'>Click Here</a>",
+                            uuid : "303"
                         },
 
             'ds_04' : {   title : "DS-04",
-                            imp_number : "NA",
-                            ship_name : "NA",
-                            ship_category : "NA",
-                            operator : "NA",
-                            registered_owner : "NA",
-                            technical_manager : "NA",
-                            last_seen : "NA",
-                            move_status : "NA",
-                            photo_info : "NA",
-                            uuid : "301"
+                            imp_number : "9234664",
+                            ship_name : "DS-04",
+                            ship_category : "Drill Ship",
+                            operator : "ACME Oil co.",
+                            registered_owner : "ACME Drilling co.",
+                            technical_manager : "ACME Drilling co.",
+                            last_seen : "4 May 2014 15:07 GMT",
+                            move_status : "Stationary",
+                            photo_info : "<a href='#'>Click Here</a>",
+                            uuid : "304"
                         },
              'ds_05' : {   title : "DS-05",
-                            imp_number : "NA",
-                            ship_name : "NA",
-                            ship_category : "NA",
-                            operator : "NA",
-                            registered_owner : "NA",
-                            technical_manager : "NA",
-                            last_seen : "NA",
-                            move_status : "NA",
-                            photo_info : "NA",
-                            uuid : "301"
+                            imp_number : "9234564",
+                            ship_name : "DS-05",
+                            ship_category : "Drill Ship",
+                            operator : "ACME Oil co.",
+                            registered_owner : "ACME Drilling co.",
+                            technical_manager : "ACME Drilling co.",
+                            last_seen : "4 May 2014 15:07 GMT",
+                            move_status : "Stationary",
+                            photo_info : "<a href='#'>Click Here</a>",
+                            uuid : "305"
                         }
             }
 </script>
 
 <style>
+.offset_space
+{
+    /*margin-left: 30px;*/
+    float:right;
+}
 .my-popover
 {
     min-width:500px;

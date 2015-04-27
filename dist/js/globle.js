@@ -42,7 +42,10 @@ var _pages = [
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
         { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"301" },
-
+        { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"302" },
+        { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"303" },
+        { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"304" },
+        { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"305" },
 
     { url: 'summary.html' , hash: "Section-3" , uuid:"400" },
         { url: 'home.html' , hash: "" , uuid:"401" },
