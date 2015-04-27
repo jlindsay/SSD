@@ -64,6 +64,8 @@
   letter-spacing: 0.5px;
 }
 
+
+
 #left-nav{
   background-color: #fff;
   overflow: scroll;
@@ -80,6 +82,9 @@
    height:100%;
    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 }
+
+
+
 
 #left-nav ul{
     padding: 0;
@@ -126,6 +131,31 @@ position: relative;
 #left-nav ul li.selected a
 {
     background-color: #c2c2c2;
+}
+
+
+#left-nav ul.systems-overview
+{
+   height:80px;
+
+}
+#left-nav ul.systems-overview li
+{
+ 
+}
+#left-nav ul.systems-overview li span{
+  color:#aaa;  
+  display:block;
+  float:left;
+  clear:both;
+   padding-left: 35px;
+   color:#333;
+   line-height: 35px;
+}
+#left-nav ul.systems-overview li span.label{
+  padding-left: 20px;
+  color:#aaa;  
+  background: none;
 }
 
 

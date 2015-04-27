@@ -255,7 +255,7 @@
 		console.log("debug:initUI()");
 
 		$("#master-nav li a").click(function(e){
-				console.log("ping");
+				//console.log("ping");
 				e.preventDefault();
 			var elm = $(e.target).attr("href");
 				if(!elm){
@@ -468,6 +468,11 @@
 	function initSubNav()
 	{
 		console.log("debug:initSubNav()");
+
+		$("#left-nav ul.systems-overview li a").off();
+		$("#left-nav ul.systems-overview li a").click(function(e){
+			console.log("click:");
+		});
 
 		$("#left-nav ul li.level-0").off();
 		$("#left-nav ul li.level-0").click(function(e){
