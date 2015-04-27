@@ -66,7 +66,7 @@ body {
 .primary-navbar .nav li a {
   padding: 10px 15px 8px 15px;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: #eee;
 }
 
 
@@ -159,8 +159,10 @@ position: relative;
 }
 #left-nav ul.systems-overview li span.label{
   padding-left: 20px;
-  color:#aaa;  
+  color: #979797;  
   background: none;
+  font-size: 10px;
+  letter-spacing: 0.5px;
 }
 
 
