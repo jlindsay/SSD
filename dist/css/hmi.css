@@ -13,6 +13,7 @@
 .navbar-default .navbar-nav > .active > a:focus {
   background-color: #414141;
   color:#fff;
+  border-bottom: 2px white solid;
 }
 
 .container .profile
@@ -52,6 +53,15 @@
     top:0;
     width:100%;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav li {
+  margin: 2px 0px;
+}
+
+.primary-navbar .nav li a {
+  padding: 10px 15px 8px 15px;
+  letter-spacing: 0.5px;
 }
 
 #left-nav{
@@ -179,7 +189,8 @@ li [class^="icon-"], li [class*=" icon-"]{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height:100%;
-    max-width:125px;
+    max-width:130px;
+    width: 130px;
 /*    position:absolute;*/
     padding-top: 99px;
     position: fixed;
