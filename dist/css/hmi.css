@@ -7,6 +7,9 @@
 
 /*  override */
 
+body {
+  font-family: "GE Inspira", "ge-inspira", Helvetica, Arial, sans-serif;
+}
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -14,6 +17,7 @@
   background-color: #414141;
   color:#fff;
   border-bottom: 2px white solid;
+  font-weight: 500;
 }
 
 .container .profile
@@ -62,6 +66,7 @@
 .primary-navbar .nav li a {
   padding: 10px 15px 8px 15px;
   letter-spacing: 0.5px;
+  color: #fff;
 }
 
 
@@ -343,11 +348,16 @@ img {
   background-color:#dc2838;
 }
 .content-area .pannel header h1{
-  color:#fff;
-  display:inline-block;
-  }
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  vertical-align: middle;
+}
 .content-area .pannel header{
-  background-color:#505357
+  background-color: #505357;
+  box-shadow: 0px 2px 4px #888888;
 }
 
 .content-area .pannel header span.action-btns img.sort,
@@ -374,7 +384,7 @@ img {
 }
 
 .pannel header img{
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   height:30px;
   width:30px;
 }
