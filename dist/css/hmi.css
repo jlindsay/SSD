@@ -229,7 +229,7 @@ li [class^="icon-"], li [class*=" icon-"]{
     max-width:130px;
     width: 130px;
 /*    position:absolute;*/
-    padding-top: 99px;
+    padding-top: 102px;
     position: fixed;
     bottom:0;
     top:0;
@@ -268,11 +268,9 @@ li [class^="icon-"], li [class*=" icon-"]{
 
 
 .asset-pannel ul li{
-  line-height:42px;  
   color:#ffffff;
-  
-    padding-top: 10px;
-    padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .asset-pannel ul li a{
@@ -296,9 +294,9 @@ li [class^="icon-"], li [class*=" icon-"]{
 .asset-pannel img {
   font-size: 24px;
   display: block;
-  margin-left:35px;
+  /*margin-left:35px;
   height:30px;
-  width:30px;
+  width:30px;*/
 }
 
 
