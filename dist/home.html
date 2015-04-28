@@ -83,7 +83,7 @@ a
 		  <a class="btn btn-remove" href="./fleet-view.html?uuid=201#"><i class="icon-remove"></i></a>
 		</div>
 		<ul id="master-nav" class="nav navbar-nav">
-			<li><a href="#ship">
+			<li id="ship-tab"><a href="#ship">
 					<svg width="10" height="10"><path d=" M 5 0 L 0 10 L 10 10" fill="#ff0000" /></svg>
 					<span>Ship</span>
 				</a>
@@ -119,7 +119,7 @@ a
       </ul>
 
       <ul id="ship" class="nav navbar-nav" style="display:none;">
-        <li>
+        <li >
         	<a class="active" href="#bop">
 	            <svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
@@ -449,7 +449,18 @@ a
 
 				$("#master-nav li").removeClass("active");
 				
+				console.log( "ping()", $("#ship svg") );
+				$("#ship-tab svg").remove();
+
+
+				$("#ship-tab a").prepend('<svg height="10" width="10">   \
+  					<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />   \
+				</svg>');
+
+
+
 				$("#drillfloor svg").remove();
+				$("#drillfloor ").addClass("active");
 				$("#drillfloor a").prepend('<svg width="10" height="10">  \
 	        		<path d=" 	M 5 0  \
 					        	L 0 10  \
