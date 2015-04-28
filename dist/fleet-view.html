@@ -51,8 +51,9 @@
 }
 
 #left-nav ul li{
-	font-size: 18px;
-	color:#666;
+	font-size: 16px;
+	color:#000;
+  letter-spacing: 0.25px
 }
 
 #left-nav ul li .description{
@@ -61,8 +62,10 @@
 }
 
 #left-nav ul li .details{
-	font-size: 11px;
-	color:#aaa;
+	font-size: 12px;
+  color: #979797;
+  letter-spacing: 0.5px;
+  font-style: italic;
 }
 </style>
 
@@ -85,13 +88,6 @@
 
   <div class="pull-right profile">
       <div class="btn-toolbar pull-left">
-       
-        
-        <div class="btn-group open">
-          <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i><span class="user-name">Tom Edison</span> <i class="icon-chevron-down"></i></button>
-          
-        </div>
-        
         <img class="circular" src="./img/people/jeff-crossman.jpg" />
       </div>
     </div>
@@ -106,68 +102,68 @@
 </nav>
 
 <nav id="left-nav" style="width:400px;max-width:400px; padding:20px; padding-top:120px; height:auto;">
-	<h4 style="color:#333;"><strong>SMARTSIGNAL INCIDENtS</strong></h4>
+	<h4>SMARTSIGNAL INCIDENTS</h4>
 	<ul class="list-group smart-signal" style="padding-top:0px;">
-		<li class="list-group-item">DS-01 <div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
+		<li class="list-group-item">Gearbox Temerature Anomaly<div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
 			
-			<div class="description">Overall Risk  <div class="pull-right" style="color:#333; font-weight:bold;">87%</div></div>
+			<div class="description">Overall Risk  <div class="pull-right" style="color:#333; font-weight:bold;">24%</div></div>
  			<div style="width:100%; border:1px #ccc solid;">
- 				<div style="width:80%; height:10px;background-color:#dc2839;"></div>
+ 				<div style="width:24%; height:10px;background-color:#FFED45;"></div>
  			</div>
- 			<div class="details">Gearbox Temerature Anomaly</div>
+ 			<div class="details">DS-01</div>
 		</li>
 		
 	</ul>
 
 	
-	<h4 style="color:#333;"><strong>SHIPS</strong></h4>
+	<h4>SHIPS</h4>
 	<ul class="list-group ships" style="padding-top:0px;">
-		<li class="list-group-item">
+		<li class="list-group-item" style="border-bottom: 1px solid #ddd;margin-bottom:0px;color:#aaa;">
 		<i class="icon-search" style="font-size:18px;color:#aaa;"></i> Search
 		<!--input id="query" type="search" class="form-control tt-input" autocomplete="off" placeholder="Search" spellcheck="false" dir="auto" style="position:relative;float:left;width:280px; background-color:none;"-->
 		</li>
 		<li class="list-group-item" id="ds-01-item">DS-01 
 			   <input name="data" value="#a" type="hidden" />
         <input name="id" value="#ds_01" type="hidden" />
-            <input class="btn btn-danger" type="button" value="POOR">
-   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+            <input class="btn btn-warning" type="button" value="AVAILABLE">
+   			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#E7E8EA;line-height:75px;"></i>
    			<div class="description">Acme Drilling Co.</div>
-   			<div class="details">9% Average Downtime</div>
+   			<div class="details">11% Average Downtime</div>
       
  		</li>
 		<li class="list-group-item " id="ds-02-item">DS-02 
 			<input name="data" value="#b" type="hidden" />
             <input name="id" value="#ds_02" type="hidden" />
-            <input class="btn btn-success" type="button" value="GOOD">
-  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+            <input class="btn btn-success" type="button" value="AVAILABLE">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#E7E8EA;line-height:75px;"></i>
   			<div class="description">Acme Drilling Co.</div>
-   			<div class="details">16% Average Downtime</div>
+   			<div class="details">9% Average Downtime</div>
       
 		</li>
 		<li class="list-group-item " id="ds-03-item">DS-03 
 			<input name="data" value="#c" type="hidden" />
             <input name="id" value="#ds_03" type="hidden" />
-            <input class="btn btn-success" type="button" value="GOOD">
-  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+            <input class="btn btn-success" type="button" value="AVAILABLE">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#E7E8EA;line-height:75px;"></i>
   			<div class="description">Acme Drilling Co.</div>
-   			<div class="details">21% Average Downtime</div>
+   			<div class="details">16% Average Downtime</div>
       
 		</li>
 		<li class="list-group-item" id="ds-04-item">DS-04 
             <input name="data" value="#d" type="hidden" />
             <input name="id" value="#ds_04" type="hidden" />
-            <input class="btn btn-warning" type="button" value="INTERMEDIATE">
-  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+            <input class="btn btn-danger" type="button" value="UNAVAILABLE">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#E7E8EA;line-height:75px;"></i>
   			<div class="description">Acme Drilling Co.</div>
-   			<div class="details">7% Average Downtime</div>
+   			<div class="details">21% Average Downtime</div>
 		</li>
 		<li class="list-group-item " id="ds-05-item">DS-05 
 			<input name="data" value="#e" type="hidden" />
             <input name="id" value="#ds_05" type="hidden" />
-            <input class="btn btn-success" type="button" value="GOOD">
-  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#666;line-height:80px;"></i>
+            <input class="btn btn-success" type="button" value="AVAILABLE">
+  			<i class="module-arrow icon-chevron-right pull-right" style="font-size:18px;color:#E7E8EA;line-height:75px;"></i>
   			<div class="description">Acme Drilling Co.</div>
-   			<div class="details">9% Average Downtime</div>
+   			<div class="details">7% Average Downtime</div>
 		</li>
 	</ul>
 </nav>
