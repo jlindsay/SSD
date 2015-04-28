@@ -41,10 +41,36 @@ body {
   margin-left: 155px;
 }
 
+
+#btn-analyze {
+  margin-top: 1px;
+}
+
+#btn-analyze img{
+  height: 14px;
+  margin-right: 4px;
+  margin-top: -1px;
+}
+
+#btn-analyze .btn{
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: #414141;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
+#btn-analyze .btn.active {
+  background-color: #4A90E2;
+}
+
 #fleet-view-btn
 {
-  margin-top: 6px; 
+  margin-top: 8px;
   margin-right: 10px;
+  background-color: #4A90E2;
+  margin-bottom: 9px;
 }
 
 #fleet-view-btn i{
@@ -53,7 +79,7 @@ body {
 
 #ship-view-btn
 {
-  margin-top: 7px; 
+  margin-top: 8px; 
   margin-right: 10px;
 }
 
@@ -108,6 +134,11 @@ body {
    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 }
 
+#left-nav h4 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 
 
 
@@ -116,7 +147,7 @@ body {
     padding-top: 99px;
     list-style-type: none;
     margin:0px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 
 }
@@ -125,7 +156,14 @@ body {
 /*    height:35px;  */
     width:100%;
     clear:both;
+      border: none;
+  border-bottom: 1px solid #ddd;
+}
 
+#left-nav .btn {
+  font-size: 11px;
+  letter-spacing: 0.25px;
+  padding: 0px 8px 0px 6px;
 }
 
 #left-nav ul li a{
@@ -451,9 +489,11 @@ img {
 .circular {
   width: 30px;
   height: 30px;
+  /*
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
+  */
   display:inline-block;
   float:right;
 }
