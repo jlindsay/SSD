@@ -448,11 +448,11 @@
 		switch( _sub_tab )
 		{
 			case "drillfloor":
-				console.log("ping:focusSubtab:", _sub_tab);
-				console.log("svg:", $("#drillfloor svg.warning") );
+				//console.log("ping:focusSubtab:", _sub_tab);
+				//console.log("svg:", $("#drillfloor svg.warning") );
 
-				//$("#master-nav li").removeClass("active");
-				//$("#drillfloor-warning").removeClass("hidden");
+				$("#master-nav li").removeClass("active");
+				
 				$("#drillfloor svg").remove();
 				$("#drillfloor a").prepend('<svg width="10" height="10">  \
 	        		<path d=" 	M 5 0  \
@@ -460,7 +460,6 @@
 					        	L 10 10 \
 					        	" fill="#ff9821" /></svg>');
 
-				//$("#drillfloor svg").hide();
 				
 				loadTemplate( "home_ship_drillfloor" );
 				break;
