@@ -424,19 +424,9 @@ a
 
 	}
 
-
-/*
-<!--svg id="drillfloor-warning" class="warning hidden" width="10" height="10">
-	        		<path d=" 	M 5 0 
-					        	L 0 10 
-					        	L 10 10
-					        	" fill="#ff9821" /></svg-->
-*/
-
-
 	function focusSubtab()
 	{
-		console.log("focusSubtab():sub_tab:", _sub_tab );
+		//console.log("focusSubtab():sub_tab:", _sub_tab );
 		if(!_sub_tab){
 			return;
 		}
@@ -501,7 +491,7 @@ a
 
 		$("#left-nav ul.systems-overview li a").off();
 		$("#left-nav ul.systems-overview li a").click(function(e){
-			console.log("click:");
+			//console.log("click:");
 		});
 
 		$("#left-nav ul li.level-0").off();
@@ -518,8 +508,10 @@ a
 				try{
 					key = $( e.target ).attr('href').split("#").join("");		
 				}catch(e){}
-			
-				if(!key){
+				
+				//NOTE: disabling everything except for 'ballast-and-bilge'
+				if( !key || key != 'ballast-and-bilge' && key != 'overview' ) {
+					console.log("display nothing except ballast-and-bilge or overview");
 					return;
 				}
 
@@ -531,7 +523,8 @@ a
 				if( $(e.target).closest("li.level-0").find("ul") != null )
 				{
 					$(e.target).closest("li.level-0").find("ul").slideToggle();	
-					$(e.target).closest("li.level-0").find("ul li:first").trigger("click");
+					//NOTE: Disabling the auto select first child
+					//$(e.target).closest("li.level-0").find("ul li:first").trigger("click");
 				}else{
 					//
 				}
@@ -553,8 +546,15 @@ a
 
 
 		$(".left-nav-tree li.level-1").off();
+		//"system-1"
 		$(".left-nav-tree li.level-1").click(function(e){
 			e.preventDefault();
+			//console.log("xxxxxxxxxx", $(e.target).closest("li").attr("id") );
+			var id = $(e.target).closest("li").attr("id");
+			//NOTE: disabling all options except for system-2
+			if( id != "system-2" ){
+				return
+			}
 			_sub_nav_dropdown = $(e.target).closest("li").find("span").attr("data").split("#").join("") ;
 			console.log("level-1:click:", _sub_nav_dropdown );
 			$(".left-nav-tree li").removeClass("selected");
@@ -562,8 +562,8 @@ a
 
 			loadSubNavDropdownContentTemplate(_sub_nav_dropdown);
 			updateBreadcrum();
-			
 		});
+
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
 			//$("#left-nav-tree ul li:first a").trigger("click");
 		}
