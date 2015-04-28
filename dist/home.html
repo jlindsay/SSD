@@ -84,8 +84,10 @@
 
   <div class="primary-navbar nav-collapse">
     <div class="container">
-		<!--button class="btn btn-primary">Fleet View</button-->
-		<a id="fleet-view-btn" href="./fleet-view.html?uuid=201#" class="btn btn-primary pull-left"><i class="icon-sitemap pull-left"></i>Fleet View<span></a>
+		<div id="ship-view-btn" class="btn-group btn-filter pull-left">
+		  <a class="btn"><img src="./img/icons/ship-front-icon.png" />DS-01</a>
+		  <a class="btn btn-remove" href="./fleet-view.html?uuid=201#"><i class="icon-remove"></i></a>
+		</div>
 		<ul id="master-nav" class="nav navbar-nav">
 			<li><a href="#ship">
 					<svg width="10" height="10"><path d=" M 5 0 L 0 10 L 10 10" fill="#ff0000" /></svg>
@@ -122,7 +124,7 @@
 		</li>
       </ul>
 
-      <ul id="ship" class="nav navbar-nav" style="margin-left:40px;display:none;">
+      <ul id="ship" class="nav navbar-nav" style="display:none;">
         <li>
         	<a class="active" href="#bop">
 	            <svg height="10" width="10">
