@@ -20,19 +20,94 @@
 			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top.png" />
 		</div>
 		<div id="pannel-1-assets-bottom" class="hidden">
-			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top-expanded.png" />
+			<a id="popover1" class="">
+				<img  src="./img/sprites/screens/sprite_ballastsys2_assets_expanded.png" />
+			</a>
+			<!--img class="btn-box" src="./img/sprites/screens/btn-box-0.png" />
+			<img class="btn-box" src="./img/sprites/screens/btn-box-1.png" /-->
 		</div>
-		<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
+		
+			<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
+		
+		<!--div id="btn-box-0" class="btn-box">asdf</div>
+		<div id="btn-box-1" class="btn-box">asdf</div-->
 	</div>
+
+
+
+ 
+<div id="popover1-content-wrapper" style="display: none">
+  <p><button class="btn btn-small btn-success">success</button> Here's some engaging content. It's very engaging, right?</p>
+  <div class="divider"></div>
+  <p><strong>Lorem ipsum dolor set amet lorem ipsum dolor</strong></p>
+</div>
+
+
+	<style>
+	
+	.btn-box{
+		background-color: #ccc;
+		position: relative;
+  		display: inline-block;
+  		width:100px;
+  		height:100px;
+  		
+  		top: 100px;
+  		left: 0px;	
+	}
+	
+  </style>
 	<script>
 		$(document).ready(function(e){
 			$("#pannel-1-assets").click(function(e){
 				console.log("pannel-1-assets:click()");	
+				$(".btn-box").click(function(e){
+					console.log("ping");
+				});
 				$("#pannel-1-assets").addClass("hidden");
 				$("#pannel-1-assets-bottom").removeClass("hidden");
-			});
-			
+			});	
+			$("#pannel-1-assets-bottom").click(function(e){
+					//e.preventDefault();
+					//return;
+					console.log("ping");
+					$(".my-popover").remove();
+            	var id = "p-0";
+            	var tmp = html;
+        			tmp = tmp.split("{{popoverId}}").join(id)
+        			tmp = tmp.split("{{title}}").join("MCS3601M1")
+        			tmp = tmp.split("{{uuid}}").join("uuid")
+
+
+	            	$(document.body).prepend(tmp);
+	                $("#"+id).hide();
+
+	                $("#"+id).fadeIn();
+	                //$(".my-popover").popover({position:"bottom"});
+	                var position = $(e.target).position();
+	                var offset = $(e.target).offset();
+
+	                    //console.log( position, offset );
+	                $("#"+id).css("top", Number(offset.top) + 175 );
+	                $("#"+id).css("left", Number(offset.left) + 150 );
+			})
+
 		});
+
+		var html = '<div id="{{popoverId}}" rel="popover" class="my-popover popover bottom" data-popover-id="{{popoverId}}" style="position:absolute;display:block; "> \
+                        <div class="arrow" ></div> \
+                        <header class="panel-header"> \
+                          <!--div class="left"><i class="icon-map-marker"></i></div--> \
+                          <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
+                        </header> \
+                        <div class="popover-content panel-content">   \
+                            stuff goes here...   \
+                            <div class="actions" >\
+                                <a id="show-smart-signal-summary" href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Ship Overview</a>  \
+                             </div> \
+                        </div> \
+                      </div>';
+
 	</script>
 
 </div>
