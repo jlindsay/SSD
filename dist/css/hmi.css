@@ -51,6 +51,26 @@ body {
   margin-top: 3px;
 }
 
+#ship-view-btn
+{
+  margin-top: 7px; 
+  margin-right: 10px;
+}
+
+#ship-view-btn img{
+  height: 14px;
+  margin-right: 4px;
+  margin-top: -2px;
+}
+
+#ship-view-btn .btn{
+  color: #fff;
+  background-color: #4A90E2;
+  border-color: #414141;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
 #navbar
 {
     position: fixed;
