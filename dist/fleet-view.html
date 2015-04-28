@@ -388,6 +388,8 @@
                       
                 
                 $(document.body).prepend(tmp);
+                $("#"+id).hide();
+                $("#"+id).fadeIn();
                 //$(".my-popover").popover({position:"bottom"});
                 var position = $(e.target).position();
                 var offset = $(e.target).offset();
