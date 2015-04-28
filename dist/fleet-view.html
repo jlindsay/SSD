@@ -349,19 +349,21 @@
                                 <li><span class="field">Move Status</span><span class="offset_space">:{{move_status}}</span></li>   \
                                 <li><span class="field">MT Photo/Info</span><span class="offset_space">:{{photo_info}}</span></li>   \
                             </ul>   \
-                            <div class="actions" style="">\
-                                <button class="btn btn-primary pull-right my-btn">Ship Overview</button>  \
+                            <div class="actions" >\
+                                <a id="show-smart-signal-summary" href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Ship Overview</a>  \
                              </div> \
                         </div> \
-                        <div class="break">GE SmartSignal</div>       \
-                        <footer class="panel-footer"> \
+                        <div id="smart-signal-summary" class="{{hide_details}}">\
+                          <div class="break">GE SmartSignal</div>       \
+                          <footer class="panel-footer"> \
                              <div>Gearbox Temerature Anomaly</div>    \
                              <div>DIAGNOSIS</div> \
-                             <div>SmartSignal has detected a small increase in bearing metal temperature on th einboard driver bearing on the gearbox of the top drive. Actual values are reaching 210 degrees Fahrenheit, while values were expected to be around 200 degrees Fahrenheit.  A small increase in vibrations is also being detected on the same bearing.  Vibrations have increased from expected values around 0.3 mils to values as high as 0.5 mils.</div> \
+                             <div class="{{hide_details}}">SmartSignal has detected a small increase in bearing metal temperature on th einboard driver bearing on the gearbox of the top drive. Actual values are reaching 210 degrees Fahrenheit, while values were expected to be around 200 degrees Fahrenheit.  A small increase in vibrations is also being detected on the same bearing.  Vibrations have increased from expected values around 0.3 mils to values as high as 0.5 mils.</div> \
                              <div> \
                                 <a href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Details</a>   \
                              </div>\
                         </footer> \
+                        </div> \
                       </div>';
             
 
@@ -385,6 +387,8 @@
                           .split("{{move_status}}").join(ship_data.move_status)
                           .split("{{photo_info}}").join(ship_data.photo_info)
                           .split("{{uuid}}").join(ship_data.uuid)
+                          .split("{{hide_details}}").join(ship_data.hide_details)
+                          
                       
                 
                 $(document.body).prepend(tmp);
@@ -397,6 +401,11 @@
                     //console.log( position, offset );
                 $("#"+id).css("top", Number(offset.top) + 25 );
                 $("#"+id).css("left", Number(offset.left) - 235 );
+
+                $("#show-smart-signal-summary").click(function(e){
+                  //e.preventDefault();
+                  //$("#smart-signal-summary").show();
+                })
 
     //        console.log("shit happens!");
         };
@@ -411,6 +420,7 @@
                             registered_owner : "ACME Drilling co.",
                             technical_manager : "ACME Drilling co.",
                             last_seen : "4 May 2014 15:07 GMT",
+                            hide_details: "",
                             move_status : "Stationary",
                             photo_info : "<a href='#'>Click Here</a>",
                             uuid : "301"
@@ -423,46 +433,50 @@
                             registered_owner : "ACME Drilling co.",
                             technical_manager : "ACME Drilling co.",
                             last_seen : "4 May 2014 15:07 GMT",
+                            hide_details: "",
                             move_status : "Stationary",
                             photo_info : "<a href='#'>Click Here</a>",
                             uuid : "302"
                         }, 
             'ds_03' : {   title : "DS-03",
-                            imp_number : "9234343",
-                            ship_name : "DS-03",
-                            ship_category : "Drill Ship",
-                            operator : "ACME Oil co.",
-                            registered_owner : "ACME Drilling co.",
-                            technical_manager : "ACME Drilling co.",
-                            last_seen : "4 May 2014 15:07 GMT",
-                            move_status : "Stationary",
-                            photo_info : "<a href='#'>Click Here</a>",
-                            uuid : "303"
+                          imp_number : "9234343",
+                          ship_name : "DS-03",
+                          ship_category : "Drill Ship",
+                          operator : "ACME Oil co.",
+                          registered_owner : "ACME Drilling co.",
+                          technical_manager : "ACME Drilling co.",
+                          last_seen : "4 May 2014 15:07 GMT",
+                          hide_details: "",
+                          move_status : "Stationary",
+                          photo_info : "<a href='#'>Click Here</a>",
+                          uuid : "303"
                         },
 
             'ds_04' : {   title : "DS-04",
-                            imp_number : "9234664",
-                            ship_name : "DS-04",
-                            ship_category : "Drill Ship",
-                            operator : "ACME Oil co.",
-                            registered_owner : "ACME Drilling co.",
-                            technical_manager : "ACME Drilling co.",
-                            last_seen : "4 May 2014 15:07 GMT",
-                            move_status : "Stationary",
-                            photo_info : "<a href='#'>Click Here</a>",
-                            uuid : "302"
+                          imp_number : "9234664",
+                          ship_name : "DS-04",
+                          ship_category : "Drill Ship",
+                          operator : "ACME Oil co.",
+                          registered_owner : "ACME Drilling co.",
+                          technical_manager : "ACME Drilling co.",
+                          last_seen : "4 May 2014 15:07 GMT",
+                          hide_details: "collapse",
+                          move_status : "Stationary",
+                          photo_info : "<a href='#'>Click Here</a>",
+                          uuid : "302"
                         },
-             'ds_05' : {   title : "DS-05",
-                            imp_number : "9234564",
-                            ship_name : "DS-05",
-                            ship_category : "Drill Ship",
-                            operator : "ACME Oil co.",
-                            registered_owner : "ACME Drilling co.",
-                            technical_manager : "ACME Drilling co.",
-                            last_seen : "4 May 2014 15:07 GMT",
-                            move_status : "Stationary",
-                            photo_info : "<a href='#'>Click Here</a>",
-                            uuid : "305"
+             'ds_05' : {  title : "DS-05",
+                          imp_number : "9234564",
+                          ship_name : "DS-05",
+                          ship_category : "Drill Ship",
+                          operator : "ACME Oil co.",
+                          registered_owner : "ACME Drilling co.",
+                          technical_manager : "ACME Drilling co.",
+                          last_seen : "4 May 2014 15:07 GMT",
+                          hide_details: "",
+                          move_status : "Stationary",
+                          photo_info : "<a href='#'>Click Here</a>",
+                          uuid : "305"
                         }
             }
 </script>
