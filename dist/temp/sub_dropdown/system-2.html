@@ -15,8 +15,26 @@
 		</span>
 	</header>
 	<div class="module-body">
-		<img src="./img/sprites/screens/sprite_ballastsys2_assets.png" />
+		<!--img src="./img/sprites/screens/sprite_ballastsys2_assets.png" /-->
+		<div id="pannel-1-assets">
+			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top.png" />
+		</div>
+		<div id="pannel-1-assets-bottom" class="hidden">
+			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top-expanded.png" />
+		</div>
+		<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
 	</div>
+	<script>
+		$(document).ready(function(e){
+			$("#pannel-1-assets").click(function(e){
+				console.log("pannel-1-assets:click()");	
+				$("#pannel-1-assets").addClass("hidden");
+				$("#pannel-1-assets-bottom").removeClass("hidden");
+			});
+			
+		});
+	</script>
+
 </div>
 
 
