@@ -149,11 +149,14 @@
         </li>
         <li id="drillfloor">
         	<a href="#drillfloor">
-	        	<svg width="10" height="10">
+	        	<!--svg id="drillfloor-warning" class="warning hidden" width="10" height="10">
 	        		<path d=" 	M 5 0 
 					        	L 0 10 
 					        	L 10 10
-					        	" fill="#ff9821" /></svg>
+					        	" fill="#ff9821" /></svg-->
+				<svg height="10" width="10">
+	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
+				</svg>
 				<span style="margin-left:5px;">Drillfloor</span>
 			</a>
         </li>
@@ -425,6 +428,16 @@
 
 	}
 
+
+/*
+<!--svg id="drillfloor-warning" class="warning hidden" width="10" height="10">
+	        		<path d=" 	M 5 0 
+					        	L 0 10 
+					        	L 10 10
+					        	" fill="#ff9821" /></svg-->
+*/
+
+
 	function focusSubtab()
 	{
 		console.log("focusSubtab():sub_tab:", _sub_tab );
@@ -436,8 +449,19 @@
 		{
 			case "drillfloor":
 				console.log("ping:focusSubtab:", _sub_tab);
-				$("#master-nav li").removeClass("active");
-				$("#drillfloor").addClass("active");
+				console.log("svg:", $("#drillfloor svg.warning") );
+
+				//$("#master-nav li").removeClass("active");
+				//$("#drillfloor-warning").removeClass("hidden");
+				$("#drillfloor svg").remove();
+				$("#drillfloor a").prepend('<svg width="10" height="10">  \
+	        		<path d=" 	M 5 0  \
+					        	L 0 10  \
+					        	L 10 10 \
+					        	" fill="#ff9821" /></svg>');
+
+				//$("#drillfloor svg").hide();
+				
 				loadTemplate( "home_ship_drillfloor" );
 				break;
 /*			case "#bop":
@@ -687,7 +711,6 @@
             	initSubNav();
         	});
 		});
-
 	}
 
 	
