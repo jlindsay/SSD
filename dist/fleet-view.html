@@ -339,15 +339,15 @@
                         </header> \
                         <div class="popover-content panel-content">   \
                             <ul class="inline">   \
-                                <li>IMO Number<span class="offset_space">:{{imp_number}}</span></li>   \
-                                <li>Ship Name<span class="offset_space">:{{ship_name}}</span></li>   \
-                                <li>Ship Category<span class="offset_space">:{{ship_category}}</span></li>   \
-                                <li>Operator<span class="offset_space">:{{operator}}</span></li>   \
-                                <li>Registered Owner<span class="offset_space">:{{registered_owner}}</span></li>   \
-                                <li>Technical Manager<span class="offset_space">:{{technical_manager}}</span></li>   \
-                                <li>Last Seen<span class="offset_space">:{{last_seen}}</span></li>   \
-                                <li>Move Status<span class="offset_space">:{{move_status}}</span></li>   \
-                                <li>MT Photo/Info<span class="offset_space">:{{photo_info}}</span></li>   \
+                                <li><span class="field">IMO Number</span><span class="offset_space">:{{imp_number}}</span></li>   \
+                                <li><span class="field">Ship Name</span><span class="offset_space">:{{ship_name}}</span></li>   \
+                                <li><span class="field">Ship Category</span><span class="offset_space">:{{ship_category}}</span></li>   \
+                                <li><span class="field">Operator</span><span class="offset_space">:{{operator}}</span></li>   \
+                                <li><span class="field">Registered Owner</span><span class="offset_space">:{{registered_owner}}</span></li>   \
+                                <li><span class="field">Technical Manager</span><span class="offset_space">:{{technical_manager}}</span></li>   \
+                                <li><span class="field">Last Seen</span><span class="offset_space">:{{last_seen}}</span></li>   \
+                                <li><span class="field">Move Status</span><span class="offset_space">:{{move_status}}</span></li>   \
+                                <li><span class="field">MT Photo/Info</span><span class="offset_space">:{{photo_info}}</span></li>   \
                             </ul>   \
                             <div class="actions" style="">\
                                 <button class="btn btn-primary pull-right my-btn">Ship Overview</button>  \
@@ -499,6 +499,13 @@
   text-align: center;
   background-color: #505357;
   color: #fff;
+}
+
+
+.field{
+  width:200px;  
+  display: inline-block;
+  /*margin-right:20px;*/
 }
 
 .my-popover > .arrow, .my-popover > .arrow:after
