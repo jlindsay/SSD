@@ -303,6 +303,11 @@
         $(".panzoom").panzoom('zoom', .7, {relative: false, animate: false} ) // center  
         $(".panzoom").panzoom('pan', -726, -674, {relative: false, animate: true} ) // center  
         
+        //disable panzoom after were foused
+        setTimeout(function(){ 
+          $(".panzoom").panzoom("disable")
+        }, 1500);
+        
         //$("#left-nav ul li").css( "cursor","");
         $("#left-nav ul.ships li").click(function(e){
           console.log(e.target)
