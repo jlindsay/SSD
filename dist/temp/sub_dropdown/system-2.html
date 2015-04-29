@@ -20,14 +20,19 @@
 			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top.png" />
 		</div>
 		<div id="pannel-1-assets-bottom" class="hidden">
-			<a id="popover1" class="">
+			<a data-toggle="modal" href="#modal-assets" >
 				<img  src="./img/sprites/screens/sprite_ballastsys2_assets_expanded.png" />
 			</a>
+			<!--a data-toggle="modal" href="#modal-assets" class="btn">Launch Modal</a-->
+
 			<!--img class="btn-box" src="./img/sprites/screens/btn-box-0.png" />
 			<img class="btn-box" src="./img/sprites/screens/btn-box-1.png" /-->
 		</div>
-		
-			<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
+			
+			
+				<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
+			
+
 		
 		<!--div id="btn-box-0" class="btn-box">asdf</div>
 		<div id="btn-box-1" class="btn-box">asdf</div-->
@@ -59,6 +64,8 @@
   </style>
 	<script>
 		$(document).ready(function(e){
+			$("#modal-assets").modal({show: false});
+
 			$("#pannel-1-assets").click(function(e){
 				console.log("pannel-1-assets:click()");	
 				$(".btn-box").click(function(e){
@@ -71,6 +78,9 @@
 					//e.preventDefault();
 					//return;
 					console.log("ping");
+					
+					//$("#modal-assets").modal({show: true});
+/*				
 					$(".my-popover").remove();
             	var id = "p-0";
             	var tmp = html;
@@ -90,6 +100,7 @@
 	                    //console.log( position, offset );
 	                $("#"+id).css("top", Number(offset.top) + 175 );
 	                $("#"+id).css("left", Number(offset.left) + 150 );
+*/
 			})
 
 		});
@@ -111,7 +122,6 @@
 	</script>
 
 </div>
-
 
 <div id="pannel-2" class="pannel">
 	<header class="module-header">
@@ -171,7 +181,9 @@
 		</span>
 	</header>
 	<div class="module-body">
-		<img src="./img/sprites/screens/sprite_ballastsys2_documentation.png" />
+		<a data-toggle="modal" href="#modal-documentation" >
+			<img src="./img/sprites/screens/sprite_ballastsys2_documentation.png" />
+		</a>
 	</div>
 </div>
 
@@ -187,4 +199,38 @@
 	<div class="module-body">
 		<img src="./img/sprites/screens/sprite_ballastsys2_procedures.png" />
 	</div>
+</div>
+
+
+
+
+
+<div id="modal-documentation" class="modal hide fade" >
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Modal Heading</h3>
+  </div>
+  <div class="modal-body">
+    …
+  </div>
+  <div class="modal-footer">
+    <a class="btn" data-dismiss="modal">Close</a>
+    <a class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+
+
+<div id="modal-assets" class="modal hide fade" >
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Modal Heading</h3>
+  </div>
+  <div class="modal-body">
+    …
+  </div>
+  <div class="modal-footer">
+    <a class="btn" data-dismiss="modal">Close</a>
+    <a class="btn btn-primary">Save changes</a>
+  </div>
 </div>
