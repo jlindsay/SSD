@@ -116,6 +116,34 @@ body {
 }
 
 
+#nav_shipoverview {
+  width: 300px !important;
+  text-align: left !important;
+  margin-left: -25px;
+  border-bottom: none;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#nav_shipoverview a{
+  padding-left: 25px !important;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.left-sub-nav ul li {
+  width:100%;
+  clear:both;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+.sub_nav_header {
+  line-height: 12px !important;
+  padding-top: 20px;
+}
+
 
 #left-nav{
   background-color: #fff;
@@ -148,7 +176,7 @@ body {
     list-style-type: none;
     margin:0px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 
 }
 
@@ -167,7 +195,7 @@ body {
 }
 
 #left-nav ul li a{
-  line-height: 35px;
+  line-height: 32px;
   padding-left: 10px;
 }
 
@@ -183,17 +211,20 @@ position: relative;
 }
 
 #left-nav ul li a , .truncate {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color:#666;
-    text-decoration: none;
-    width:100%;
-    display:block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 #left-nav ul li.selected a
 {
-    background-color: #c2c2c2;
+    background-color: #505357;
+    color: #fff;
 }
 
 
@@ -207,16 +238,17 @@ position: relative;
  
 }
 #left-nav ul.systems-overview li span{
-  color:#aaa;  
   display:block;
   float:left;
   clear:both;
-   padding-left: 35px;
-   color:#333;
+   padding-left: 15px;
+   color:#000;
    line-height: 35px;
+     width: 100%;
+  text-align: left;
 }
 #left-nav ul.systems-overview li span.label{
-  padding-left: 20px;
+  padding-left: 25px;
   color: #979797;  
   background: none;
   font-size: 10px;
@@ -250,15 +282,17 @@ position: relative;
 {
     clear:both;
  /*   height:35px;*/
-
+  background-color: #BCBCBC;
+  color: #000;
 }
 
 #left-nav ul li ul.left-nav-tree li span
 {
-    text-overflow: ellipsis;
-    line-height: 35px;
-    padding-left: 30px;
-    color:#666;
+  text-overflow: ellipsis;
+  line-height: 32px;
+  padding-left: 25px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 #left-nav ul li ul.left-nav-tree li span svg
@@ -275,7 +309,8 @@ li [class^="icon-"], li [class*=" icon-"]{
 
 #left-nav ul li ul.left-nav-tree li.selected 
 {
-    background-color:#c2c2c2;
+    background-color: #505357;
+    color: #fff;
 }
 
 
