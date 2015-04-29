@@ -286,8 +286,9 @@
 */
         $(".my-ship-icon").click(function(e){
             e.preventDefault();
+            showPopup(e);
         });
-        $(".my-ship-icon").hover(showPopup);
+        //$(".my-ship-icon").hover(showPopup);
         $(".panzoom").mousedown(function(e){
             $(".my-popover").remove();
         })
