@@ -224,6 +224,12 @@ position: relative;
 }
 
 
+.active-dropdown
+{
+  background-color: #e4e3e3;
+}
+
+
 /**
  * .left-nav-tree is a nested ul of #left-nav
  */

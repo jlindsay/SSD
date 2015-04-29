@@ -553,6 +553,11 @@
 			if( id != "system-2" ){
 				return
 			}
+
+			$(e.target).closest(".level-0").removeClass("selected");
+			$(e.target).closest(".level-0").addClass("active-dropdown");
+
+
 			_sub_nav_dropdown = $(e.target).closest("li").find("span").attr("data").split("#").join("") ;
 			console.log("level-1:click:", _sub_nav_dropdown );
 			$(".left-nav-tree li").removeClass("selected");
