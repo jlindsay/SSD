@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+
+</head>
+<body>
+
+
+ <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
+    
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
+<link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
+
+<link href="./css/hmi.css" rel="stylesheet" type="text/css">
+<script src="./iidx/components/modernizr/modernizr.js"></script>
+<script src="./iidx/components/jquery/jquery.js"></script>
+<script src="./iidx/components/requirejs/require.js"></script>
+<script src="./iidx/js/require.config.js"></script>
+<script src="./iidx/components/bootstrap/js/modal.js"></script>
+
+
+<script>
+/*
+	require.config({
+		baseUrl: './',
+		urlArgs: String("r="+ (new Date()).getTime()),
+  		paths: {
+			'cookies': 'js/jquery.cookie',
+    		'url': 'js/jquery.url',
+    		'keynote': 'js/keynote',
+    		'scrollTo':'js/jquery.scrollTo.js'
+		},
+		shim: {
+			'url': ['jquery'],
+			'cookies': ['jquery'],
+			'scrollTo' : ['jquery']
+		}
+
+	});
+
+	require(['jquery','cookies', 'url', 'keynote'], function($) {
+   			console.log("deubg:init()");
+   		var _keynote = new Keynote().init( { pages: _pages } );
+   			initUI();
+	});
+*/
+</script>
+</body>
+</html>

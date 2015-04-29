@@ -1,3 +1,37 @@
+<!--div id="pannel--1" class="pannel">
+	<header class="module-header">
+		<h1><img src="./img/sprites/icons/ico_section_shiphealth.png" /> System Health</h1>
+	</header>
+	<div class="module-body">
+
+			 <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
+		    
+		    
+		    <div id="myModal" class="modal fade">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                    <h4 class="modal-title">Confirmation</h4>
+		                </div>
+		                <div class="modal-body">
+		                    <p>Do you want to save changes you made to document before closing?</p>
+		                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+		                </div>
+		                <div class="modal-footer">
+		                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		                    <button type="button" class="btn btn-primary">Save changes</button>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+	</div>
+</div-->
+
+
+
+
 <div id="pannel-0" class="pannel">
 	<header class="module-header">
 		<h1><img src="./img/sprites/icons/ico_section_shiphealth.png" /> System Health</h1>
@@ -20,6 +54,7 @@
 			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top.png" />
 		</div>
 		<div id="pannel-1-assets-bottom" class="hidden">
+			
 			<a data-toggle="modal" href="#modal-assets" >
 				<img  src="./img/sprites/screens/sprite_ballastsys2_assets_expanded.png" />
 			</a>
@@ -167,7 +202,8 @@
 		    		console.log("mycb:e:",e.target);
 		    		var elm = $(".my-cbs").find(".switch-on") ;
 		    		console.log(elm.length);
-		    		$("#badge-count").html(elm.length);
+		    		$("#badge-count-btn").html(elm.length);
+		    		$("#badge-count-modal").html(elm.length);
 
 		    	});
 
@@ -243,7 +279,43 @@
 
 
 
+<div id="modal-documentation" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Documentation</h4>
+            </div>
+            <div class="modal-body">
+                <p>content goes here...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="modal-assets" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Assets</h4>
+            </div>
+            <div class="modal-body">
+                <p>content goes here...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
 
 <div id="modal-documentation" class="modal hide fade" >
   <div class="modal-header">
@@ -274,3 +346,4 @@
     <a class="btn btn-primary">Save changes</a>
   </div>
 </div>
+-->
