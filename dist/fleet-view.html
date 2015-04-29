@@ -172,12 +172,12 @@
 <section id="content" style="left:400px;right:0px;margin-top:97px; position:relative; overflow:hidden;">
       <div class="parent" style="overflow: hidden; position: relative;">
         <div class="panzoom" style="transform: matrix(1.2, 0, 0, 1.2, -144.314285714285, 28.5160714285843); backface-visibility: hidden; transform-origin: 50% 50% 0px; cursor: move; transition: none; -webkit-transition: none;">
-            <a id="a" data='ds_01' href="home.html?uuid=301"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1100px;"></a>
-            <a id="b" data='ds_02' href="home.html?uuid=302"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:800px; left:1150px;"></a>
-            <a id="c" data='ds_03' href="home.html?uuid=303"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:850px; left:1200px;"></a>
-            <a id="d" data='ds_04' href="home.html?uuid=304"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:950px; left:1300px;"></a>
-            <a id="d" data='ds_05' href="home.html?uuid=305"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:900px; left:1250px;"></a>
-            <img id="my-map" class="map" src="./img/google-map.png">
+            <a id="a" data='ds_01' href="home.html?uuid=301"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:1100px; left:1400px;"></a>
+            <a id="b" data='ds_02' href="home.html?uuid=302"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:1000px; left:1450px;"></a>
+            <a id="c" data='ds_03' href="home.html?uuid=303"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:1050px; left:1500px;"></a>
+            <a id="d" data='ds_04' href="home.html?uuid=304"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:1150px; left:1600px;"></a>
+            <a id="d" data='ds_05' href="home.html?uuid=305"><img class="my-ship-icon" src="./img/icons/ship-icon.png" style="z-index:10; position:relative; top:1100px; left:1550px;"></a>
+            <img id="my-map" class="map" src="./img/google-map-lg.png">
         </div>
       </div>
 </section>    
@@ -272,7 +272,7 @@
                         $(".my-popover").remove();
                     var delta = e.delta || e.originalEvent.wheelDelta;
                     var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
-                        console.log(zoomOut);
+                        //console.log(zoomOut);
                         $panzoom.panzoom('zoom', zoomOut, {
                             increment: 0.1,
                             animate: false,
@@ -297,7 +297,8 @@
            
         })
         $(".panzoom").panzoom('zoom', .7, {relative: false, animate: false} ) // center  
-        $(".panzoom").panzoom('pan', -726, -674, {relative: false, animate: true} ) // center  
+        $(".panzoom").panzoom('pan', -1026, -900, {relative: false, animate: true} ) // center  
+        //$(".panzoom").panzoom('pan', -726, -674, {relative: false, animate: true} ) // center  
         
         //disable panzoom after were foused
         setTimeout(function(){ 
@@ -307,20 +308,18 @@
         //$("#left-nav ul li").css( "cursor","");
         $("#left-nav ul.ships li").click(function(e){
           console.log(e.target)
-              e.preventDefault();
+                e.preventDefault();
             var elm_id = $(e.target).closest("li").find("input[name=data]").val()
             var id = $(e.target).closest("li").find("input[name=id]").val()
-              console.log("click:", elm_id );
+                console.log("click:", elm_id );
             var elm = $(elm_id).find("img");
-              console.log("elm:", elm);
-              hidePopup();
-              if(id == "#ds_04" || id == "#ds_01"){
-                showPopup({ target : elm, preventDefault:function(){}, id:id })  
-              }else{
-
-              }
+                console.log("elm:", elm);
+                hidePopup();
+                if(id == "#ds_04" || id == "#ds_01"){
+                    showPopup({ target : elm, preventDefault:function(){}, id:id })  
+                }
               
-            //console.log($(id))
+
         });
 
         $("#left-nav ul.smart-signal li").click(function(e){
