@@ -131,8 +131,46 @@
 		</span>
 	</header>
 	<div class="module-body">
-		<img src="./img/sprites/screens/sprite_ballastsys2_measurements.png" />
+		<!--img src="./img/sprites/screens/sprite_ballastsys2_measurements.png" /-->
+		<img src="./img/sprites/screens/messurements-0.png" />
+		<img src="./img/sprites/screens/messurements-1.png" />
+		<img src="./img/sprites/screens/messurements-bottom.png" />
+		<div style="position:relative; top:-250px; left:0px; z-index:20; padding-right:25px; " class="pull-right">
+			    <input class="mycb" type="checkbox" data-toggle-switch="true" name="nm" value="vl"/>
+			    <input class="mycb" type="checkbox" data-toggle-switch="true" name="nm" value="vl"/>
+			    <input class="mycb" type="checkbox" data-toggle-switch="true" name="nm" value="vl"/>
+			    <input class="mycb" type="checkbox" data-toggle-switch="true" name="nm" value="vl"/>
+			    <input class="mycb" type="checkbox" data-toggle-switch="true" name="nm" value="vl"/>
+
+		</div>
+
+		
 	</div>
+	<script src="./iidx/components/bootstrap-switch/static/js/bootstrap-switch.js"></script>
+	<style>
+	.mycb{
+		display:block;
+		margin-bottom: 23px;
+	}
+	</style>
+	<script type="text/javascript">
+		 require.config({
+		 	baseUrl:"./iidx/"
+		 })
+
+		 var mycb_count=0;
+		 require([
+		    'jquery',
+		    'toggle-switch'
+		  ], function($) {
+		  		
+		    	$("mycb").click(function(e){
+		    		console.log("mycb:e:", $(e.target ).attr("checked"));
+		    		//mycb_count++;
+		    	});
+
+		  });
+		</script>
 </div>
 
 

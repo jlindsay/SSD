@@ -26,7 +26,7 @@
   <link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
   <link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
 
-
+  <!--link href="./iidx/components/bootstrap-switch/static/stylesheets/bootstrap-switch.css" rel="stylesheet" type="text/css"-->
 
   <link href="./css/hmi.css" rel="stylesheet" type="text/css">
   <!--link href="./css/styles.css" rel="stylesheet" type="text/css"-->
@@ -203,6 +203,8 @@
     	baseUrl: './iidx/'
   	});
 
+
+
 </script>
 
 
@@ -214,11 +216,13 @@
 <script src="./iidx/components/bootstrap/js/carousel.js"></script>
 <script src="./iidx/components/bootstrap/js/collapse.js"></script>
 <script src="./iidx/components/bootstrap/js/dropdown.js"></script>
+<script src="./iidx/components/bootstrap/js/tooltip.js"></script>
 <script src="./iidx/components/bootstrap/js/popover.js"></script>
 <script src="./iidx/components/bootstrap/js/scrollspy.js"></script>
 <script src="./iidx/components/bootstrap/js/tab.js"></script>
-<script src="./iidx/components/bootstrap/js/tooltip.js"></script>
+
 <script src="./iidx/components/bootstrap/js/transition.js"></script>
+<script src="./iidx/components/bootstrap-switch/static/js/bootstrap-switch.js"></script>
 <!--script src="./js/jquery.cookie.js"></script>
 <script src="./js/jquery.url.js"></script-->
 <script src="./js/globle.js"></script>
@@ -661,10 +665,14 @@
 			$(document).on('scroll', function(e) {
     			var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
 			    $.each(_pannels, function(index,elm){
-				    if( ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
-				    	$(".asset-pannel").removeClass("selected");
-				    	$(elm).addClass("selected");
-				    }
+				    
+			    	try{
+			    		if( ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
+				    		$(".asset-pannel").removeClass("selected");
+				    		$(elm).addClass("selected");
+				    	}	
+			    	}catch(e){}
+				    
 			    });
 			});
 			
