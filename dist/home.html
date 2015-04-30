@@ -391,22 +391,24 @@
 		baseUrl: './',
 		urlArgs: String("r="+ (new Date()).getTime()),
   		paths: {
-			'cookies': 'js/jquery.cookie',
-    		'url': 'js/jquery.url',
-    		'keynote': 'js/keynote',
-    		'scrollTo':'js/jquery.scrollTo.js'
+			'cookies'			: 'js/jquery.cookie',
+    		'url'				: 'js/jquery.url',
+    		'keynote'			: 'js/keynote',
+    		'scrollTo'			:'js/jquery.scrollTo.js',
+    		'jquery.panzoom'    : './bower/jquery.panzoom/dist/jquery.panzoom'
 		},
 		shim: {
 			'url': ['jquery'],
 			'cookies': ['jquery'],
-			'scrollTo' : ['jquery']
+			'scrollTo' : ['jquery'],
+			'jquery.panzoom' : ['jquery'],
 		}
 
 	});
 
 
 
-	require(['jquery','cookies', 'url', 'keynote'], function($) {
+	require(['jquery','cookies', 'url', 'keynote','jquery.panzoom'], function($) {
    			console.log("deubg:init()");
    		var _keynote = new Keynote().init( { pages: _pages } );
    			initUI();
@@ -453,7 +455,8 @@
 				//$("")
 		})
 		
-		initCharts();
+		//initCharts();
+		initBadge();
 
 	}
 
@@ -904,28 +907,43 @@
 	}
 
 
+	function initBadge()
+	{
+		$("#btn-analyze").click(function(e){
+			console.log();
+			
+		});
+		initCharts();
+	}
+
 	function initCharts()
 	{
+		$(".timeline-left-nav .message-list .message-item").off();
+		$(".timeline-left-nav .message-list .message-item").on("click", function(e){
+			console.log("ping");
+			$(this).show("slide", { direction: "left" }, 1000);
+		});
+  
+
     	 var $panzoom = $('.panzoom').panzoom();
             
             $panzoom.parent().on('mousewheel.focal', function( e ) {
                         //console.log(e);
                         e.preventDefault();
-                        $(".my-popover").remove();
-                    var delta = e.delta || e.originalEvent.wheelDelta;
-                    var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                        
+                        //$(".graphs").remove();
+                    //var delta = e.delta || e.originalEvent.wheelDelta;
+                    //var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
                         //console.log(zoomOut);
-                        $panzoom.panzoom('zoom', zoomOut, {
+                        $panzoom.panzoom('pan', -400, {
                             increment: 0.1,
                             animate: false,
                             focal: e
                 });
+
             });
 
-			$(".timeline-left-nav .message-list .message-item").click(function(e){
-				onsole.log("ping");
-			});
-  	}
+	}
 	
 
 </script>
