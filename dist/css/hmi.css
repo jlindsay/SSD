@@ -581,7 +581,7 @@ html body{
 .timeline-right-nav 
 {
     overflow: hidden;
-    max-width: 368px;
+    max-width: 668px;
     
 }
 
@@ -589,7 +589,13 @@ html body{
 {
   max-width: none;
   width: 1600px;
-    height:212px;
+  height:212px;
+}
+
+
+#modal-badge-count .modal-dialog
+{
+  min-width:900px;
 }
 
 

@@ -192,7 +192,7 @@
 
 
 <div id="modal-badge-count" class="modal fade">
-        <div class="modal-dialog">
+        <div class="modal-dialog" >
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -314,19 +314,19 @@
 		              </div>
 
 		              <div class="timeline-right-nav">
-		              		<div class="panzoom" >
+		              		<div id="chart-0" class="panzoom" >
 							    <img class="graph" src="./img/sprites/graphs/chart-0.png"/>
 							  </div>
-							  <div class="panzoom" >
+							  <div id="chart-1" class="panzoom" >
 							    <img class="graph" src="./img/sprites/graphs/chart-1.png"/>
 							  </div>
-							  <div class="panzoom" >
+							  <div id="chart-2" class="panzoom" >
 							    <img class="graph" src="./img/sprites/graphs/chart-2.png"/>
 							  </div>
-							  <!--div class="panzoom" >
+							  <!--div id="chart-3"  class="panzoom" >
 							    <img class="graph" src="./img/sprites/graphs/chart-3.png"/>
 							  </div>
-							  <div class="panzoom" >
+							  <div id="chart-4"  class="panzoom" >
 							    <img class="graph" src="./img/sprites/graphs/chart-4.png"/>
 							  </div-->
 		              </div>
@@ -918,13 +918,23 @@
 
 	function initCharts()
 	{
-		$(".timeline-left-nav .message-list .message-item").off();
-		$(".timeline-left-nav .message-list .message-item").on("click", function(e){
+		//$(".timeline-left-nav .message-list .message-item a").off();
+		$(".timeline-left-nav .message-list .message-item a").on("click", function(e){
+			e.preventDefault();
 			console.log("ping");
-			$(this).show("slide", { direction: "left" }, 1000);
-		});
-  
+		//	$("#chart-2").show("slide", { direction: "left" }, 500);
+			 //console.log($("#chart-0"));
+			 $("#chart-0").panzoom("pan", -500, 0, {
+	              relative: true,
+	              animate: true
+	          });
 
+		});
+  			
+
+
+
+///*
     	 var $panzoom = $('.panzoom').panzoom();
             
             $panzoom.parent().on('mousewheel.focal', function( e ) {
@@ -935,14 +945,16 @@
                     //var delta = e.delta || e.originalEvent.wheelDelta;
                     //var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
                         //console.log(zoomOut);
+                        /*
                         $panzoom.panzoom('pan', -400, {
                             increment: 0.1,
                             animate: false,
                             focal: e
                 });
+						*/                
 
             });
-
+//*/
 	}
 	
 
