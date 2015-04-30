@@ -104,7 +104,7 @@
 <nav id="left-nav" style="width:400px;max-width:400px; padding:20px; padding-top:120px; height:auto;">
 	<h4>SMARTSIGNAL INCIDENTS</h4>
 	<ul class="list-group smart-signal" style="padding-top:0px;">
-		<li class="list-group-item">Gearbox Temerature Anomaly<div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
+		<li class="list-group-item">Gearbox Temperature Anomaly<div class="pull-right" style="color:#ccc; font-size:11px;">1 min ago</div>
 			
 			<div class="description">Overall Risk  <div class="pull-right" style="color:#333; font-weight:bold;">24%</div></div>
  			<div style="width:100%; border:1px #ccc solid;">
@@ -357,27 +357,26 @@
                           <div class="popover-title panel-title voice voice-brand"><h3>{{title}}</h3></div> \
                         </header> \
                         <div class="popover-content panel-content">   \
-                            <ul class="inline">   \
-                                <li><span class="field">IMO Number</span><span class="offset_space">:{{imp_number}}</span></li>   \
-                                <li><span class="field">Ship Name</span><span class="offset_space">:{{ship_name}}</span></li>   \
-                                <li><span class="field">Ship Category</span><span class="offset_space">:{{ship_category}}</span></li>   \
-                                <li><span class="field">Operator</span><span class="offset_space">:{{operator}}</span></li>   \
-                                <li><span class="field">Registered Owner</span><span class="offset_space">:{{registered_owner}}</span></li>   \
-                                <li><span class="field">Technical Manager</span><span class="offset_space">:{{technical_manager}}</span></li>   \
-                                <li><span class="field">Last Seen</span><span class="offset_space">:{{last_seen}}</span></li>   \
-                                <li><span class="field">Move Status</span><span class="offset_space">:{{move_status}}</span></li>   \
-                                <li><span class="field">MT Photo/Info</span><span class="offset_space">:{{photo_info}}</span></li>   \
+                            <ul class="inline" style="list-style-type: none;font-size: 14px;letter-spacing: 0.25px;">   \
+                                <li><span class="field">IMO Number</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{imp_number}}</span></li>   \
+                                <li><span class="field">Ship Category</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{ship_category}}</span></li>   \
+                                <li><span class="field">Operator</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{operator}}</span></li>   \
+                                <li><span class="field">Registered Owner</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{registered_owner}}</span></li>   \
+                                <li><span class="field">Technical Manager</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{technical_manager}}</span></li>   \
+                                <li><span class="field">Last Seen</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{last_seen}}</span></li>   \
+                                <li><span class="field">Move Status</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{move_status}}</span></li>   \
+                                <li><span class="field">MT Photo/Info</span><span class="offset_space">:&nbsp;&nbsp;&nbsp;&nbsp;{{photo_info}}</span></li>   \
                             </ul>   \
                             <div class="actions" >\
                                 <a id="show-smart-signal-summary" href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Ship Overview</a>  \
                              </div> \
                         </div> \
                         <div id="smart-signal-summary" class="{{hide_details}}">\
-                          <div class="break">GE SmartSignal</div>       \
+                          <div class="break" style="letter-spacing: 1px;"><img style="height: 18px;padding-right: 5px;padding-left: 6px;" src="./img/sprites/icons/ico_section_smartsignal.png" />GE SmartSignal</div>       \
                           <footer class="panel-footer"> \
-                             <div>Gearbox Temerature Anomaly</div>    \
-                             <div>DIAGNOSIS</div> \
-                             <div class="{{hide_details}}">SmartSignal has detected a small increase in bearing metal temperature on th einboard driver bearing on the gearbox of the top drive. Actual values are reaching 210 degrees Fahrenheit, while values were expected to be around 200 degrees Fahrenheit.  A small increase in vibrations is also being detected on the same bearing.  Vibrations have increased from expected values around 0.3 mils to values as high as 0.5 mils.</div> \
+                             <div style="font-size: 14px;font-weight: 600;letter-spacing: 0.25px;margin-bottom: 5px;">Gearbox Temperature Anomaly</div>    \
+                             <div style="font-size: 12px;font-weight: 600;letter-spacing: 0.5px;">DIAGNOSIS</div> \
+                             <div class="{{hide_details}}" style="font-size: 12px;line-height: 16px;letter-spacing: 0.25px;margin-bottom: 15px;">Likely bearing failure developing: gearbox inboard driver bearing metal temps 175 degF vs. expectation of 155.  Vibrations reading 0.38 mils vs. expected value of 0.25 mils.</div> \
                              <div> \
                                 <a href="./home.html?uuid={{uuid}}" class="btn btn-primary pull-right my-btn" >Details</a>   \
                              </div>\
@@ -540,6 +539,7 @@
   width:200px;  
   display: inline-block;
   /*margin-right:20px;*/
+  font-weight: 600;
 }
 
 .my-popover > .arrow, .my-popover > .arrow:after
