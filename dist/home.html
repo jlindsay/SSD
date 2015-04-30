@@ -203,7 +203,7 @@
 		            <div class="timeline-left-nav">
 		            	<h2>Timeline</h2>
 			              <ul class="message-list">
-			                <li class="message-item">
+			                <li class="message-item" id="event-0">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -213,7 +213,7 @@
 			                    <time>11 hours ago</time>
 			                  </a>
 			                </li>
-			                <li class="message-item">
+			                <li class="message-item" id="event-1">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -223,7 +223,7 @@
 			                    <time>11 hours ago</time>
 			                  </a>
 			                </li>
-			                <li class="message-item">
+			                <li class="message-item" id="event-2">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -233,7 +233,7 @@
 			                    <time>12 hours ago</time>
 			                  </a>
 			                </li>
-			                <li class="message-item">
+			                <li class="message-item" id="event-3">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -243,7 +243,7 @@
 			                    <time>12 hours ago</time>
 			                  </a>
 			                </li>
-			                <li class="message-item">
+			                <li class="message-item" id="event-4">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -253,7 +253,7 @@
 			                    <time>May 1 at 17:05</time>
 			                  </a>
 			                </li>
-			                <li class="message-item">
+			                <li class="message-item" id="event-5">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -264,7 +264,7 @@
 			                  </a>
 			                </li>
 
-			                <li class="message-item">
+			                <li class="message-item" id="event-6">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -275,19 +275,7 @@
 			                  </a>
 			                </li>
 
-			                <li class="message-item">
-			                  <a href="#">
-			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
-			                    <h4 class="message-title">
-			                    Valve closed
-			                    </h4>
-			                    <p>Drain valve - Ballast System #2</p>
-			                    <time>April 13 at 15:24</time>
-			                  </a>
-			                </li>
-
-
-			                <li class="message-item">
+			                <li class="message-item" id="event-7">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -299,7 +287,19 @@
 			                </li>
 
 
-			                <li class="message-item">
+			                <li class="message-item" id="event-8">
+			                  <a href="#">
+			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+			                    <h4 class="message-title">
+			                    Valve closed
+			                    </h4>
+			                    <p>Drain valve - Ballast System #2</p>
+			                    <time>April 13 at 15:24</time>
+			                  </a>
+			                </li>
+
+
+			                <li class="message-item" id="event-9">
 			                  <a href="#">
 			                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
 			                    <h4 class="message-title">
@@ -916,18 +916,25 @@
 		initCharts();
 	}
 
+
+
 	function initCharts()
 	{
+		var _offset=0;
+
 		//$(".timeline-left-nav .message-list .message-item a").off();
 		$(".timeline-left-nav .message-list .message-item a").on("click", function(e){
 			e.preventDefault();
-			console.log("ping");
-		//	$("#chart-2").show("slide", { direction: "left" }, 500);
-			 //console.log($("#chart-0"));
-			 $("#chart-0").panzoom("pan", -500, 0, {
-	              relative: true,
-	              animate: true
-	          });
+
+			var id = $( e.target ).closest("li").attr("id").split("event-").join("") ;
+				id = Number(id);			
+
+			_offset = 1600 - ( 1600/ 9 ) * id ;
+			//console.log("offset:", _offset );
+			$(".panzoom").panzoom( "pan", -_offset, 0, {
+	            relative: true,
+	            animate: true
+	        });
 
 		});
   			
