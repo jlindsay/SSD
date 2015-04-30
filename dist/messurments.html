@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SeaStream Insight: Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./iidx/components/brandkit/favicon/favicon-144px.png">
+
+  <!-- For iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./iidx/components/brandkit/favicon/favicon-114px.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./iidx/components/brandkit/favicon/favicon-72px.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="./iidx/components/brandkit/favicon/favicon.png">
+
+  <link rel="icon" href="./iidx/components/brandkit/favicon/favicon.ico">
+  <link href="./iidx/css/iids.css" rel="stylesheet" type="text/css">
+  <link href="./iidx/css/responsive.css" rel="stylesheet" type="text/css">
+
+  <!--link href="./iidx/components/bootstrap-switch/static/stylesheets/bootstrap-switch.css" rel="stylesheet" type="text/css"-->
+
+  <link href="./css/hmi.css" rel="stylesheet" type="text/css">
+  <!--link href="./css/styles.css" rel="stylesheet" type="text/css"-->
+
+  <!--link href="./css/main.css" rel="stylesheet" type="text/css"-->
+
+  <!--[if lt IE 9]>
+    <link id="theme-ie" href="../../css/ie.css" rel="stylesheet" type="text/css">
+  <![endif]-->
+
+  <script src="./iidx/components/modernizr/modernizr.js"></script>
+
+<style>
+</style>
+
+</head>
+<body>
+<script src="./iidx/components/requirejs/require.js"></script>
+<script src="./iidx/js/require.config.js"></script>
+<script type="text/javascript">
+
+  require.config({
+      baseUrl: './iidx/',
+        
+    });
+
+</script>
+
+<script src="./iidx/components/jquery/jquery.js"></script>
+<script src="./js/globle.js"></script>
+<script src="./js/keynote.js"></script>
+<script>
+
+require.config({
+    baseUrl: './',
+    urlArgs: String("r="+ (new Date()).getTime()),
+      paths: {
+      'cookies'        : 'js/jquery.cookie',
+        'url'             : 'js/jquery.url',
+        'keynote'         : 'js/keynote',
+        'scrollTo'        :'js/jquery.scrollTo.js',
+       "jquery.panzoom"    : './bower/jquery.panzoom/dist/jquery.panzoom'
+    },
+    shim: {
+      'url'        : ['jquery'],
+      'cookies'    : ['jquery'],
+      'scrollTo'   : ['jquery'],
+            'jquery.panzoom' : ['jquery'],
+    }
+
+  });
+
+  require(['jquery','cookies', 'url', 'jquery.panzoom'], function($) {
+        console.log("deubg:init()");
+      var _keynote = new Keynote().init( { pages: _pages } );
+        initUI();
+  });
+
+
+
+  function initUI(){
+     var $panzoom = $('.panzoom').panzoom();
+            
+            $panzoom.parent().on('mousewheel.focal', function( e ) {
+                        //console.log(e);
+                        e.preventDefault();
+                        $(".my-popover").remove();
+                    var delta = e.delta || e.originalEvent.wheelDelta;
+                    var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                        //console.log(zoomOut);
+                        $panzoom.panzoom('zoom', zoomOut, {
+                            increment: 0.1,
+                            animate: false,
+                            focal: e
+                });
+            });
+  }
+
+
+</script>
+
+<div class="col-sm-3 col-md-3">
+      <section class="module">
+        <header class="module-header">
+          <h3 class="voice voice-brand pull-left">Timeline</h3>
+        </header>
+        <div class="module-body" style="margin-right:40px;">
+          <div class="">
+            <div>
+              <ul class="message-list">
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Fill pressure normal
+                    </h4>
+                    <p>Pump - Ballast System #2</p>
+                    <time>11 hours ago</time>
+                  </a>
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Entered tripped state
+                    </h4>
+                    <p>Drive - Ballast System #2</p>
+                    <time>11 hours ago</time>
+                  </a>
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Value opened
+                    </h4>
+                    <p>Fill valve - Ballast System #2</p>
+                    <time>12 hours ago</time>
+                  </a>
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Overtemperature warning
+                    </h4>
+                    <p>Motor - Ballast System #2</p>
+                    <time>12 hours ago</time>
+                  </a>
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Mortor - Ballast System #2
+                    </h4>
+                    <p>Motor -  Ballast System #2</p>
+                    <time>May 1 at 17:05</time>
+                  </a>
+                </li>
+                <li class="message-item">
+                  <a href="#">
+                    <!--span class="label label-important pull-left">Fill pressure normal</span-->
+                    <h4 class="message-title">
+                    Valve closed
+                    </h4>
+                    <p>Drain valve - Ballast System #2</p>
+                    <time>April 13 at 15:24</time>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <footer class="module-footer"></footer>
+      </section>
+      <br>
+
+    </div>
+
+
+<style>
+
+
+</style>
+<div class="col-sm-6 col-md-6">
+  <div class="panzoom" >
+    <img  src="./img/sprites/graphs/chart-0.png"/>
+  </div>
+  <div class="panzoom" >
+    <img  src="./img/sprites/graphs/chart-1.png"/>
+  </div>
+  <div class="panzoom" >
+    <img  src="./img/sprites/graphs/chart-2.png"/>
+  </div>
+  <div class="panzoom" >
+    <img  src="./img/sprites/graphs/chart-3.png"/>
+  </div>
+  <div class="panzoom" >
+    <img  src="./img/sprites/graphs/chart-4.png"/>
+  </div>
+</div>
+
+
+
+
+<!--section class="module">
+        <header class="module-header voice voice-brand">
+          <h3>Fleet Utilization</h3>
+        </header>
+        <div class="module-contents">
+          <div id="chart" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 818px; height: 230px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(65, 65, 65); font-family: ge-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;"><svg version="1.1" style="font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:14px;color:#414141;fill:#414141;" xmlns="http://www.w3.org/2000/svg" width="818" height="230"><desc>Created with Highstock 1.3.10</desc><defs><clipPath id="highcharts-1"><rect x="0" y="0" width="743" height="173"></rect></clipPath></defs><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 75 -0.5 L 818 -0.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 75 35.5 L 818 35.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 75 69.5 L 818 69.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 75 104.5 L 818 104.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 75 138.5 L 818 138.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 75 173.5 L 818 173.5" stroke="#bcbcbc" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><text x="446.5" y="229" zIndex="7" text-anchor="middle" transform="translate(0,0)" class=" highcharts-xaxis-title" style="color:#414141;font-weight:normal;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13px;fill:#414141;" visibility="visible"><tspan x="446.5">2012</tspan></text></g><g class="highcharts-axis" zIndex="2"><text x="13.09375" y="86.5" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 13.09375 86.5)" class=" highcharts-yaxis-title" style="color:#414141;font-weight:normal;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13px;fill:#414141;" visibility="visible"><tspan x="13.09375">Output Power (MW)</tspan></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(75,0) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 6.87962962962963 138.37924 L 18.157710989678204 138.36194 L 29.435792349726775 138.28928 L 40.71387370977535 138.0194 L 51.99195506982392 137.5869 L 63.2700364298725 137.12326000000002 L 74.54811778992106 136.1856 L 85.82619914996964 134.9227 L 97.10428051001821 133.43144 L 108.38236187006679 131.26202 L 119.66044323011536 127.82278 L 130.93852459016392 122.42172 L 142.2166059502125 116.10376 L 153.49468731026107 104.41588 L 164.77276867030966 84.88072 L 176.05085003035822 67.69836 L 187.3289313904068 54.924040000000005 L 198.60701275045537 43.64098000000001 L 209.88509411050396 36.47185999999999 L 221.16317547055252 30.94623999999999 L 232.44125683060108 27.742279999999994 L 243.71933819064967 27.54159999999999 L 254.99741955069823 30.333820000000003 L 266.2755009107468 37.28496000000001 L 277.5535822707954 43.79668000000001 L 288.83166363084393 46.14948 L 300.1097449908925 45.132239999999996 L 311.3878263509411 41.824479999999994 L 322.6659077109897 38.06345999999999 L 333.94398907103823 38.181100000000015 L 345.2220704310868 42.12204 L 356.5001517911354 49.89666 L 367.77823315118394 49.401880000000006 L 379.05631451123253 52.50204000000001 L 390.3343958712811 53.2667 L 401.6124772313297 54.30816 L 412.89055859137824 57.214560000000006 L 424.1686399514268 56.37032000000001 L 435.4467213114754 55.01746 L 446.724802671524 54.12478 L 458.00288403157253 54.53998 L 469.2809653916211 53.972539999999995 L 480.5590467516697 54.16976 L 491.83712811171824 56.79244 L 503.11520947176683 60.965199999999996 L 514.3932908318154 65.72616000000001 L 525.671372191864 78.58698 L 536.9494535519126 87.37538 L 548.2275349119611 93.15704 L 559.5056162720097 94.9597 L 570.7836976320583 96.38176 L 582.0617789921068 100.30886 L 593.3398603521555 100.513 L 604.617941712204 100.78634 L 615.8960230722525 100.94896 L 627.1741044323012 101.80358 L 638.4521857923497 101.97658 L 649.7302671523983 102.1565 L 661.0083485124469 102.34334 L 672.2864298724954 102.56132 L 683.564511232544 102.7793 L 694.8425925925926 103.44016" stroke="#005CB9" stroke-width="3" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -3.1203703703703702 138.37924 L 6.87962962962963 138.37924 L 18.157710989678204 138.36194 L 29.435792349726775 138.28928 L 40.71387370977535 138.0194 L 51.99195506982392 137.5869 L 63.2700364298725 137.12326000000002 L 74.54811778992106 136.1856 L 85.82619914996964 134.9227 L 97.10428051001821 133.43144 L 108.38236187006679 131.26202 L 119.66044323011536 127.82278 L 130.93852459016392 122.42172 L 142.2166059502125 116.10376 L 153.49468731026107 104.41588 L 164.77276867030966 84.88072 L 176.05085003035822 67.69836 L 187.3289313904068 54.924040000000005 L 198.60701275045537 43.64098000000001 L 209.88509411050396 36.47185999999999 L 221.16317547055252 30.94623999999999 L 232.44125683060108 27.742279999999994 L 243.71933819064967 27.54159999999999 L 254.99741955069823 30.333820000000003 L 266.2755009107468 37.28496000000001 L 277.5535822707954 43.79668000000001 L 288.83166363084393 46.14948 L 300.1097449908925 45.132239999999996 L 311.3878263509411 41.824479999999994 L 322.6659077109897 38.06345999999999 L 333.94398907103823 38.181100000000015 L 345.2220704310868 42.12204 L 356.5001517911354 49.89666 L 367.77823315118394 49.401880000000006 L 379.05631451123253 52.50204000000001 L 390.3343958712811 53.2667 L 401.6124772313297 54.30816 L 412.89055859137824 57.214560000000006 L 424.1686399514268 56.37032000000001 L 435.4467213114754 55.01746 L 446.724802671524 54.12478 L 458.00288403157253 54.53998 L 469.2809653916211 53.972539999999995 L 480.5590467516697 54.16976 L 491.83712811171824 56.79244 L 503.11520947176683 60.965199999999996 L 514.3932908318154 65.72616000000001 L 525.671372191864 78.58698 L 536.9494535519126 87.37538 L 548.2275349119611 93.15704 L 559.5056162720097 94.9597 L 570.7836976320583 96.38176 L 582.0617789921068 100.30886 L 593.3398603521555 100.513 L 604.617941712204 100.78634 L 615.8960230722525 100.94896 L 627.1741044323012 101.80358 L 638.4521857923497 101.97658 L 649.7302671523983 102.1565 L 661.0083485124469 102.34334 L 672.2864298724954 102.56132 L 683.564511232544 102.7793 L 694.8425925925926 103.44016 L 704.8425925925926 103.44016" stroke-linejoin="round" visibility="visible" stroke-opacity="0.0001" stroke="rgb(192,192,192)" stroke-width="23" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(75,0) scale(1 1)" style="" clip-path="none"></g></g><text x="0" y="20" text-anchor="start" class="highcharts-title" zIndex="4" style="color:#414141;font-size:14px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-weight:bold;fill:#414141;width:774px;"></text><g class="highcharts-legend" zIndex="7" transform="translate(737,3)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#005CB9" stroke-width="3"></path><text x="21" y="15" style="color:#274b6d;font-size:12px;cursor:pointer;fill:#274b6d;" text-anchor="start" zIndex="2"><tspan x="21">Total Fleet</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="81.87962962962963" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="81.87962962962963">Jan '12</tspan></text><text x="151.80373406193078" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="151.80373406193078">Feb '12</tspan></text><text x="217.2166059502125" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="217.2166059502125">Mar '12</tspan></text><text x="287.14071038251365" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="287.14071038251365">Apr '12</tspan></text><text x="354.8091985428051" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="354.8091985428051">May '12</tspan></text><text x="424.73330297510626" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="424.73330297510626">Jun '12</tspan></text><text x="492.4017911353977" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="492.4017911353977">Jul '12</tspan></text><text x="562.3258955676988" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="562.3258955676988">Aug '12</tspan></text><text x="632.25" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="632.25">Sep '12</tspan></text><text x="699.9184881602914" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="699.9184881602914">Oct '12</tspan></text><text x="769.8425925925926" y="197" text-anchor="middle" style="color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="769.8425925925926">Nov '12</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="57" y="180.5" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">-10k</tspan></text><text x="57" y="145.9" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">0k</tspan></text><text x="57" y="111.30000000000001" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">10k</tspan></text><text x="57" y="76.7" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">20k</tspan></text><text x="57" y="42.099999999999994" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">30k</tspan></text><text x="57" y="7.5" text-anchor="end" style="width:250px;color:#575757;cursor:default;font-size:13px;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;fill:#575757;" opacity="1"><tspan x="57">40k</tspan></text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><rect x="0.5" y="0.5" width="30" height="30" fill="rgb(247,248,250)" fill-opacity="0.85" rx="3" ry="3"></rect><text x="15" y="29" zIndex="1" style="font-size:13px;font-weight:normal;font-family:&quot;ge-sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color:#414141;fill:#414141;"></text></g></svg></div></div>
+        </div>
+      </section-->
+
+
+
+<script src="./iidx/components/respond/respond.src.js"></script>
+
+</body>
+</html>
