@@ -562,3 +562,34 @@ html body{
 }
 
 
+
+.timeline-left-nav{
+  overflow-y: scroll;
+  /*height:500px;*/
+  max-height: 500px;
+  width:200px;
+  float: left;
+  display:inline-block;
+}
+
+.timeline-right-nav{
+  /*width:400px;  */
+  float: left;
+  display:inline-block;
+}
+
+.timeline-right-nav 
+{
+    overflow: hidden;
+    max-width: 368px;
+    
+}
+
+.timeline-right-nav img.graph
+{
+  max-width: none;
+  width: 1600px;
+    height:212px;
+}
+
+
