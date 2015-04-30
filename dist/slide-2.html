@@ -35,9 +35,7 @@
 <style type="text/css">
 
     html, body {
-        /*background-color: #2b2b2b;*/
-        background-color: #093eaa;
-        
+        background-color: white;
         color: white;
         height: 100%;
         vertical-align: middle;
@@ -46,27 +44,19 @@
     h1 {
         display: inline;
         position: relative;
-        top: 34%;
+        top: 50%;
         vertical-align: middle;
         font-size: 90px;
-        line-height: 90%;
-        color:white;
     }
 
-  #bottom-left {
-    opacity: 1;
-    transition: all 0.2s ease-in;
-  }
-  #bottom-left {
-    bottom: 10px;
-    left: 10px;
-    z-index: 100;
-  }
-
-  #top-left, #top-right, #bottom-right, #bottom, #bottom-left, #center, #center-below, #center-above {
-    position: absolute;
-    z-index: 3;
-  }
+    img {
+        width: 100%;
+        height:auto;
+        position: relative;
+        margin-bottom: 0;
+        overflow: hidden;
+        background: #1c1c1c;
+    }
 
 </style>
 
@@ -74,21 +64,13 @@
   <link id="theme-ie" href="css/iids/ie.css" rel="stylesheet" type="text/css">
 <![endif]-->
 
-</head>
-    <body>
-        <h1><strong class="msg">.</strong></h1>
-        <div id="bottom-left" >
-          <a class="navbar-brand" href="./index.html"><span class="ge-logo"></span> <span>SeaStream™ Insight | 2015<small><i></i></small></span></a>
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+        
+</head> 
+	<body style="display:none;">
+    	<img src="./img/slides/slide_2.png">
     </body>
 
+    
     <script src="./iidx/components/requirejs/require.js"></script>
     <script src="./iidx/components/jquery/jquery.js"></script>
     <!--script src="./js/jquery.cookie.js"></script>
@@ -97,50 +79,31 @@
     <script src="./js/keynote.js"></script>
     <script>
       
-        require.config({
-            baseUrl: './',
-            urlArgs: String("r="+ (new Date()).getTime()),
-                paths: {
-                    'cookies': 'js/jquery.cookie',
-                    'url': 'js/jquery.url',
-                    'keynote': 'js/keynote'
-            },
-            shim: {
-                'url': ['jquery'],
-                'cookies': ['jquery'],
-            }
+      require.config({
+        baseUrl: './',
+        urlArgs: String("r="+ (new Date()).getTime()),
+          paths: {
+          'cookies': 'js/jquery.cookie',
+            'url': 'js/jquery.url',
+            'keynote': 'js/keynote'
+        },
+        shim: {
+          'url': ['jquery'],
+          'cookies': ['jquery'],
+        }
 
-        });
+      });
 
-        require(['jquery','cookies', 'url', 'keynote'], function($) {
-            console.log("deubg:init()");
-
-            _title = ( window.location.hash )? window.location.hash : "...";
-          
-            var _keynote = new Keynote().init( { pages: _pages } );
-
-            _title = _title.split("#").join("");
-            _title = _title.split("-").join(" ");
-            _title = _title.split("_").join(" ");
-            
-            
-            $(".msg").fadeOut("fast",function(e){
-                $(".msg").text( _title );
-                $(".msg").fadeIn("fast", function(e){
-                    
-                });
-                
-            }); 
-
-            $("#bottom-left").fadeIn("fast", function(e){
-                    
-            });
-                 
-        
-            
+      require(['jquery','cookies', 'url', 'keynote'], function($) {
+          //initKeyBoard();
+          console.log("deubg:init()");
+          var _keynote = new Keynote().init( {pages: _pages } );
+          $("body").fadeIn("fast", function(){
+            //
+          });
       });
 
     </script>
-    
     <script src="./iidx/components/respond/respond.src.js"></script>
 </html>
+

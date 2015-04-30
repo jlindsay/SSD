@@ -2,7 +2,7 @@ var _pages = [
 
     { url: 'index.html' , hash: "" , uuid:"000" },
 
-
+    { url: 'summary.html' , hash: "SeaStream™ Insight" , uuid:"010" },
     { url: 'summary.html' , hash: "Ships" , uuid:"100" },
         { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"101" },
         { url: 'home.html' , hash: "tab=ship&sub=acoustics" , uuid:"102" },
@@ -33,11 +33,6 @@ var _pages = [
 
     { url: 'summary.html' , hash: "Fleet-View" , uuid:"200" },
         { url: 'fleet-view.html' , hash: "" , uuid:"201" },
-        
-        { url: 'summary.html' , hash: "ship_id=1" , uuid:"202" },
-        { url: 'summary.html' , hash: "ship_id=2" , uuid:"203" },
-        { url: 'summary.html' , hash: "ship_id=3" , uuid:"204" },
-        { url: 'summary.html' , hash: "ship_id=4" , uuid:"205" },
         { url: 'fleet-view+google-maps.html' , hash: "" , uuid:"210" },
 
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
@@ -47,17 +42,16 @@ var _pages = [
         { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"304" },
         { url: 'home.html' , hash: "tab=ship&sub=overview" , uuid:"305" },
 
-    { url: 'summary.html' , hash: "Section-3" , uuid:"400" },
-        { url: 'home.html' , hash: "" , uuid:"401" },
-    
-    
-    { url: 'summary.html' , hash: "Section-4" , uuid:"500" },
-        { url: 'home.html' , hash: "" , uuid:"501" },
-    
-    
-    { url: 'summary.html' , hash: "Section-5" , uuid:"600" },
-        { url: 'home.html' , hash: "" , uuid:"601" },
+    { url: 'summary.html' , hash: "Shore-Scenario" , uuid:"400" },
+        { url: 'slide-0.html' , hash: "" , uuid:"401" },
+        { url: 'slide-1.html' , hash: "" , uuid:"402" },
+        { url: 'slide-2.html' , hash: "" , uuid:"403" },
+        { url: 'slide-3.html' , hash: "" , uuid:"404" },
+        { url: 'slide-4.html' , hash: "" , uuid:"405" },
+        { url: 'slide-5.html' , hash: "" , uuid:"406" },
+        { url: 'slide-6.html' , hash: "" , uuid:"407" },
 
-    { url: 'thankyou.html' , hash: "" , uuid:"700" },
+
+    { url: 'thankyou.html' , hash: "" , uuid:"500" },
 
 ];
