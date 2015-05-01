@@ -5,8 +5,8 @@
 	<div class="module-body">
 
 			 <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
-		    
-		    
+
+
 		    <div id="myModal" class="modal fade">
 		        <div class="modal-dialog">
 		            <div class="modal-content">
@@ -54,28 +54,29 @@
 			<img  src="./img/sprites/screens/sprite_ballastsys2_assets-top.png" />
 		</div>
 		<div id="pannel-1-assets-bottom" class="hidden">
-			
-			<a data-toggle="modal" href="#modal-assets" >
-				<img  src="./img/sprites/screens/sprite_ballastsys2_assets_expanded.png" />
-			</a>
+
+			<a class="modal-1" data-toggle="modal" href="#modal-assets" ><span>Modal 1</span></a>
+			<a class="modal-2" data-toggle="modal" href="#modal-deck"><span>Modal 2</span></a>
+
+			<img  src="./img/sprites/screens/sprite_ballastsys2_assets_expanded.png" />
 			<!--a data-toggle="modal" href="#modal-assets" class="btn">Launch Modal</a-->
 
 			<!--img class="btn-box" src="./img/sprites/screens/btn-box-0.png" />
 			<img class="btn-box" src="./img/sprites/screens/btn-box-1.png" /-->
 		</div>
-			
-			
-				<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
-			
 
-		
+
+				<img src="./img/sprites/screens/sprite_ballastsys2_assets-bottom.png" />
+
+
+
 		<!--div id="btn-box-0" class="btn-box">asdf</div>
 		<div id="btn-box-1" class="btn-box">asdf</div-->
 	</div>
 
 
 
- 
+
 <div id="popover1-content-wrapper" style="display: none">
   <p><button class="btn btn-small btn-success">success</button> Here's some engaging content. It's very engaging, right?</p>
   <div class="divider"></div>
@@ -84,38 +85,64 @@
 
 
 	<style>
-	
+	#pannel-1-assets-bottom {
+		position: relative;
+	}
 	.btn-box{
 		background-color: #ccc;
 		position: relative;
   		display: inline-block;
   		width:100px;
   		height:100px;
-  		
+
   		top: 100px;
-  		left: 0px;	
+  		left: 0px;
 	}
-	
+
+	.modal-1 span, .modal-2 span {
+		display: none;
+	}
+
+	.modal-1 {
+		position: absolute;
+		display: block;
+		width: 440px;
+		height: 140px;
+		left: 280px;
+		top: 183px;
+		z-index: 10000;
+	}
+	.modal-2 {
+		position: absolute;
+		display: block;
+		width: 440px;
+		height: 140px;
+		left: 760px;
+		top: 183px;
+		z-index: 10000;
+	}
+
   </style>
 	<script>
 		$(document).ready(function(e){
 			$("#modal-assets").modal({show: false});
+			$("#modal-deck").modal({show: false});
 
 			$("#pannel-1-assets").click(function(e){
-				console.log("pannel-1-assets:click()");	
+				console.log("pannel-1-assets:click()");
 				$(".btn-box").click(function(e){
 					console.log("ping");
 				});
 				$("#pannel-1-assets").addClass("hidden");
 				$("#pannel-1-assets-bottom").removeClass("hidden");
-			});	
+			});
 			$("#pannel-1-assets-bottom").click(function(e){
 					//e.preventDefault();
 					//return;
 					console.log("ping");
-					
+
 					//$("#modal-assets").modal({show: true});
-/*				
+/*
 					$(".my-popover").remove();
             	var id = "p-0";
             	var tmp = html;
@@ -179,7 +206,7 @@
 
 		</div>
 
-		
+
 	</div>
 	<style>
 	.mycb{
@@ -295,7 +322,7 @@
             </div>
             <div class="modal-body">
             	<img src="./img/docs/filter_manual.jpg" />
-                
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -315,7 +342,7 @@
             </div>
             <div class="modal-body">
             	<img src="./img/docs/filter_procedure.png" />
-                
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -342,6 +369,25 @@
         </div>
     </div>
 </div>
+
+<div id="modal-deck" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Deck 6 - Frame 114</h4>
+            </div>
+            <div class="modal-body">
+                <img src="./img/docs/drive_location.png" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--
 
