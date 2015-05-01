@@ -920,7 +920,7 @@
 
 	function initCharts()
 	{
-		var _offset=0;
+		var _offset = 0;
 
 		//$(".timeline-left-nav .message-list .message-item a").off();
 		$(".timeline-left-nav .message-list .message-item a").on("click", function(e){
@@ -929,9 +929,14 @@
 			var id = $( e.target ).closest("li").attr("id").split("event-").join("") ;
 				id = Number(id);			
 
-			_offset = 1600 - ( 1600/ 9 ) * id ;
-			//console.log("offset:", _offset );
-			$(".panzoom").panzoom( "pan", -_offset, 0, {
+				_offset = ( 1600/ 9 ) * id ;
+
+			var width = 1600;
+			var _x = _offset;
+			var delta_x = 1600;
+
+				console.log("offset:", _offset );
+			$(".panzoom").panzoom( "pan", _offset, 0, {
 	            relative: true,
 	            animate: true
 	        });
@@ -939,6 +944,21 @@
 		});
   			
 
+		function panleft()
+		{
+			$('#panzoom img').animate({
+					marginLeft: "-=0.5in"
+				}, 1000, function() {
+			});
+		}
+
+		function panright()
+		{
+			$('#panzoom img').animate({
+					marginLeft: "+=0.5in"
+				}, 1000, function() {
+			});
+		}
 
 
 ///*
@@ -963,6 +983,9 @@
             });
 //*/
 	}
+
+
+
 	
 
 </script>
