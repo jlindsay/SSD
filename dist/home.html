@@ -857,13 +857,17 @@
 			$(document).on('scroll', function(e) {
     			var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
 			    $.each(_pannels, function(index,elm){
-				    
 			    	try{
-			    		if( ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
+						_content_pannels = $("#content-pannels .pannel");
+			    		if( elm && ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
+				    		//console.log("scroll:elm:_content_pannels:",_content_pannels.length );
 				    		$(".asset-pannel").removeClass("selected");
+				    		
 				    		$(elm).addClass("selected");
 				    	}	
-			    	}catch(e){}
+			    	}catch(e){
+			    		//console.log("scroll:error:", e);
+			    	}
 				    
 			    });
 			});
