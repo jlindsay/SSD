@@ -172,5 +172,41 @@
 
 </script>
 
+
+<script src="./iidx/components/requirejs/require.js"></script>
+    <script src="./iidx/components/jquery/jquery.js"></script>
+    <!--script src="./js/jquery.cookie.js"></script>
+    <script src="./js/jquery.url.js"></script-->
+    <script src="./js/globle.js"></script>
+    <script src="./js/keynote.js"></script>
+    <script>
+      
+      require.config({
+        baseUrl: './',
+        urlArgs: String("r="+ (new Date()).getTime()),
+          paths: {
+          'cookies': 'js/jquery.cookie',
+            'url': 'js/jquery.url',
+            'keynote': 'js/keynote'
+        },
+        shim: {
+          'url': ['jquery'],
+          'cookies': ['jquery'],
+        }
+
+      });
+
+      require(['jquery','cookies', 'url', 'keynote'], function($) {
+          //initKeyBoard();
+          console.log("deubg:init()");
+          var _keynote = new Keynote().init( {pages: _pages } );
+          $("body").fadeIn("fast", function(){
+            //
+          });
+      });
+
+    </script>
+    <script src="./iidx/components/respond/respond.src.js"></script>
+
 </body>
 </html>
