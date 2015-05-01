@@ -35,12 +35,8 @@ var _pages = [
         { url: 'home.html' , hash: "tab=ship&sub=water-grey" , uuid:"121" },
 */
 
-
-    
-
-
     { url: 'summary.html' , hash: "Section-2" , uuid:"300" },
-        { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=overview" , uuid:"301" },
+        { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"301" },
         { url: 'home.html' , hash: "tab=ship&sub-tab=drillfloor&sub=home_ship_drillfloor_top-drive" , uuid:"302" },
         
 

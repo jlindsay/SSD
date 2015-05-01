@@ -687,7 +687,7 @@
 					key = $( e.target ).attr('href').split("#").join("");		
 				}catch(e){}
 				
-				//NOTE: disabling everything except for 'ballast-and-bilge'
+				//NOTE: disabling everything except for 'ballast-and-bilge' && 'overview'
 				if( !key || key != 'ballast-and-bilge' && key != 'overview' && key != 'home_ship_drillfloor_top-drive' ) {
 					console.log("display nothing except ballast-and-bilge or overview");
 					return;
@@ -709,7 +709,14 @@
 
 		});
 
-		if( !_sub_nav || _sub_nav == "" ){
+		console.log("debug:_sub_nav_dropdown:",_sub_nav_dropdown);
+		if( _sub_nav_dropdown == "system-2" ){
+			$("#system-2 a").trigger("click");	
+			//return
+		}
+
+		if( !_sub_nav || _sub_nav == "" && _sub_nav_dropdown != undefined ){
+			console.log("ping damnit");
 			$("#left-nav ul li.level-0:first a").trigger("click");	
 		}else{
 			$("#left-nav ul li.level-0 a").each(function(index,elm){
@@ -748,8 +755,10 @@
 		});
 
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
-			//$("#left-nav-tree ul li:first a").trigger("click");
+			$("#left-nav-tree ul li:first a").trigger("click");
 		}
+
+
 
 	}
 
@@ -758,7 +767,7 @@
 		console.log("debug:initSubTabs()");
 		$("#fleet li").off();
 		$("#fleet li").click(function(e){
-			console.log("debug:initSubTabs:CLICK()");
+			//console.log("debug:initSubTabs:CLICK()");
 		});
 
 	}
@@ -773,8 +782,17 @@
 		//$('.left-nav-tree').slideToggle();	
 
 		_sub_nav = key;
+/*
+		if( _sub_nav_dropdown == "system-2" ){
+			$("#system-2 a").trigger("click");	
+		}
+*/
 		_sub_nav_dropdown = undefined;
-		updateBreadcrum();
+		
+
+
+
+		//updateBreadcrum();
 	}
 
 	function loadSubNavDropdownContentTemplate(key)
