@@ -63,7 +63,7 @@
 
   <div class="pull-right profile">
       <div class="btn-toolbar pull-left">
-        		
+
         <div id="btn-analyze" class="btn-group btn-filter pull-left" data-toggle="modal" href="#modal-badge-count">
 		  <a class="btn"><img src="./img/sprites/icons/ico_header_analyze.png" /><span class="ds-id">Analyze</span></a>
 		  <a id="badge-count-btn" class="btn badge-count">0</a>
@@ -98,7 +98,7 @@
 				<span>A</span>
 			</a>
 		</li>
-        <li>		
+        <li>
         	<a href="#">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
@@ -107,7 +107,7 @@
 			</a>
 		</li>
         <li>
-        	<a href="#">        	
+        	<a href="#">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -134,7 +134,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#riser">        	
+        	<a href="#riser">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -144,8 +144,8 @@
         <li id="drillfloor">
         	<a href="#drillfloor">
 	        	<!--svg id="drillfloor-warning" class="warning hidden" width="10" height="10">
-	        		<path d=" 	M 5 0 
-					        	L 0 10 
+	        		<path d=" 	M 5 0
+					        	L 0 10
 					        	L 10 10
 					        	" fill="#ff9821" /></svg-->
 				<svg height="10" width="10">
@@ -155,7 +155,7 @@
 			</a>
         </li>
         <li>
-        	<a href="#fire-and-gas">        	
+        	<a href="#fire-and-gas">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -163,15 +163,15 @@
 			</a>
         </li>
         <li>
-        	<a href="#power-managment">        	
+        	<a href="#power-managment">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
 				<span style="margin-left:5px;">Power Managment</span>
 			</a>
         </li>
-        <li>	
-        	<a href="#dynamic-position">        	
+        <li>
+        	<a href="#dynamic-position">
 	        	<svg height="10" width="10">
 	  				<circle cx="5" cy="5" r="5" stroke="black" stroke-width="0" fill="#3c95f5" />
 				</svg>
@@ -199,7 +199,7 @@
                     <h4 class="modal-title">Badge Count <span id="badge-count-modal">0</span></h4>
                 </div>
                 <div class="modal-body">
-  		          
+
 		            <div class="timeline-left-nav">
 		            	<h2>Timeline</h2>
 			              <ul class="message-list">
@@ -309,7 +309,7 @@
 			                    <time>April 13 at 15:24</time>
 			                  </a>
 			                </li>
-			                
+
 			              </ul>
 		              </div>
 
@@ -441,7 +441,7 @@
 				_sub_tab = "";
 				_sub = "overview";
 				//$(location).attr('hash', "#tab=ship&sub=overview")
-				
+
 				$("#ship li").removeClass("active");
 
 				focusMainTabs(elm);
@@ -450,11 +450,11 @@
 		parseURL();
 
 		$("#btn-analyze").click(function(e){
-			var badge_count = $("#badge-count").html();	
+			var badge_count = $("#badge-count").html();
 				console.log("badge_count:",badge_count);
 				//$("")
 		})
-		
+
 		//initCharts();
 		initBadge();
 
@@ -483,7 +483,7 @@
 
 		switch(_tab)
 		{
-			
+
 			case "ship":
 				focusMainTabs("#ship");
 				break;
@@ -507,7 +507,7 @@
 //		_nav_id = elem_id ? elem_id : 0;
 		$("#fleet").hide();
 		$("#ship").hide();
-		
+
 		if( !elm_id ){
 			return;
 		}
@@ -516,7 +516,7 @@
 			$("#master-nav li a").removeClass("active");
 		if( elm )
 		{
-			$(elm).closest("li").addClass("active");	
+			$(elm).closest("li").addClass("active");
 		}else{
 			//$("#master-nav li:first").addClass("active");
 		}
@@ -527,7 +527,7 @@
 		var key = elm_id.split("#").join("");
 
 
-		
+
 		//return;
 		console.log("ping:_sub_tab:", _sub_tab, ", _tab:" , _tab);
 		switch(elm_id)
@@ -535,11 +535,11 @@
 			case "#ship":
 				if( _sub_tab == "drillfloor" && _tab == "ship" ){
 					initSubTab();
-					
+
 				}else{
 					loadTemplate( "home_ship" );
 				}
-				
+
 				break;
 			case "#index":
 			default:
@@ -564,11 +564,11 @@
 			html += "<li>" + _sub_tab.split("-").join(" ")+"</li>";
 		}
 		if( _sub_nav && _sub_nav != "" ){
-			hash += "&sub=" + _sub_nav;	
+			hash += "&sub=" + _sub_nav;
 			html += "<li>" + _sub_nav.split("-").join(" ")+"</li>";
 		}
 
-		if( _sub_nav_dropdown && _sub_nav_dropdown != "" ){ 
+		if( _sub_nav_dropdown && _sub_nav_dropdown != "" ){
 			hash += "&dropdown=" + _sub_nav_dropdown;
 			html += "<li>" + _sub_nav_dropdown.split("-").join(" ")+"</li>";
 		}
@@ -597,11 +597,11 @@
 				$("#ship li").removeClass("active");
 				$(elm).closest("li").addClass("active");
 				focusSubtab();
-				//updateBreadcrum();
+				updateBreadcrum();
 		});
 		focusSubtab();
 		//focusSubNav();
-		//updateBreadcrum();
+		updateBreadcrum();
 
 
 	}
@@ -612,7 +612,7 @@
 		if(!_sub_tab){
 			return;
 		}
-		
+
 		switch( _sub_tab )
 		{
 			case "drillfloor":
@@ -620,7 +620,7 @@
 				//console.log("svg:", $("#drillfloor svg.warning") );
 
 				$("#master-nav li").removeClass("active");
-				
+
 				console.log( "ping()", $("#ship svg") );
 				$("#ship-tab svg").remove();
 				$("#ship-view-btn .ds-id").html("DS-01");
@@ -635,7 +635,7 @@
 				$("#drillfloor ").addClass("active");
 				$("#drillfloor a").prepend('<svg width="10" height="10"><rect width="10" height="10" style="fill:rgb(255 , 237 ,69);stroke-width:2;stroke:rgb(151 ,151, 151)" /></svg>');
 
-				
+
 				loadTemplate( "home_ship_drillfloor" );
 				break;
 /*			case "#bop":
@@ -647,7 +647,7 @@
 			case "#riser":
 				loadTemplate( "home_ship_riser" );
 				break;
-			
+
 			case "#fire-and-gas":
 				loadTemplate( "home_ship_fire-and-gas" );
 				break;
@@ -684,9 +684,9 @@
 
 				var key;
 				try{
-					key = $( e.target ).attr('href').split("#").join("");		
+					key = $( e.target ).attr('href').split("#").join("");
 				}catch(e){}
-				
+
 				//NOTE: disabling everything except for 'ballast-and-bilge' && 'overview'
 				if( !key || key != 'ballast-and-bilge' && key != 'overview' && key != 'home_ship_drillfloor_top-drive' ) {
 					console.log("display nothing except ballast-and-bilge or overview");
@@ -696,11 +696,11 @@
 				$("#left-nav ul li.level-0").removeClass("selected");
 				$(e.target).closest( "li").addClass("selected");
 				console.log("level-0:click:", e.target );
-				focusSubNav( key );	
+				focusSubNav( key );
 
 				if( $(e.target).closest("li.level-0").find("ul") != null )
 				{
-					$(e.target).closest("li.level-0").find("ul").slideToggle();	
+					$(e.target).closest("li.level-0").find("ul").slideToggle();
 					//NOTE: Disabling the auto select first child
 					//$(e.target).closest("li.level-0").find("ul li:first").trigger("click");
 				}else{
@@ -711,13 +711,13 @@
 
 		console.log("debug:_sub_nav_dropdown:",_sub_nav_dropdown);
 		if( _sub_nav_dropdown == "system-2" ){
-			$("#system-2 a").trigger("click");	
+			$("#system-2 a").trigger("click");
 			//return
 		}
 
 		if( !_sub_nav || _sub_nav == "" && _sub_nav_dropdown != undefined ){
 			console.log("ping damnit");
-			$("#left-nav ul li.level-0:first a").trigger("click");	
+			$("#left-nav ul li.level-0:first a").trigger("click");
 		}else{
 			$("#left-nav ul li.level-0 a").each(function(index,elm){
 				var val = $(elm).attr("href").split("#").join("");
@@ -775,20 +775,20 @@
 
 	function focusSubNav(key)
 	{
-		console.log( "debug:focusSubNav():key:", key );				
+		console.log( "debug:focusSubNav():key:", key );
 		loadSubNavContentTemplate(key);
 		$('.left-nav-tree').hide();
 		$('.left-nav-tree li').removeClass("selected");
-		//$('.left-nav-tree').slideToggle();	
+		//$('.left-nav-tree').slideToggle();
 
 		_sub_nav = key;
 /*
 		if( _sub_nav_dropdown == "system-2" ){
-			$("#system-2 a").trigger("click");	
+			$("#system-2 a").trigger("click");
 		}
 */
 		_sub_nav_dropdown = undefined;
-		
+
 
 
 
@@ -799,7 +799,7 @@
 	{
 			console.log( "debug:loadSubNavDropdownContentTemplate():key:", key );
 		var template = "./temp/sub_dropdown/"+key+".html";
-	
+
 			$("#content-pannels").fadeOut("fast", function(e){
 				$("#content-pannels").empty();
 				$("#content-pannels").load( template , function(responseText, textStatus, XMLHttpRequest)
@@ -817,7 +817,7 @@
 	function loadSubNavContentTemplate(key)
 	{
 			console.log( "debug:loadSubNavContentTemplate():key:", key );
-			
+
 		var template = "./temp/sub/"+key+".html";
 //			console.log( "debug:loadSubNavContentTemplate():template:", template );
 			//$("#content-pannels")
@@ -837,7 +837,7 @@
 
 			loadSubNavTemplate(key);
 	}
-	
+
 	function loadSubNavTemplate(key)
 	{
 			console.log( "debug:loadSubNavTemplate():key:", key );
@@ -847,18 +847,18 @@
 			$(document).on('scroll', function(e) {
     			var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
 			    $.each(_pannels, function(index,elm){
-				    
+
 			    	try{
 			    		if( ( Number( $(window).scrollTop() ) + 99 ) > $( _content_pannels[index] ).position().top ){
 				    		$(".asset-pannel").removeClass("selected");
 				    		$(elm).addClass("selected");
-				    	}	
+				    	}
 			    	}catch(e){}
-				    
+
 			    });
 			});
-			
-			
+
+
 
 			$("#asset-pannels").fadeOut("fast", function(e){
 				console.log("debug:asset-pannels:fadeout():complete");
@@ -866,7 +866,7 @@
             	$("#asset-pannels").fadeIn("fast", function(e){
             		console.log("fadeIn()");
             	});
-	            
+
 
 
 				$("#asset-pannels").empty();
@@ -880,10 +880,10 @@
 
 		            $(".asset-pannel li a").click(function(e){
 		            	e.preventDefault();
-		            	
+
 		            	var elm = $(e.target ).closest("li").find("a");//.attr("href");
 		            	console.log( "debug:click:", elm );
-		            	var offset = Number( $( $(elm).attr('href') ).offset().top ); 
+		            	var offset = Number( $( $(elm).attr('href') ).offset().top );
 		            		offset -= 115;
 		            		console.log("offset:", offset);
 		            	$("html, body").animate({ scrollTop:  offset }, 500);
@@ -893,13 +893,13 @@
 
 		            	//$("#asset-pannels").animate({ scrollTop: $( $(e.target).attr('href') ).offset().top }, 500);
 
-						
+
 	            	});
 
 	        	});
 			});
 	}
-	
+
 	function loadTemplate(key)
 	{
 			console.log("debug:loadTemplate():key:", key);
@@ -929,7 +929,7 @@
 	{
 		$("#btn-analyze").click(function(e){
 			console.log();
-			
+
 		});
 		initCharts();
 	}
@@ -944,22 +944,22 @@
 		$(".timeline-left-nav .message-list .message-item a").on("click", function(e){
 			e.preventDefault();
 
-			var id = $( e.target ).closest("li").attr("id").split("event-").join("") ;
-				id = Number(id);			
-
-				_offset = ( 1600/ 9 ) * id ;
-
+			var id = $( e.target ).closest("li").attr("id").split("event-").join("");
+			id = Number(id);
+      _offset = - ( 1600/ 9 ) * id;
 			var width = 1600;
 			var _x = _offset;
 			var delta_x = 1600;
 
-				console.log("offset:", _offset );
+      console.log("offset:", _offset );
+
 			$(".panzoom").panzoom( "pan", _offset, 0, {
-	            relative: true,
-	            animate: true
-	        });
+	      relative: false,
+	      animate: true
+	    });
+
 		});
-  			
+
 
 		function panleft()
 		{
@@ -980,11 +980,11 @@
 
 ///*
     	 var $panzoom = $('.panzoom').panzoom();
-            
+
             $panzoom.parent().on('mousewheel.focal', function( e ) {
                         //console.log(e);
                         e.preventDefault();
-                        
+
                         //$(".graphs").remove();
                     //var delta = e.delta || e.originalEvent.wheelDelta;
                     //var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
@@ -995,7 +995,7 @@
                             animate: false,
                             focal: e
                 });
-						*/                
+						*/
 
             });
 //*/
@@ -1003,7 +1003,7 @@
 
 
 
-	
+
 
 </script>
 
@@ -1011,6 +1011,3 @@
 
 </body>
 </html>
-
-
-
