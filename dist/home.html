@@ -423,6 +423,8 @@
 	var _pannels=[];
 	var _content_pannels=[];
 
+	var _show_system_2=false;
+
 	function initUI()
 	{
 		console.log("debug:initUI()");
@@ -701,6 +703,9 @@
 				if( $(e.target).closest("li.level-0").find("ul") != null )
 				{
 					$(e.target).closest("li.level-0").find("ul").slideToggle();	
+					//NOTE: need to force a click to system-2
+					//console.log("stuff:_show_system_2:", _show_system_2, ", _sub_nav_dropdown:", _sub_nav_dropdown );
+					
 					//NOTE: Disabling the auto select first child
 					//$(e.target).closest("li.level-0").find("ul li:first").trigger("click");
 				}else{
@@ -710,12 +715,15 @@
 		});
 
 		console.log("debug:_sub_nav_dropdown:",_sub_nav_dropdown);
+		console.log("xxxxx:system-2:", _sub_nav_dropdown );
 		if( _sub_nav_dropdown == "system-2" ){
-			$("#system-2 a").trigger("click");	
+			
+				_show_system_2 = true;
+			//$("#system-2").trigger("click");	
 			//return
 		}
 
-		if( !_sub_nav || _sub_nav == "" && _sub_nav_dropdown != undefined ){
+		if( !_sub_nav || _sub_nav == "" && _sub_nav_dropdown == undefined  ){
 			console.log("ping damnit");
 			$("#left-nav ul li.level-0:first a").trigger("click");	
 		}else{
@@ -724,7 +732,7 @@
 				if( _sub_nav == val )
 				{
 					console.log("match:", _sub_nav, ", val:", val );
-					$(elm).trigger("click");
+						$(elm).trigger("click");	
 				}
 			})
 		}
@@ -756,9 +764,15 @@
 
 		if( !_sub_nav_dropdown || _sub_nav_dropdown == "" ){
 			$("#left-nav-tree ul li:first a").trigger("click");
+		}else{
+
 		}
 
-
+		if( _show_system_2 )
+		{
+			$("#system-2").trigger("click");	
+		}
+			
 
 	}
 
@@ -782,11 +796,7 @@
 		//$('.left-nav-tree').slideToggle();	
 
 		_sub_nav = key;
-/*
-		if( _sub_nav_dropdown == "system-2" ){
-			$("#system-2 a").trigger("click");	
-		}
-*/
+
 		_sub_nav_dropdown = undefined;
 		
 
