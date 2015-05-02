@@ -959,8 +959,7 @@
 	function initBadge()
 	{
 		$("#btn-analyze").click(function(e){
-			console.log();
-
+			//console.log();
 		});
 		initCharts();
 	}
@@ -974,25 +973,29 @@
 		//$(".timeline-left-nav .message-list .message-item a").off();
 		$(".timeline-left-nav .message-list .message-item a").on("click", function(e){
 			e.preventDefault();
-
+			console.log("initCharts():click");
 			var id = $( e.target ).closest("li").attr("id").split("event-").join("");
 
-      id = Number(id);
-      _offset = - ( 1600/ 9 ) * id ;
+			    id = Number(id);
+			    _offset = - ( 1600/ 9 ) * id ;
 
 			var width = 1600;
 			var _x = _offset;
 			var delta_x = 1600;
 
-      console.log("offset:", _offset );
+      			console.log("offset:", _offset );
+      		$(".panzoom").panzoom("enable");
 			$(".panzoom").panzoom( "pan", _offset, 0, {
-	      relative: false,
-	      animate: true
-	    });
+			      relative: false,
+			      animate: true
+	    	});
+	    	setTimeout(function(){ 
+          		$(".panzoom").panzoom("disable")
+        	}, 1500);
 
 		});
 
-
+/*
 		function panleft()
 		{
 			$('#panzoom img').animate({
@@ -1008,10 +1011,17 @@
 				}, 1000, function() {
 			});
 		}
+*/
 
+ 		var $panzoom = $('.panzoom').panzoom();
+ 		//$(".panzoom").panzoom("disable")
 
-///*
-    	 var $panzoom = $('.panzoom').panzoom();
+ 		 setTimeout(function(){ 
+          $(".panzoom").panzoom("disable")
+        }, 1500);
+
+/*
+    	
 
             $panzoom.parent().on('mousewheel.focal', function( e ) {
                         //console.log(e);
@@ -1021,16 +1031,10 @@
                     //var delta = e.delta || e.originalEvent.wheelDelta;
                     //var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
                         //console.log(zoomOut);
-                        /*
-                        $panzoom.panzoom('pan', -400, {
-                            increment: 0.1,
-                            animate: false,
-                            focal: e
-                });
-						*/
+                        
 
             });
-//*/
+*/
 	}
 
 
